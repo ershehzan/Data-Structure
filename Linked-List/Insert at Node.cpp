@@ -21,7 +21,7 @@ public:
 // - arr: Array containing values to insert
 // - index: Current index in the array
 // - size: Total size of the array
-node *insertAtend(int arr[], int index, int size)
+node *insertAtnode(int arr[], int index, int size)
 {
     if (index == size) // Base case: If all elements are processed, return NULL
         return NULL;
@@ -30,7 +30,7 @@ node *insertAtend(int arr[], int index, int size)
     node *temp = new node(arr[index]);
 
     // Recursively insert the next elements and link them to the current node
-    temp->next = insertAtend(arr, index + 1, size);
+    temp->next = insertAtnode(arr, index + 1, size);
     return temp; // Return the current node
 }
 
@@ -44,7 +44,7 @@ int main()
     int size = 4; // Size of the array
 
     // Recursively insert elements from the array into the linked list
-    head = insertAtend(arr, 0, size);
+    head = insertAtnode(arr, 0, size);
 
     int x = 2;      // Position after which the new node will be inserted (1-based index)
     int value = 30; // Value of the new node to be inserted
