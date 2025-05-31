@@ -1,26 +1,32 @@
-#include <iostream>
+#include <iostream>  // Include for standard input and output operations
 using namespace std;
+
 int main()
 {
-    // i=row    j=column
-    int n, i, j;
-    cout << "Enter a number :";
-    cin >> n;
+    // i = row loop variable, j = column loop variable
+    int n, i, j; // n will store the size of the pattern, i and j are loop counters
+
+    cout << "Enter a number :"; // Prompt user to enter the size of the pattern
+    cin >> n;                   // Take input for n
+
+    // Outer loop for rows, iterates n times (from 1 to n)
     for (i = 1; i <= n; i++)
     {
-        // Nested loop
+        // Inner loop for columns, also iterates n times (from 1 to n)
         for (j = 1; j <= n; j++)
         {
-            cout << j * j << "  ";
+            cout << j * j << "  "; // Print the square of column number (j^2) with spacing
         }
-        cout << endl;
+        cout << endl; // Move to the next line after printing each row
     }
 
-    return 0;
+    return 0; // Indicate successful program termination
 }
-/* Output
+
+/* Output Example for n = 5:
 1  4  9  16  25      
 1  4  9  16  25      
 1  4  9  16  25      
 1  4  9  16  25      
-1  4  9  16  25 */
+1  4  9  16  25 
+*/
