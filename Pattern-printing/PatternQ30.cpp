@@ -9,40 +9,41 @@ int main()
     cout << "Enter the number : "; // Prompt the user to enter the size of the pattern
     cin >> n; // Read and store the user's input in n
 
-    // First half: from 1 to n rows
+    // First half: from 1 to n rows (upper part of the pattern)
     for (i = 1; i <= n; i++)
     {
-        // Print stars on the left side
+        // Print stars on the left side of the pattern
         for (j = 1; j <= i; j++)
             cout << "* ";
 
-        // Print spaces in the middle
+        // Print spaces in the middle; the number of spaces decreases as i increases
+        // Each "space" is two spaces ("  ") for alignment with "* "
         for (j = 1; j <= 2 * n - 2 * i; j++)
             cout << "  ";
 
-        // Print stars on the right side
+        // Print stars on the right side (mirrored from the left)
         for (j = 1; j <= i; j++)
             cout << "* ";
 
-        cout << endl; // Move to the next line after each row is printed
+        cout << endl; // Move to the next line after printing the current row
     }
 
-    // Second half: from n-1 down to 1
+    // Second half: from n-1 down to 1 (lower part of the pattern)
     for (i = n - 1; i >= 1; i--)
     {
         // Print stars on the left side
         for (j = 1; j <= i; j++)
             cout << "* ";
 
-        // Print spaces in the middle
+        // Print spaces in the middle; the number of spaces increases as i decreases
         for (j = 1; j <= 2 * n - 2 * i; j++)
             cout << "  ";
 
-        // Print stars on the right side
+        // Print stars on the right side (mirrored from the left)
         for (j = 1; j <= i; j++)
             cout << "* ";
 
-        cout << endl; // Move to the next line after each row is printed
+        cout << endl; // Move to the next line after printing the current row
     }
 
     return 0; // Indicate successful program execution
@@ -55,7 +56,7 @@ int main()
 * * * *     * * * * 
 * * * * * * * * * * 
 * * * *     * * * * 
-* * * *         * * 
+* * *         * * * 
 * *             * * 
 *                 *  
 */
