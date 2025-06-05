@@ -11,8 +11,7 @@ int main()
     cout << "Enter the Elements: ";
     for (i = 0; i < n; i++)
     {
-
-        cin >> arr[i];
+        cin >> arr[i]; // Input n sorted positive integers
     }
     int k;
     cout << "Enter the position of missing element: ";
