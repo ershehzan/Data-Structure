@@ -1,30 +1,43 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * Searches for a target value in a rotated sorted array.
+ * @param arr   The input array (rotated and sorted).
+ * @param size  The size of the array.
+ * @param target The value to search for.
+ * @return      Index of target if found, otherwise -1.
+ */
 int searchInRotatedArray(int arr[], int size, int target)
 {
     int start = 0, end = size - 1, mid;
 
+    // Perform binary search while the range is valid
     while (start <= end)
     {
+        // Calculate the middle index to avoid overflow
         mid = start + (end - start) / 2;
 
+        // Check if the middle element is the target
         if (arr[mid] == target)
             return mid;
 
         // Determine if the left half is sorted
         if (arr[start] <= arr[mid])
         {
+            // Target is in the left (sorted) half
             if (arr[start] <= target && target < arr[mid])
                 end = mid - 1;
-            else
+            else // Target is in the right half
                 start = mid + 1;
         }
         else
-        { // Right half is sorted
+        { 
+            // Right half is sorted
+            // Target is in the right (sorted) half
             if (arr[mid] < target && target <= arr[end])
                 start = mid + 1;
-            else
+            else // Target is in the left half
                 end = mid - 1;
         }
     }
@@ -33,14 +46,17 @@ int searchInRotatedArray(int arr[], int size, int target)
 
 int main()
 {
+    // Example rotated sorted array
     int arr[] = {4, 5, 6, 7, 0, 1, 2};
     int target;
 
     cout << "Enter the Target: ";
     cin >> target;
 
+    // Call search function and get index of target
     int index = searchInRotatedArray(arr, 7, target);
 
+    // Output the result
     if (index != -1)
         cout << "Target found at index: " << index << endl;
     else
