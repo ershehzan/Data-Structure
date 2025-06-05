@@ -4,37 +4,39 @@ using namespace std;
 
 int main()
 {
-    int arr[1000], n;
+    int arr[1000], n; // Declare an array of size 1000 and a variable n for length
 
     // Input array size
     cout << "Enter the size of the array: ";
     cin >> n;
 
-    // Input array elements
+    // Input array elements from the user
     cout << "Enter the elements of the array: ";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
+
+    // Sort the array to bring duplicate elements together
     sort(arr, arr + n);
 
-    // Removing duplicates
+    // Removing duplicates by comparing adjacent elements
     for (int i = 0; i < n - 1; i++)
     {
         for (int j = i + 1; j < n;)
         {
             if (arr[i] == arr[j])
             {
-                // Shift elements to the left
+                // If duplicate found, shift all elements left to overwrite arr[j]
                 for (int k = j; k < n - 1; k++)
                 {
                     arr[k] = arr[k + 1];
                 }
-                n--; // Reduce array size
+                n--; // Reduce array size since a duplicate was removed
             }
             else
             {
-                j++; // Move to the next element only if no deletion occurs
+                j++; // Only increase j if no deletion occurred
             }
         }
     }
@@ -48,17 +50,3 @@ int main()
 
     return 0;
 }
- // LC-26
-//  int n = arr.size();
-//         if (n == 0) return 0; // Edge case: empty array
-        
-//         int index = 1; // Pointer for placing unique elements
-        
-//         for (int i = 1; i < n; i++) {
-//             if (arr[i] != arr[i - 1]) {
-//                 arr[index] = arr[i]; // Place unique element at index
-//                 index++;
-//             }
-//         }
-//         return index; // New length of the array
-//     }
