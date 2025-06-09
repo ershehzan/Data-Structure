@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream> // Include the input-output stream library for cin and cout
 using namespace std; // Use the standard namespace to avoid prefixing std::
 
@@ -22,3 +23,22 @@ int main()
 
     // Return 0 is optional in main, but signifies successful completion
 }
+=======
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cin >> n;
+    int row, col,count=1;
+    for (row = 1; row <= n; row++)
+    {
+        for (col = 1; col <= n; col++)
+        {
+            cout << count << " ";
+            count++;
+        }
+        cout << endl;
+    }
+}
+>>>>>>> 549b0d8 (file update)

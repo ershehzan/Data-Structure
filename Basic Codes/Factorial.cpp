@@ -1,6 +1,10 @@
 // factorial
 #include <iostream>
 using namespace std;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 549b0d8 (file update)
 int main()
 {
     int n;

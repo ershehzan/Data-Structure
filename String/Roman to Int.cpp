@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>  // Include the input-output stream library
 #include <string>    // Include the string library for handling strings
 using namespace std; // Use the standard namespace to simplify code
@@ -52,11 +53,49 @@ public:
         sum += nums(s[index]);
 
         // Return the resulting integer value
+=======
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Solution {
+public:
+    int nums(char c) {
+        if (c == 'I')
+            return 1;
+        else if (c == 'V')
+            return 5;
+        else if (c == 'X')
+            return 10;
+        else if (c == 'L')
+            return 50;
+        else if (c == 'C')
+            return 100;
+        else if (c == 'D')
+            return 500;
+        else
+            return 1000;
+    }
+
+    int romanToInt(string s) {
+        int sum = 0, index = 0;
+
+        while (index < s.size() - 1) {
+            if (nums(s[index]) < nums(s[index + 1]))
+                sum -= nums(s[index]);
+            else
+                sum += nums(s[index]);
+
+            index++;
+        }
+        sum += nums(s[index]);
+>>>>>>> 549b0d8 (file update)
         return sum;
     }
 };
 
 int main() {
+<<<<<<< HEAD
     Solution solution;        // Create an instance of the Solution class
     string romanNumeral;      // Variable to store the user-input Roman numeral
 
@@ -72,3 +111,16 @@ int main() {
 
     return 0; // End of the program
 }
+=======
+    Solution solution;
+    string romanNumeral;
+
+    cout << "Enter a Roman numeral: ";
+    cin >> romanNumeral;
+
+    int result = solution.romanToInt(romanNumeral);
+    cout << "The integer value is: " << result << endl;
+
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

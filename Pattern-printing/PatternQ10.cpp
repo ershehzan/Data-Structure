@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>  // Include the library for input and output operations
 using namespace std;
 
@@ -22,9 +23,35 @@ int main()
 }
 
 /* Output Example for n = 5:
+=======
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n, i, j;
+    cout << "Enter the number : ";
+    cin >> n;
+
+    for (i = 1; i <= n; i++)
+    {
+// Loop run from 1 to no. of rows 
+        for (j = 1; j <= i; j++)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+/* Output
+>>>>>>> 549b0d8 (file update)
 1         
 1 2       
 1 2 3     
 1 2 3 4   
+<<<<<<< HEAD
 1 2 3 4 5 
 */
+=======
+1 2 3 4 5    */
+>>>>>>> 549b0d8 (file update)

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Selection Sort implementation in C++
 // This program sorts an array using the Selection Sort algorithm.
 
@@ -14,12 +15,25 @@ int main()
     cin >> n;
 
     // Prompt user to input the array elements
+=======
+
+#include <iostream>
+using namespace std;
+int main()
+{
+
+    int arr[1000];
+    int n;
+    cout << "Enter the Index: ";
+    cin >> n;
+>>>>>>> 549b0d8 (file update)
     cout << "Enter the Elements of Array: ";
     for (int i = 0; i < n; i++)
     {
         cin >> arr[i];
     }
 
+<<<<<<< HEAD
     // Selection Sort algorithm
     for (int i = 0; i < n - 1; i++)
     {
@@ -36,6 +50,21 @@ int main()
 
     // Output the sorted array
     cout << "Sorted Array are: ";
+=======
+    for (int i = 0; i < n - 1; i++)
+    {
+
+        int index = i;
+        for (int j = i + 1; j < n; j++)
+        {
+            if (arr[j] < arr[index])
+                index = j;
+        }
+        swap(arr[i], arr[index]);
+    }
+
+    cout<<"Sorted Array are: ";
+>>>>>>> 549b0d8 (file update)
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " ";

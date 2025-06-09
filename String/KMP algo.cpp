@@ -3,6 +3,7 @@
 #include <string>
 using namespace std;
 
+<<<<<<< HEAD
 // Class implementing the KMP (Knuth-Morris-Pratt) string matching algorithm
 class Solution {
 public:
@@ -33,12 +34,30 @@ public:
                     suf++;
                 } else {
                     // Backtrack the prefix pointer using the LPS array
+=======
+class Solution {
+public:
+    void lpsfind(vector<int> &lps, string s) {
+        int pre = 0, suf = 1;
+
+        while (suf < s.size()) {
+            if (s[pre] == s[suf]) {
+                lps[suf] = pre + 1;
+                pre++;
+                suf++;
+            } else {
+                if (pre == 0) {
+                    lps[suf] = 0;
+                    suf++;
+                } else {
+>>>>>>> 549b0d8 (file update)
                     pre = lps[pre - 1];
                 }
             }
         }
     }
 
+<<<<<<< HEAD
     /*
     Function: strStr
     Finds the starting index of the first occurrence of the `needle` string in the `haystack` string.
@@ -84,6 +103,32 @@ public:
             return first - second; // Return the starting index of the match
         else
             return -1; // Return -1 if no match is found
+=======
+    int strStr(string haystack, string needle) {
+        if (needle.empty()) return 0;
+
+        vector<int> lps(needle.size(), 0);
+        lpsfind(lps, needle);
+
+        int first = 0, second = 0;
+
+        while (first < haystack.size() && second < needle.size()) {
+            if (haystack[first] == needle[second]) {
+                first++;
+                second++;
+            } else {
+                if (second == 0)
+                    first++;
+                else
+                    second = lps[second - 1];
+            }
+        }
+
+        if (second == needle.size())
+            return first - second;
+        else
+            return -1;
+>>>>>>> 549b0d8 (file update)
     }
 };
 
@@ -91,6 +136,7 @@ int main() {
     Solution solution;
     string haystack, needle;
 
+<<<<<<< HEAD
     // Prompt the user to enter the haystack string
     cout << "Enter the haystack string: ";
     cin >> haystack;
@@ -103,11 +149,26 @@ int main() {
     int result = solution.strStr(haystack, needle);
 
     // Print the result
+=======
+    cout << "Enter the haystack string: ";
+    cin >> haystack;
+
+    cout << "Enter the needle string: ";
+    cin >> needle;
+
+    int result = solution.strStr(haystack, needle);
+
+>>>>>>> 549b0d8 (file update)
     if (result != -1) {
         cout << "The needle is found at index: " << result << endl;
     } else {
         cout << "The needle is not found in the haystack." << endl;
     }
 
+<<<<<<< HEAD
     return 0; // Exit the program
 }
+=======
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

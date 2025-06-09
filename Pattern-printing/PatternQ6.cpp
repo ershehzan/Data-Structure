@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream> // Include the input/output stream library for using cout and cin
 using namespace std; // Use the standard namespace
 
@@ -28,9 +29,38 @@ int main()
 }
 
 /* Output Example for n = 5:
+=======
+#include <iostream>
+using namespace std;
+int main()
+{
+    // i=row    j=column
+    int n, i, j;
+
+    cout << "Enter a number :";
+    cin >> n;
+    for (i = 1; i <= n; i++)
+    {
+        char name = 'a' + (i - 1);
+        // Nested loop
+        for (j = 1; j <= n; j++)
+        {
+            cout << name << "  ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+/* Output
+>>>>>>> 549b0d8 (file update)
 a  a  a  a  a        
 b  b  b  b  b        
 c  c  c  c  c        
 d  d  d  d  d        
+<<<<<<< HEAD
 e  e  e  e  e
 */
+=======
+e  e  e  e  e  */
+>>>>>>> 549b0d8 (file update)

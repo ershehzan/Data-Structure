@@ -1,19 +1,30 @@
+<<<<<<< HEAD
 // Rotate Matrix 90 degrees Anticlockwise
 // This is equivalent to rotating the matrix 270 degrees Clockwise
+=======
+// Rotate Matrix 90 degree Anticlockwise
+// same as Rotate Matrix 270 degree Clockwise
+>>>>>>> 549b0d8 (file update)
 
 #include <iostream>
 #include <vector>
 using namespace std;
+<<<<<<< HEAD
 
 int main()
 {
     // Step 1: Initialize a 4x4 matrix with given integers
     // This is the original matrix that will be rotated
+=======
+int main()
+{
+>>>>>>> 549b0d8 (file update)
     vector<vector<int>> matrix = {
         {1, 2, 3, 4},
         {5, 6, 7, 8},
         {9, 10, 11, 12},
         {13, 14, 15, 16}};
+<<<<<<< HEAD
     
     // Get the size of the matrix (number of rows/columns)
     int n = matrix.size();
@@ -87,4 +98,67 @@ int main()
     }
 
     return 0; // Indicate successful program termination
+=======
+
+    int n = matrix.size();
+    
+    //  rotate the matrix 180 degrees
+
+    for (int j = 0; j < n; j++)
+    {
+        int start = 0, end = n - 1;
+        while (start < end)
+        {
+            swap(matrix[start][j], matrix[end][j]);
+            start++;
+            end--;
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        int start = 0, end = n - 1;
+        while (start < end)
+        {
+
+            swap(matrix[i][start], matrix[i][end]);
+            start++;
+            end--;
+        }
+    }
+
+    // Transpose the matrix
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = i + 1; j < n; j++)
+        {
+            swap(matrix[i][j], matrix[j][i]);
+        }
+    }
+    // reverse the matrix
+    for (int i = 0; i < n; i++)
+    {
+
+        int start = 0, end = n - 1;
+
+        while (start < end)
+        {
+            swap(matrix[i][start], matrix[i][end]);
+            start++;
+            end--;
+        }
+    }
+
+    cout << "Matrix after 270 degree rotation:" << endl;
+    for (int i = 0; i < 4; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
+    }
+
+    return 0;
+>>>>>>> 549b0d8 (file update)
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Book Allocation Problem
 // This program attempts to allocate books to students such that the maximum number of pages assigned to a student is minimized.
 
@@ -26,10 +27,33 @@ int main()
         for (int i = 0; i < n; i++)
         {
             if (start < arr[i]) // Ensure the start value is at least the maximum book pages
+=======
+// Book Allocation
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n;
+    cout << "Enter a number : ";
+    cin >> n;
+    int arr[1000] = {12, 36, 67, 90};
+
+    int start = 0, end = 3, mid, ans;
+
+    while (start <= end)
+    {
+        mid = start + (end - start) / 2;
+        int page = 0, count = 1;
+
+        for (int i = 0; i < n; i++)
+        {
+            if (start < arr[i])
+>>>>>>> 549b0d8 (file update)
             {
                 start = arr[i];
                 end += arr[i];
             }
+<<<<<<< HEAD
 
             page += arr[i]; // Add book pages to the current allocation
 
@@ -57,3 +81,26 @@ int main()
 
     return 0; // Indicate successful program execution
 }
+=======
+            page += arr[i];
+            if (page > mid)
+
+                count++;
+            page = arr[i];
+        }
+        if (count <= n)
+        {
+
+            ans = mid;
+            end = mid - 1;
+        }
+        else
+        {
+
+            start = mid + 1;
+        }
+    }
+    cout << " " << ans;
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

@@ -3,6 +3,7 @@
 #include <vector>
 using namespace std;
 
+<<<<<<< HEAD
 // Class to provide a solution for converting an integer to a Roman numeral
 class Solution {
 public:
@@ -32,10 +33,29 @@ public:
         }
         
         return result; // Return the final Roman numeral string
+=======
+class Solution {
+public:
+    string intToRoman(int num) {
+        vector<int> values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        vector<string> symbols = {"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        
+        string result = "";
+        
+        for (size_t i = 0; i < values.size(); i++) {
+            while (num >= values[i]) {
+                result += symbols[i];
+                num -= values[i];
+            }
+        }
+        
+        return result;
+>>>>>>> 549b0d8 (file update)
     }
 };
 
 int main() {
+<<<<<<< HEAD
     Solution solution; // Create an instance of the Solution class
     int num;           // Variable to store the user input
 
@@ -51,3 +71,16 @@ int main() {
 
     return 0; // Exit the program
 }
+=======
+    Solution solution;
+    int num;
+
+    cout << "Enter an integer: ";
+    cin >> num;
+
+    string roman = solution.intToRoman(num);
+    cout << "Roman numeral: " << roman << endl;
+
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

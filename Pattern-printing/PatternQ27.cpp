@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+<<<<<<< HEAD
 
 int main()
 {
@@ -42,6 +43,35 @@ int main()
 }
 
 /* Output Example (for n = 5):
+=======
+int main()
+{
+    // i=row   j= column
+    int n, i, j;
+    cout << "Enter the number : ";
+    cin >> n;
+
+    for (i = 1; i <= n; i++)
+    {
+        // space print
+        for (j = 1; j <= n - i; j++)
+
+            cout << "  ";
+        // 1 to n
+        for (j = 1; j <= i; j++)
+
+            cout << j << " ";
+        // n to 1
+        for (j = i - 1; j >= 1; j--)
+
+            cout << j << " ";
+
+        cout << endl;
+    }
+    return 0;
+}
+/* Output
+>>>>>>> 549b0d8 (file update)
 
         1 
       1 2 1 
@@ -49,4 +79,8 @@ int main()
   1 2 3 4 3 2 1      
 1 2 3 4 5 4 3 2 1 
 
+<<<<<<< HEAD
 */
+=======
+   */
+>>>>>>> 549b0d8 (file update)

@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+<<<<<<< HEAD
 
 int main()
 {
@@ -27,9 +28,33 @@ int main()
 }
 
 /* Output Example for n = 5
+=======
+int main()
+{
+    int n, i, j;
+    cout << "Enter the number : ";
+    cin >> n;
+
+    for (i = 1; i <= n; i++)
+    {
+        
+        for (j = n; j >= n - i + 1; j--)
+        {
+            cout << j << " ";
+        }
+        cout << endl;
+    }
+    return 0;
+}
+/* Output
+>>>>>>> 549b0d8 (file update)
 5 
 5 4 
 5 4 3 
 5 4 3 2 
+<<<<<<< HEAD
 5 4 3 2 1
 */
+=======
+5 4 3 2 1    */
+>>>>>>> 549b0d8 (file update)

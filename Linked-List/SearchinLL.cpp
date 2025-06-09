@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 
+<<<<<<< HEAD
 // Definition of a node in the singly linked list
 struct Node
 { 
@@ -12,10 +13,21 @@ struct Node
 int main()
 {
     // Creating three nodes for the linked list
+=======
+struct Node
+{ // holds the integer value
+    int data;
+    Node *next; // points to the next node
+};
+int main()
+{
+
+>>>>>>> 549b0d8 (file update)
     Node *first = new Node();
     Node *second = new Node();
     Node *third = new Node();
 
+<<<<<<< HEAD
     // Assigning values and linking the nodes together
     first->data = 10;         // First node holds value 10
     first->next = second;     // First node points to second node
@@ -45,6 +57,32 @@ int main()
     }
 
     // Output search result
+=======
+    first->data = 10;
+    first->next = second;
+
+    second->data = 20;
+    second->next = third;
+
+    third->data = 30;
+    third->next = nullptr;
+
+    int target;
+    cout << "Enter the number to search :";
+    cin >> target;
+
+    Node *current = first;
+    bool found = false;
+    while (current != nullptr)
+    {
+        if (current->data == target)
+        {
+            found = true;
+            break;
+        }
+        current = current->next;
+    }
+>>>>>>> 549b0d8 (file update)
     if (found)
     {
         cout << "Number " << target << " is found in the linked list :" << endl;
@@ -54,4 +92,8 @@ int main()
         cout << "Number " << target << " is not found in the linked list :" << endl;
     }
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 549b0d8 (file update)

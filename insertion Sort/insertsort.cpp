@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Implementation of the Insertion Sort algorithm in C++
 #include <iostream>  // Include the input-output stream library for console input and output
 using namespace std; // Use the standard namespace to avoid prefixing standard functions with "std::"
@@ -30,11 +31,40 @@ int main()
     }
 
     // Output the sorted array
+=======
+// Insertion sort
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int i, j, key;
+    int arr[6] = {10, 41, 64, 29, 11, 9};
+
+    for (i = 1; i < 6; i++)
+    {
+        key = arr[i];
+        j = i - 1;
+
+        while (j >= 0 && arr[j] > key)
+        {
+            arr[j + 1] = arr[j];
+            j = j - 1;
+        }
+        arr[j + 1] = key;
+    }
+
+>>>>>>> 549b0d8 (file update)
     cout << "Sorted Array is: ";
     for (i = 0; i < 6; i++)
     {
         cout << arr[i] << " "; // Output each sorted element separated by a space
     }
 
+<<<<<<< HEAD
     return 0; // Indicate that the program executed successfully
 }
+=======
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

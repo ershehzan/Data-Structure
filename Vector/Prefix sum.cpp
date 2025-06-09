@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+<<<<<<< HEAD
 
 int main()
 {
@@ -34,3 +35,24 @@ int main()
 
     return 0; // Indicate that the program executed successfully
 }
+=======
+int main()
+{
+
+    int arr[1000] = {6, 4, 12, -3, 7, 14, 28};
+    int n = 7;
+    int prefix[1000];
+    prefix[0] = arr[0];
+    for (int i = 1; i < n; i++)
+    {
+        prefix[i] = prefix[i - 1] + arr[i];
+    }
+    cout << "Prefix sum array: ";
+    for (int i = 0; i < n; i++)
+    {
+        cout << prefix[i] << " ";
+    }
+
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

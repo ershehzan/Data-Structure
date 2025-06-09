@@ -1,11 +1,16 @@
+<<<<<<< HEAD
 // This program finds the length of the longest prefix which is also a suffix (LPS) in a given string.
 // The LPS problem is a common preprocessing step in the Knuth-Morris-Pratt (KMP) string matching algorithm.
 
+=======
+// This program finds the longest prefix which is also a suffix in a given string.
+>>>>>>> 549b0d8 (file update)
 #include <iostream>
 #include <string>
 #include <vector>
 using namespace std;
 
+<<<<<<< HEAD
 // Class implementing the solution for finding the Longest Prefix Suffix (LPS).
 class Solution {
 public:
@@ -39,17 +44,39 @@ public:
                     suf++; // Move the suffix pointer forward.
                 } else {
                     // If a prefix exists, backtrack the prefix pointer using the LPS array.
+=======
+class Solution {
+public:
+    int longestPrefixSuffix(string &s) {
+        vector<int> lps(s.size(), 0);
+        int pre = 0, suf = 1;
+
+        while (suf < s.size()) {
+            if (s[pre] == s[suf]) {
+                lps[suf] = pre + 1;
+                pre++;
+                suf++;
+            } else {
+                if (pre == 0) {
+                    lps[suf] = 0;
+                    suf++;
+                } else {
+>>>>>>> 549b0d8 (file update)
                     pre = lps[pre - 1];
                 }
             }
         }
+<<<<<<< HEAD
 
         // The last value in the LPS array represents the length of the longest prefix which is also a suffix.
+=======
+>>>>>>> 549b0d8 (file update)
         return lps[s.size() - 1];
     }
 };
 
 int main() {
+<<<<<<< HEAD
     Solution solution; // Create an instance of the Solution class.
     string input;      // Variable to store the user input string.
 
@@ -65,3 +92,15 @@ int main() {
 
     return 0; // Exit the program.
 }
+=======
+    Solution solution;
+    string input;
+    cout << "Enter a string: ";
+    cin >> input;
+
+    int result = solution.longestPrefixSuffix(input);
+    cout << "The length of the longest prefix which is also a suffix is: " << result << endl;
+
+    return 0;
+}
+>>>>>>> 549b0d8 (file update)

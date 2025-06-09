@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+<<<<<<< HEAD
 
 int main()
 {
@@ -21,10 +22,26 @@ int main()
 
         // Second inner loop: print numbers in decreasing order from i down to 1
         // Each number is followed by a space for better alignment
+=======
+int main()
+{
+    int n, i, j;
+    cout << "Enter the number : ";
+    cin >> n;
+
+    for (i = 1; i <= n; i++)
+    {
+    //space print
+        for (j = 1; j <= n-i; j++)
+        {
+            cout << " ";
+        }
+>>>>>>> 549b0d8 (file update)
         for (j = i; j >= 1; j--)
         {
             cout << j << " ";
         }
+<<<<<<< HEAD
 
         // Move to the next line after completing the current row
         cout << endl;
@@ -34,11 +51,22 @@ int main()
 }
 
 /* Output Example for n = 5
+=======
+        cout << endl;
+    }
+    return 0;
+}
+/* Output
+>>>>>>> 549b0d8 (file update)
 
     1 
    2 1 
   3 2 1 
  4 3 2 1 
 5 4 3 2 1 
+<<<<<<< HEAD
 
 */
+=======
+   */
+>>>>>>> 549b0d8 (file update)

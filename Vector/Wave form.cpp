@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>      // For input and output stream
 #include <vector>        // For using the vector container
 #include <algorithm>     // For possible algorithms, not used in this code
@@ -22,10 +23,29 @@ int main()
     for (int j = 0; j < 4; j++)
     {
         // If the column index is even, print from top to bottom
+=======
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+int main()
+{
+
+    vector<vector<int>> matrix = {
+        {1, 2, 3, 4},
+        {5, 6, 7, 8},
+        {9, 10, 11, 12}};
+
+    cout << "wave form" << endl;
+
+    for (int j = 0; j < 4; j++)
+    {
+>>>>>>> 549b0d8 (file update)
         if (j % 2 == 0)
         {
             for (int i = 0; i < 3; i++)
             {
+<<<<<<< HEAD
                 // Print element at row i and column j
                 cout << matrix[i][j] << " ";
             }
@@ -44,3 +64,19 @@ int main()
 
     return 0; // End of program
 }
+=======
+                cout << matrix[i][j] << " ";
+            }
+          
+        }
+            else
+            {
+                for(int i=2;i>=0;i--){
+                    cout<<matrix[i][j]<<" ";
+                }
+        }
+        
+}
+return 0;
+}
+>>>>>>> 549b0d8 (file update)

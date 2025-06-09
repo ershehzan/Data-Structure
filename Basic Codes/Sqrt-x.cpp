@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Include the necessary header file for input and output operations
 #include <iostream>
 using namespace std;
@@ -31,12 +32,36 @@ public:
             }
         }
         // Return the integer part of the square root
+=======
+#include <iostream>
+using namespace std;
+
+class Solution {
+public:
+    int mySqrt(int x) {
+        long long start = 0, end = x, ans = 0;
+        
+        while (start <= end) {
+            long long mid = start + (end - start) / 2;
+            long long square = (long long)mid * mid;  // Explicitly cast mid to long long
+            
+            if (square == x) {
+                return mid;
+            } else if (square < x) {
+                ans = mid;
+                start = mid + 1;
+            } else {
+                end = mid - 1;
+            }
+        }
+>>>>>>> 549b0d8 (file update)
         return ans;
     }
 };
 
 int main() {
     int x;
+<<<<<<< HEAD
     cout << "Enter a number: ";   // Prompt the user for input
     cin >> x;                     // Read the input number
     
@@ -46,4 +71,14 @@ int main() {
     // Output the result to the user
     cout << "Square root of " << x << " is: " << result << endl;
     return 0;                     // Indicate successful program execution
+=======
+    cout << "Enter a number: ";
+    cin >> x;
+    
+    Solution s1;  // Correctly instantiate the class
+    int result = s1.mySqrt(x);  // Call the function
+
+    cout << "Square root of " << x << " is: " << result << endl;  // Print result
+    return 0;
+>>>>>>> 549b0d8 (file update)
 }

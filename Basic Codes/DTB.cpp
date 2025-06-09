@@ -20,4 +20,8 @@ int main()
     }
     cout << "Binary Number is : " << ans;
     return 0;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 549b0d8 (file update)
