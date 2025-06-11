@@ -1,12 +1,15 @@
 #include <iostream>
 using namespace std;
 
+// Definition of a node in a doubly linked list
 class node
 {
 public:
-    int data;
-    node *next;
-    node *prev;
+    int data;      // Value stored in the node
+    node *next;    // Pointer to the next node in the list
+    node *prev;    // Pointer to the previous node in the list
+
+    // Constructor to initialize a node with a value
     node(int val)
     {
         data = val;
@@ -17,84 +20,89 @@ public:
 
 int main()
 {
-    node *head = NULL;
-    node *tail = NULL;
-    int n;
+    node *head = NULL; // Pointer to the first node (head) of the list
+    node *tail = NULL; // Pointer to the last node (tail) of the list
+    int n;             // Number of nodes to create
+
+    // Prompt user for number of nodes
     cout << "Enter the number of Nodes: ";
     cin >> n;
     cout << "Enter the values: ";
 
+    // Construct the doubly linked list by inserting n nodes
     for (int i = 0; i < n; i++)
     {
         int val;
-        cin >> val;
+        cin >> val; // Read the value for the new node
 
         if (head == NULL)
         {
+            // If the list is empty, create the first node
             head = new node(val);
             tail = head;
         }
         else
         {
+            // For subsequent nodes, create a new node and link it at the end
             node *temp = new node(val);
-            tail->next = temp;
-            temp->prev = tail;
-            tail = temp;
+            tail->next = temp;  // Link the old tail to the new node
+            temp->prev = tail;  // Link new node's prev to the old tail
+            tail = temp;        // Update tail to the new last node
         }
     }
 
-    int pos;
+    int pos; // Position to insert a new node (0-based index)
     cout << "Enter the position to insert a new node: ";
     cin >> pos;
 
-    int val;
+    int val; // Value to insert
     cout << "Enter the value to insert: ";
     cin >> val;
 
-    node *temp = new node(val);
-    node *curr = head;
+    node *temp = new node(val); // New node to be inserted
+    node *curr = head;          // Pointer to traverse the list
 
-    // insert at the beginning
+    // Insert at the beginning (position 0)
     if (pos == 0)
     {
-        // Linked List is empty
         if (head == NULL)
         {
+            // Linked list is empty, simply set head to the new node
             head = new node(val);
         }
         else
-        // Linked List is not empty
         {
-            temp->next = head;
-            head->prev = temp;
-            head = temp;
+            // Linked list is not empty, insert at the start
+            temp->next = head;   // Point new node to old head
+            head->prev = temp;   // Old head's prev points to new node
+            head = temp;         // Update head to new node
         }
     }
     else
     {
-
+        // Traverse to the (pos-1)-th node (node after which we insert)
         while (--pos)
         {
             curr = curr->next;
         }
-        // insert at the end
+
+        // Insert at the end
         if (curr->next == NULL)
         {
-
-            curr->next = temp;
-            temp->prev = curr;
+            curr->next = temp; // Last node's next points to new node
+            temp->prev = curr; // New node's prev points to last node
         }
-
-        // insert at the middle
+        // Insert in the middle
         else
         {
-
-            temp->next = curr->next;
-            temp->prev = curr;
-            curr->next = temp;
-            temp->next->prev = temp;
+            temp->next = curr->next;     // New node's next points to next node
+            temp->prev = curr;           // New node's prev points to current node
+            curr->next = temp;           // Current node's next points to new node
+            temp->next->prev = temp;     // Next node's prev points to new node
         }
     }
+
+    // Traverse and print the updated list after insertion
     node *trav = head;
     cout << "Doubly Linked List: ";
     while (trav != NULL)
