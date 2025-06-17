@@ -2,16 +2,16 @@
 #include <vector>
 using namespace std;
 
+// Definition for singly-linked list node
 class node
 {
-
 public:
-    int data;
-    node *next;
+    int data;      // Value stored in the node
+    node *next;    // Pointer to the next node
 
+    // Constructor to initialize node with a value
     node(int value)
     {
-
         data = value;
         next = NULL;
     }
@@ -19,53 +19,50 @@ public:
 
 int main()
 {
-
     node *head, *tail;
-   tail= head = NULL;
-    
+    tail = head = NULL; // Initialize both head and tail as NULL
 
+    // Array containing the initial values for the linked list
     int arr[] = {20, 30, 40, 50};
 
+    // Construct the linked list from the array
     for (int i = 0; i < 4; i++)
     {
-
         if (head == NULL)
         {
-            head = new node(arr[i]);
-            tail=head;
+            head = new node(arr[i]); // First node becomes the head
+            tail = head;
         }
         else
         {
-            tail->next = new node(arr[i]);
+            tail->next = new node(arr[i]); // Append new node at the end
             tail = tail->next;
         }
     }
-    //Lc-206
-//start
-    vector<int>ans;
-        node*temp=head;
 
-        while(temp!=NULL)
-        {
-            ans.push_back(temp->data);
-            temp=temp->next;
-        }
-        int i=ans.size()-1;
-        temp=head;
+    // Reverse the linked list values using an auxiliary vector (LC-206 style)
+    vector<int> ans;          // Vector to store node values
+    node* temp = head;        // Temporary pointer to traverse the list
 
-        while(temp){
+    // Copy all node values to the vector
+    while (temp != NULL)
+    {
+        ans.push_back(temp->data);
+        temp = temp->next;
+    }
 
-            temp->data=ans[i];
-            i--;
-            temp=temp->next;
-        }
-        //end
+    // Write the values back to the linked list in reverse order
+    int i = ans.size() - 1;
+    temp = head;
+    while (temp)
+    {
+        temp->data = ans[i];  // Assign the value from the end of the vector
+        i--;
+        temp = temp->next;
+    }
 
-
-
-
-    node *current;
-    current = head;
+    // Print the reversed linked list
+    node *current = head;
     cout << "Reversed Linked List: ";
     while (current != NULL)
     {
@@ -74,7 +71,3 @@ int main()
     }
     return 0;
 }
-
-
-
-
