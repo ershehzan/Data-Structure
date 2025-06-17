@@ -1,9 +1,10 @@
 /*Create a linked list of the name Person. Store name,
 age and country for each person.
-Store date of at least 4 persons.*/
+Store data of at least 4 persons.*/
 #include <iostream>
 using namespace std;
 
+// Definition of a person node
 struct person
 {
     int age;
@@ -14,7 +15,7 @@ struct person
 
 int main()
 {
-    // Create nodes
+    // Create nodes for four persons
     person *first = new person();
     person *second = new person();
     person *third = new person();
@@ -41,7 +42,7 @@ int main()
     fourth->country = "Turkey";
     fourth->next = nullptr;
 
-    // Traverse and display details
+    // Traverse and display details of each person
     person *current = first;
     while (current != nullptr)
     {
