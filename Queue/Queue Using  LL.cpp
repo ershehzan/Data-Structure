@@ -1,95 +1,108 @@
 #include <iostream>
 using namespace std;
-class Node
-{
+
+// Node class for the linked list
+class Node {
 public:
-    int data;
-    Node *next;
-    Node(int val)
-    {
+    int data;      // The value stored in the queue node
+    Node* next;    // Pointer to the next node in the queue
+
+    // Constructor to initialize a node with a value
+    Node(int val) {
         data = val;
         next = NULL;
     }
 };
-class Queue
-{
-    Node *front;
-    Node *rear;
+
+// Queue class implemented using a singly linked list
+class Queue {
+    Node* front;   // Pointer to the front node of the queue
+    Node* rear;    // Pointer to the rear node of the queue
 
 public:
-    Queue()
-    {
+    // Constructor: initially, the queue is empty
+    Queue() {
         front = rear = NULL;
     }
-    bool isEmpty()
-    {
+
+    // Check if the queue is empty
+    bool isEmpty() {
         return front == NULL;
     }
-    // Enqueue operation
-    void push(int val)
-    {
-        if (isEmpty())
-        {
 
-            front = rear = new Node(val);
-            ;
-            cout << "Queue is now initialized with value: " << val << endl;
-        }
-        else
-        {
-            Node *temp = new Node(val);
+    // Add an element at the rear of the queue
+    void push(int x) {
+        Node* temp = new Node(x); // Create a new node
+        if (rear == NULL) {
+            // If queue is empty, both front and rear are the new node
+            front = rear = temp;
+        } else {
+            // Attach new node at the end and update rear
             rear->next = temp;
-            cout << "Value " << val << " added to the queue" << endl;
             rear = temp;
         }
     }
-    // Dequeue operation
-    void pop()
-    {
-        if (isEmpty())
-        {
-            cout << "Queue is empty" << endl;
+
+    // Remove the front element from the queue
+    void pop() {
+        if (isEmpty()) {
+            cout << "Queue is empty. Nothing to pop." << endl;
             return;
         }
-        else if (front == rear)
-        {
-            delete front;
-            front = rear = NULL;
-            cout << "Queue is now empty after pop" << endl;
-        }
-        else
-        {
-            Node *temp = front;
-            cout << "Popped: " << temp->data << endl;
-            front = front->next;
-            delete temp;
+        // Save the current front, move front to next node, delete old front
+        Node* temp = front;
+        front = front->next;
+        delete temp;
+        // If the queue becomes empty, set rear to NULL
+        if (front == NULL) {
+            rear = NULL;
         }
     }
-    // Peek operation
-    int peek()
-    {
-        if (isEmpty())
-        {
-            cout << "Queue is empty, no front element" << endl;
-            return -1; // or throw an exception
+
+    // Get the value at the front of the queue
+    int peek() {
+        if (isEmpty()) {
+            cout << "Queue is empty. Nothing at the front." << endl;
+            return -1; // Indicates empty queue
         }
-        else
-        {
-            return front->data;
+        return front->data;
+    }
+
+    // Display all elements in the queue from front to rear
+    void display() {
+        Node* temp = front;
+        cout << "Queue elements: ";
+        while (temp != NULL) {
+            cout << temp->data << " ";
+            temp = temp->next;
         }
+        cout << endl;
     }
 };
 
-int main()
-{
-
+// Example usage
+int main() {
     Queue q;
+
+    // Enqueue elements
     q.push(10);
     q.push(20);
     q.push(30);
-    cout << "Front element is: " << q.peek() << endl;
+
+    // Display queue contents
+    q.display(); // Output: 10 20 30
+
+    // Show front element
+    cout << "Front element: " << q.peek() << endl; // Output: 10
+
+    // Dequeue an element
     q.pop();
-    cout << "Front element after pop is: " << q.peek() << endl;
-    q.pop();
-    cout << "Front element after another pop is: " << q.peek() << endl;
+
+    // Display queue contents after pop
+    q.display(); // Output: 20 30
+
+    // Show new front element
+    cout << "Front element: " << q.peek() << endl; // Output: 20
+
+    return 0;
 }
