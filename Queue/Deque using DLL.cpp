@@ -5,8 +5,10 @@ using namespace std;
 class Node
 {
 public:
-    int data;        // Value stored in the node
-    Node *next, *prev; // Pointers to the next and previous nodes
+    int data;           // Value stored in the node
+    Node *next, *prev;  // Pointers to the next and previous nodes
+
+    // Constructor to initialize a node with a value
     Node(int val)
     {
         data = val;
@@ -44,9 +46,9 @@ public:
         {
             // Insert new node at the front
             Node *temp = new Node(val);
-            temp->next = front;
-            front->prev = temp;
-            front = temp;
+            temp->next = front;     // Link new node to current front
+            front->prev = temp;     // Link current front back to new node
+            front = temp;           // Update front pointer
         }
     }
 
@@ -62,9 +64,9 @@ public:
         {
             // Insert new node at the rear
             Node *temp = new Node(x);
-            rear->next = temp;
-            temp->prev = rear;
-            rear = temp;
+            rear->next = temp;      // Link current rear to new node
+            temp->prev = rear;      // Link new node back to current rear
+            rear = temp;            // Update rear pointer
         }
     }
     
@@ -75,16 +77,16 @@ public:
             return;
         }
         else if(front==rear){
-            // Only one element present
+            // Only one element present, deque becomes empty
             delete front;
             front=rear=NULL;
         }
         else{
             // Remove the front node and update pointers
             Node* temp = front;
-            front = front->next;
-            delete temp;
-            front->prev = NULL;
+            front = front->next;    // Move front pointer to next node
+            delete temp;            // Delete old front node
+            front->prev = NULL;     // Set new front's prev to NULL
         }
     }
    
@@ -95,16 +97,16 @@ public:
             return;
         }
         else if(front==rear){
-            // Only one element present
+            // Only one element present, deque becomes empty
             delete front;
             front=rear=NULL;
         }
         else{
             // Remove the rear node and update pointers
             Node* temp = rear;
-            rear = rear->prev;
-            delete temp;
-            rear->next = NULL;
+            rear = rear->prev;      // Move rear pointer to previous node
+            delete temp;            // Delete old rear node
+            rear->next = NULL;      // Set new rear's next to NULL
         }
     }
     
@@ -141,20 +143,22 @@ int main() {
     Deque dq; // Create a Deque object
 
     // Demonstrate push operations
-    dq.push_front(10);
-    dq.push_back(20);
-    dq.push_front(5);
-    dq.push_back(30);
+    dq.push_front(10); // Add 10 to the front
+    dq.push_back(20);  // Add 20 to the rear
+    dq.push_front(5);  // Add 5 to the front
+    dq.push_back(30);  // Add 30 to the rear
 
     cout << "Deque after pushing elements: ";
-    dq.display();
+    dq.display(); // Output: 5 10 20 30
 
     // Display front and rear elements
-    cout << "Front element: " << dq.start() << endl;
-    cout << "Rear element: " << dq.end() << endl;
+    cout << "Front element: " << dq.start() << endl; // Output: 5
+    cout << "Rear element: " << dq.end() << endl;    // Output: 30
 
     // Demonstrate pop operation from front
-    dq.pop_front();
+    dq.pop_front(); // Remove front element (5)
     cout << "Deque after popping front element: ";
-    dq.display();
+    dq.display();   // Output: 10 20 30
+
+    return 0;
 }
