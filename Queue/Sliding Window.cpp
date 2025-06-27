@@ -1,43 +1,61 @@
 #include <iostream>
-#include <queue>
+#include <deque>
+#include <vector>
 using namespace std;
 
-void display(queue<int> q)
-{
-    cout << "Sliding Window:";
-    while (!q.empty())
-    {
-        cout << q.front() << " ";
-        q.pop();
+// Function to find the maximum in every window of size k in the array
+vector<int> slidingWindowMaximum(const vector<int>& arr, int k) {
+    int n = arr.size();
+    vector<int> result;    // Stores the result (maximums for each window)
+    deque<int> dq;         // Stores indices of useful elements (potential maximums) for the current window
+
+    for (int i = 0; i < n; ++i) {
+        // Remove indices that are out of the current window
+        // dq.front() is out of this window if it is <= i - k
+        if (!dq.empty() && dq.front() <= i - k) {
+            dq.pop_front();
+        }
+
+        // Remove indices whose corresponding values are less than the current element
+        // They cannot be the maximum if current element is greater
+        while (!dq.empty() && arr[dq.back()] < arr[i]) {
+            dq.pop_back();
+        }
+
+        // Add current index to the back of the deque
+        dq.push_back(i);
+
+        // The largest element for this window is at the front of the deque
+        // Start adding to result when we have the first full window (i >= k - 1)
+        if (i >= k - 1) {
+            result.push_back(arr[dq.front()]);
+        }
     }
-    cout << endl;
+
+    return result;
 }
 
-int main()
-{
-    int arr[100];
+int main() {
     int n, k;
-    cout << "Enter the number of elements in the array: ";
+    cout << "Enter size of array: ";
     cin >> n;
-    cout << "Enter the elements of the array: ";
-    for (int i = 0; i < n; i++)
-    {
+    vector<int> arr(n);
+
+    cout << "Enter elements of array: ";
+    for (int i = 0; i < n; ++i) {
         cin >> arr[i];
     }
-    cout << "Enter the size of the sliding window: ";
+
+    cout << "Enter window size (k): ";
     cin >> k;
 
-    queue<int> q;
+    // Find and print the maximum in each sliding window
+    vector<int> max_in_windows = slidingWindowMaximum(arr, k);
+    cout << "Maximum of each window: ";
+    for (int val : max_in_windows) {
+        cout << val << " ";
+    }
+    cout << endl;
 
-    for (int i = 0; i < k - 1; i++)
-    {
-        q.push(arr[i]);
-    }
-    for (int i = k - 1; i < n; i++)
-    {
-        q.push(arr[i]);
-        display(q);
-        q.pop();
-    }
     return 0;
 }
