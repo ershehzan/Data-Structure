@@ -1,60 +1,105 @@
-#include <iostream>
-#include <vector>
-#include <queue>
-#include <tuple>
-#include <algorithm>
-
-using namespace std;
-
-int minimumTimeToReach(vector<vector<int>>& moveTime) {
-    int n = moveTime.size();
-    int m = moveTime[0].size();
-    vector<vector<int>> minTime(n, vector<int>(m, INT_MAX));
-    priority_queue<tuple<int, int, int>, vector<tuple<int, int, int>>, greater<>> pq;
-
-    // Start from (0, 0) at time 0
-    pq.emplace(0, 0, 0);
-    minTime[0][0] = 0;
-
-    // Directions for moving up, down, left, right
-    vector<pair<int, int>> directions = {{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
-
-    while (!pq.empty()) {
-        auto [currentTime, x, y] = pq.top();
-        pq.pop();
-
-        if (x == n - 1 && y == m - 1) {
-            return currentTime;
-        }
-
-        for (auto [dx, dy] : directions) {
-            int nx = x + dx;
-            int ny = y + dy;
-
-            if (nx >= 0 && nx < n && ny >= 0 && ny < m) {
-                int waitTime = max(0, moveTime[nx][ny] - (currentTime + 1));
-                int newTime = currentTime + 1 + waitTime;
-
-                if (newTime < minTime[nx][ny]) {
-                    minTime[nx][ny] = newTime;
-                    pq.emplace(newTime, nx, ny);
-                }
-            }
-        }
+class Node{
+    public:
+    int data;
+    Node *left,*right;
+    
+    Node(int value)
+    {
+        data=value;
+        left=NULL;
+        right=NULL;
     }
+};
 
-    return -1; // Should never reach here
-}
+class Solution{
+    public:
+    
+     int find(int arr[],int start,int end,int x)
+    {
+        for(int i=start;i<=end;i++)
+        {
+            if(arr[i]==x)
+            return i;
+        }
+        
+        return -1;
+    }
+    
+    Node *createTree1(int in[],int pre[],int inStart,int inEnd, int index,bool &valid)
+    {
+        
+        if(inStart>inEnd)
+        return NULL;
+        
+        Node *root = new Node(pre[index]);
+        
+        int pos = find(in,inStart,inEnd,pre[index]);
+        
+        if(pos==-1)
+        {
+            valid = 0;
+            return NULL;
+        }
+        
+        root->left=createTree1(in,pre,inStart,pos-1,index+1,valid);
+        
+        
+        root->right=createTree1(in,pre,pos+1,inEnd,index+(pos-inStart)+1,valid);
+        
+        return root;
+    }
+    
+    Node *createTree2(int in[],int post[],int inStart,int inEnd, int index,bool &valid)
+    {
+        
+        if(inStart>inEnd)
+        return NULL;
+        
+        Node *root = new Node(post[index]);
+        
+        int pos = find(in,inStart,inEnd,post[index]);
+        
+        if(pos==-1)
+        {
+            valid = 0;
+            return NULL;
+        }
+        
+        root->right=createTree2(in,post,pos+1,inEnd,index-1,valid);
+        
+        root->left=createTree2(in,post,inStart,pos-1,index-(inEnd-pos+1),valid);
+        
+        return root;
+    }
+    
+    bool check(Node *root1,Node *root2)
+    {
+        if(!root1 && !root2)
+        return 1;
+        
+        if(!root1 || !root2)
+        return 0;
+        
+        if(root1->data != root2->data)
+        return 0;
+        
+        return check(root1->left,root2->left) && check(root1->right,root2->right); 
+    }
+    
+    bool checktree(int pre[], int in[], int post[], int n) 
+    { 
+    	// Your code goes here
+    	bool valid = 1;
+    	Node *tree1 = createTree1(in,pre,0,n-1,0,valid);
+    	Node *tree2 = createTree2(in,post,0,n-1,n-1,valid);
+    	
+    	if(!valid)
+    	return 0;
+    	
+    	if(!tree1 || !tree2)
+    	return 0;
+    	
+    	return check(tree1,tree2);
+    } 
 
-int main() {
-    vector<vector<int>> moveTime1 = {{0, 4}, {4, 4}};
-    cout << "Example 1 Output: " << minimumTimeToReach(moveTime1) << endl;
-
-    vector<vector<int>> moveTime2 = {{0, 0, 0}, {0, 0, 0}};
-    cout << "Example 2 Output: " << minimumTimeToReach(moveTime2) << endl;
-
-    vector<vector<int>> moveTime3 = {{0, 1}, {1, 2}};
-    cout << "Example 3 Output: " << minimumTimeToReach(moveTime3) << endl;
-
-    return 0;
-}
+};
