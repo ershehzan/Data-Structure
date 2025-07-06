@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-// binary to decimal
-=======
 // Binary to decimal
->>>>>>> 549b0d8 (file update)
 #include <iostream>
 using namespace std;
 int main()
