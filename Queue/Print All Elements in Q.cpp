@@ -1,104 +1,103 @@
 #include <iostream>
 using namespace std;
 
-class Queue
-{
-    int front, rear;
-    int *arr;
-    int size;
+// Linear Queue class
+class Queue {
+    int front, rear;  // Indices to track front and rear positions
+    int *arr;         // Dynamic array for queue storage
+    int size;         // Maximum size of the queue
 
 public:
-    Queue(int n)
-    {
-        arr = new int[n];
+    // Constructor to initialize the queue
+    Queue(int n) {
+        arr = new int[n];      // Allocate array dynamically
         size = n;
-        front = rear = -1;
+        front = rear = -1;     // Initially empty
     }
+
+    // Get current number of elements in queue
     int getSize() const {
-        // Return the current number of elements in the queue
-        if (front == -1 && rear == -1) return 0;
+        if (front == -1 && rear == -1)
+            return 0; // Empty
         return rear - front + 1;
     }
-    bool isEmpty()
-    {
+
+    // Check if queue is empty
+    bool isEmpty() {
         return (front == -1 && rear == -1);
     }
-    bool isFull()
-    {
+
+    // Check if queue is full
+    bool isFull() {
         return (rear == size - 1);
     }
 
-    void push(int x)
-    {
-        if (isEmpty())
-        {
-            front = rear = 0;
-            arr[0] = x;
-        }
-        else if (isFull())
-        {
+    // Insert an element at rear
+    void push(int x) {
+        if (isFull()) {
             cout << "Queue is Full" << endl;
             return;
         }
-        else
-        {
-            rear++;
-            arr[rear] = x;
+        else if (isEmpty()) {
+            front = rear = 0;  // First element
         }
+        else {
+            rear++;  // Increment rear to add next element
+        }
+        arr[rear] = x;  // Store element
     }
-    void pop()
-    {
-        if (isEmpty())
-        {
+
+    // Remove front element from queue
+    void pop() {
+        if (isEmpty()) {
             cout << "Queue is Empty" << endl;
             return;
         }
-        else
-        {
-            if (front == rear)
-            {
-                front = rear = -1;
-            }
-            else
-            {
-                front++;
-            }
+        else if (front == rear) {
+            // Only one element left
+            front = rear = -1;
+        }
+        else {
+            front++;  // Move front ahead
         }
     }
 
-    int peek(){
-        if(isEmpty()){
-            // cout << "Queue is Empty" << endl;
-            return -1;
+    // Get front element without removing it
+    int peek() {
+        if (isEmpty()) {
+            return -1;  // Indicates empty queue
         }
-        else{
-            // cout << "Front element is: " << arr[front] << endl;
+        else {
             return arr[front];
         }
     }
 };
 
-int main(){
+// Driver code to test the Queue
+int main() {
     int n;
     cout << "Enter the size of the Queue: ";
     cin >> n;
+
     Queue q(n);
 
-    cout << "Enter element to enqueue: ";
-    for(int i=0;i<n;i++){
+    // Input elements into the queue
+    cout << "Enter elements to enqueue: ";
+    for (int i = 0; i < n; i++) {
         int x;
         cin >> x;
         q.push(x);
     }
 
+    // Get current number of elements in queue
     int p = q.getSize();
-   
-    cout << "Queue Elements are:";
-    while (p--)
-    {
-        cout << q.peek() << " ";
-        q.push(q.peek()); // Re-enqueue the front element to keep it in the queue
-        q.pop();
+
+    // Display queue elements in order without disturbing them
+    cout << "Queue Elements are: ";
+    while (p--) {
+        cout << q.peek() << " ";  // Print front
+        q.push(q.peek());         // Re-insert front at rear to preserve order
+        q.pop();                  // Remove front
     }
     cout << endl;
 
