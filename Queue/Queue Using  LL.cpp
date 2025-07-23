@@ -1,95 +1,124 @@
 #include <iostream>
 using namespace std;
-class Node
-{
+
+// Node class representing each element in the linked list
+class Node {
 public:
-    int data;
-    Node *next;
-    Node(int val)
-    {
+    int data;      // Data part of node
+    Node *next;    // Pointer to next node
+
+    // Constructor to initialize node with data
+    Node(int val) {
         data = val;
         next = NULL;
     }
 };
-class Queue
-{
-    Node *front;
-    Node *rear;
+
+// Queue class using linked list
+class Queue {
+    Node *front;  // Pointer to front of the queue
+    Node *rear;   // Pointer to rear of the queue
 
 public:
-    Queue()
-    {
+    // Constructor initializes empty queue
+    Queue() {
         front = rear = NULL;
     }
-    bool isEmpty()
-    {
+
+    // Check if queue is empty
+    bool isEmpty() {
         return front == NULL;
     }
-    // Enqueue operation
-    void push(int val)
-    {
-        if (isEmpty())
-        {
 
+    // Enqueue operation - insert element at rear
+    void push(int val) {
+        if (isEmpty()) {
+            // If queue is empty, front and rear both point to new node
             front = rear = new Node(val);
-            ;
             cout << "Queue is now initialized with value: " << val << endl;
-        }
-        else
-        {
+        } else {
+            // Create new node, link to current rear, and update rear
             Node *temp = new Node(val);
             rear->next = temp;
-            cout << "Value " << val << " added to the queue" << endl;
             rear = temp;
+            cout << "Value " << val << " added to the queue" << endl;
         }
     }
-    // Dequeue operation
-    void pop()
-    {
-        if (isEmpty())
-        {
+
+    // Dequeue operation - remove element from front
+    void pop() {
+        if (isEmpty()) {
             cout << "Queue is empty" << endl;
             return;
-        }
-        else if (front == rear)
-        {
+        } else if (front == rear) {
+            // Only one element in queue
+            cout << "Popped: " << front->data << " (last element)" << endl;
             delete front;
             front = rear = NULL;
             cout << "Queue is now empty after pop" << endl;
-        }
-        else
-        {
+        } else {
+            // More than one element
             Node *temp = front;
             cout << "Popped: " << temp->data << endl;
             front = front->next;
             delete temp;
         }
     }
-    // Peek operation
-    int peek()
-    {
-        if (isEmpty())
-        {
+
+    // Peek operation - get front element
+    int peek() {
+        if (isEmpty()) {
             cout << "Queue is empty, no front element" << endl;
-            return -1; // or throw an exception
-        }
-        else
-        {
+            return -1; // Could also throw exception
+        } else {
             return front->data;
+        }
+    }
+
+    // Display entire queue
+    void display() {
+        if (isEmpty()) {
+            cout << "Queue is empty" << endl;
+            return;
+        }
+
+        Node *temp = front;
+        cout << "Queue elements: ";
+        while (temp != NULL) {
+            cout << temp->data << " ";
+            temp = temp->next;
+        }
+        cout << endl;
+    }
+
+    // Destructor to free memory
+    ~Queue() {
+        while (!isEmpty()) {
+            pop(); // Repeatedly delete nodes from front
         }
     }
 };
 
-int main()
-{
-
+// Driver code to test queue
+int main() {
     Queue q;
+
     q.push(10);
     q.push(20);
     q.push(30);
+
+    q.display(); // Output: 10 20 30
+
     cout << "Front element is: " << q.peek() << endl;
-    q.pop();
+
+    q.pop();  // Pops 10
     cout << "Front element after pop is: " << q.peek() << endl;
-    q.pop();
+
+    q.pop();  // Pops 20
     cout << "Front element after another pop is: " << q.peek() << endl;
+
+    q.pop();  // Pops 30
+    q.pop();  // Attempting to pop from empty queue
+
+    return 0;
 }
