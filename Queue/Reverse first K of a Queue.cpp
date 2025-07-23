@@ -8,8 +8,9 @@ class Solution
 public:
     queue<int> reverseFirstK(queue<int> q, int k)
     {
+        // Edge case: k is invalid
         if (k > q.size() || k < 0)
-            return q; // ❗ Important: guard condition
+            return q;
 
         stack<int> st;
 
@@ -20,14 +21,14 @@ public:
             q.pop();
         }
 
-        // Step 2: Enqueue back the reversed elements
+        // Step 2: Add stack elements (reversed) back into queue
         while (!st.empty())
         {
             q.push(st.top());
             st.pop();
         }
 
-        // Step 3: Move the remaining (size - k) elements to the back
+        // Step 3: Move remaining elements (after first k) to the back
         int rem = q.size() - k;
         for (int i = 0; i < rem; ++i)
         {
@@ -43,14 +44,17 @@ int main()
 {
     queue<int> q;
     int n, k, val;
+
     cout << "Enter number of elements in queue: ";
     cin >> n;
+
     cout << "Enter the elements: ";
     for (int i = 0; i < n; ++i)
     {
         cin >> val;
         q.push(val);
     }
+
     cout << "Enter value of k: ";
     cin >> k;
 
@@ -64,5 +68,6 @@ int main()
         res.pop();
     }
     cout << endl;
+
     return 0;
 }
