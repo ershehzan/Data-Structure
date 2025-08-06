@@ -15,11 +15,13 @@ void subsetsum(int arr[], int index, int n, int sum ,vector<int>&ans)
 
 int main()
 {
-    int arr[] = {3, 4, 5};
-    int n = 3;
+    int arr[] = {3, 4, 5,6};
+    int n = 4;
     vector<int> ans; // Vector to store the sums of all subsets
     cout << "The sum of all subsets is: " << endl;
+    
     subsetsum(arr,0,n,0,ans);
+    
     for(size_t i=0;i<ans.size();i++)
     {
         cout << ans[i] << " ";
