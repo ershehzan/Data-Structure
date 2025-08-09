@@ -29,6 +29,7 @@ int main() {
             end--;
         } else {
             // If the sum is less than the target, move the 'start' pointer right to increase the sum
+         
             start++;
         }
     }
@@ -37,6 +38,7 @@ int main() {
     cout << "No pairs found." << endl;
     return 0;//return 
 }
+
 
 
 
