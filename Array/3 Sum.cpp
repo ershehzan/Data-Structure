@@ -6,7 +6,6 @@ int main()
 {
     // Initialize a vector with unsorted elements
     vector<int> arr = {1, 8, 6, 4, 10, 45};
-
     int x; // Variable to store the target sum
     cout << "Enter the target sum: ";
     cin >> x;
