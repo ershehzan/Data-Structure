@@ -20,16 +20,19 @@ int main()
         
         int start = i + 1, end = n - 1;
         
-        while (start < end) {
+        while (start < end)
+            {
             int sum = arr[start] + arr[end]; // Sum of two remaining elements
             if (sum == target) {  // If we found a triplet
                 cout << "Triplet found: [" << arr[i] << ", " << arr[start] << ", " << arr[end] << "]" << endl;
                 cout << "Triplet found at Index: [" << i << ", " << start << ", " << end << "]" << endl;
                 return 0; // Exit after finding the first valid triplet
             } 
+                
             else if (sum < target) { // If sum is less, move the start pointer forward
                 start++;
             } 
+                
             else { // If sum is greater, move the end pointer backward
                 end--;
             }
