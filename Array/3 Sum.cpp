@@ -17,10 +17,8 @@ int main()
         int target = x - arr[i]; // Remaining sum to find
         // Two-pointer approach to find the required pair
         int start = i + 1, end = n - 1;
-
         while (start < end) {
             int sum = arr[start] + arr[end]; // Sum of two remaining elements
-
             if (sum == target) {  // If we found a triplet
                 cout << "Triplet found: [" << arr[i] << ", " << arr[start] << ", " << arr[end] << "]" << endl;
                 cout << "Triplet found at Index: [" << i << ", " << start << ", " << end << "]" << endl;
