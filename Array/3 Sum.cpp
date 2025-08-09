@@ -12,11 +12,9 @@ int main()
     int n = arr.size(); // Get the size of the vector
     // Sort the array to use the two-pointer approach effectively
     sort(arr.begin(), arr.end());
-
     // Iterate through the array, fixing one element at a time
     for (int i = 0; i < n - 2; i++) {
         int target = x - arr[i]; // Remaining sum to find
-
         // Two-pointer approach to find the required pair
         int start = i + 1, end = n - 1;
 
