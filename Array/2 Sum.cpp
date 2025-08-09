@@ -9,6 +9,7 @@ int main() {
 
     // Prompt the user to enter the target sum value
     cout << "Enter the target: ";
+ 
     cin >> target; //target
 
     // Initialize two pointers: 'start' at the beginning and 'end' at the end of the array
@@ -36,6 +37,7 @@ int main() {
     cout << "No pairs found." << endl;
     return 0;//return 
 }
+
 
 
 
