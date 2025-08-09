@@ -36,8 +36,10 @@ int main() {
 
     // If no pair is found after checking all possibilities, print a message
     cout << "No pairs found." << endl;
+ 
     return 0;//return 
 }
+
 
 
 
