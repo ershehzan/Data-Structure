@@ -16,6 +16,5 @@ int main()
         }
     }
     cout << "The sum of first " << n << " odd numbers is: " << sum;
-
     return 0;
 }
