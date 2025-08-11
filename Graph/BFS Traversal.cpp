@@ -2,7 +2,6 @@
 #include <vector>
 #include <queue>
 using namespace std;
-
 class Solution
 {
 public:
@@ -60,4 +59,5 @@ int main()
     cout << endl;
 
     return 0;
+
 }
