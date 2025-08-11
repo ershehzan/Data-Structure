@@ -23,8 +23,7 @@ public:
             ans.push_back(node);
             for (int j = 0; j < adj[node].size(); j++)
             {
-                if (!visited[adj[node][j]])
-                {
+                if (!visited[adj[node][j]]) {
                     visited[adj[node][j]] = 1;
                     q.push(adj[node][j]);
                 }
@@ -62,6 +61,7 @@ int main()
     return 0;
 
 }
+
 
 
 
