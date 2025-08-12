@@ -19,7 +19,6 @@ int BinarySearch(int arr[], int key, int n)
         }
         else
         {
-
             end = mid - 1;
         }
     }
