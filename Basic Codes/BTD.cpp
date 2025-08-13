@@ -7,8 +7,7 @@ int main()
     int rem, ans = 0, mul = 1;
     cout << "Enter a binary number : ";
     cin >> n;
-    while (n > 0)
-    {
+    while (n > 0) {
         // remainder
         rem = n % 10;
         // qoutient
