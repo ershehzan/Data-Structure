@@ -15,8 +15,7 @@ void print(int arr[][4], int row, int col)
     }
     // Note: This function prints all elements in one line.
 }
-int main()
-{
+int main(){
     // Declare and initialize a 2D array with 3 rows and 4 columns
     int arr[3][4] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
