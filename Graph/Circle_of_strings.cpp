@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     void DFS(int node, vector<int> adj[], vector<int> &vis)
     {
@@ -81,4 +80,5 @@ int main()
     else
         cout << "No, the strings cannot be chained to form a circle.\n";
     return 0;
+
 }
