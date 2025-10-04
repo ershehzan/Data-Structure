@@ -47,8 +47,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int V = 5;
     vector<vector<int>> edges = {
         {0, 1, 2},
@@ -64,3 +63,4 @@ int main()
     return 0;
 
 }
+
