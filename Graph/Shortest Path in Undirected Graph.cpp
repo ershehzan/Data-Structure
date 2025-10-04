@@ -36,8 +36,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n, m;
     cin >> n >> m; // number of nodes and edges
 
@@ -65,4 +64,5 @@ int main()
 
     return 0;
 }
+
 
