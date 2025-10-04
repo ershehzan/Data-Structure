@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     bool isPossible(int N, int P, vector<pair<int, int>> &prerequisites)
     {
@@ -63,4 +62,5 @@ int main()
         cout << "No, it is not possible to finish all tasks.\n";
     }
     return 0;
+
 }
