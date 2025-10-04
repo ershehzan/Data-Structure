@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int spanningTree(int V, vector<vector<int>> &edges)
     {
@@ -63,4 +62,5 @@ int main()
     int mstCost = sol.spanningTree(V, edges);
     cout << "Minimum Spanning Tree Cost: " << mstCost << endl;
     return 0;
+
 }
