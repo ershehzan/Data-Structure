@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int row[8] = {2, 2, -2, -2, 1, -1, 1, -1};
     int col[8] = {1, -1, 1, -1, 2, 2, -2, -2};
@@ -74,4 +73,5 @@ int main()
     int steps = sol.minStepToReachTarget(KnightPos, TargetPos, N);
     cout << "Minimum steps: " << steps << endl;
     return 0;
+
 }
