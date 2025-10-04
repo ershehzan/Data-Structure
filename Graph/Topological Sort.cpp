@@ -36,6 +36,7 @@ class Solution {
       return ans;
   }
 };
+
 int main() {
     int V, E;
     cout << "Enter number of vertices and edges: ";
