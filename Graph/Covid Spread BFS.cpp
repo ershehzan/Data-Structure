@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int row[4] = {-1, 1, 0, 0};
     int col[4] = {0, 0, -1, 1};
@@ -81,4 +80,5 @@ int main()
     int result = sol.helpaterp(hospital);
     cout << result << endl;
     return 0;
+
 }
