@@ -80,8 +80,7 @@ public:
         return size;
     };
 };
-int main()
-{
+int main(){
     Stack s;
     s.push(10);
     s.push(20);
