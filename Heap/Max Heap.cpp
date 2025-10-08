@@ -16,8 +16,7 @@ public:
     }
 
     // Function to insert a new element into the Max Heap
-    void insert(int val)
-    {
+    void insert(int val){
         if (size == total_size)
         {
             cout << "Heap is full" << endl;
