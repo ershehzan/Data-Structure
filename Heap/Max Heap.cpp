@@ -130,7 +130,6 @@ public:
         delete[] arr;
     }
 };
-
 // Driver code to test the MaxHeap class
 int main(){
     int n;
