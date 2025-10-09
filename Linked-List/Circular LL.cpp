@@ -14,7 +14,7 @@ public:
     }
 };
 
-int main() {
+int main(){
     node* head = NULL; // Pointer to the first node (head) of the list
     node* tail = NULL; // Pointer to the last node (tail) of the list
 
