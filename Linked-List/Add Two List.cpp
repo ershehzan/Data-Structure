@@ -2,8 +2,7 @@
 using namespace std;
 
 // Node definition
-class Node
-{
+class Node{
 public:
     int data;
     Node *next;
