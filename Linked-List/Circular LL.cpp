@@ -2,7 +2,7 @@
 using namespace std;
 
 // Definition of the node class for the circular linked list
-class node {
+class node{
 public:
     int data;      // Data stored in the node
     node *next;    // Pointer to the next node
