@@ -73,8 +73,7 @@ void printList(Node *head){
 }
 
 // Utility function to create a linked list from user input
-Node *createList(int n)
-{
+Node *createList(int n){
     Node *head = NULL;
     Node *tail = NULL;
     for (int i = 0; i < n; ++i)
@@ -118,6 +117,7 @@ int main()
 
     return 0;
 }
+
 
 
 
