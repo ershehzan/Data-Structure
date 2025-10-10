@@ -95,8 +95,7 @@ Node *createList(int n){
     return head;
 }
 
-int main()
-{
+int main(){
     Solution solution;
     int n1, n2;
     cout << "Enter number of nodes in first sorted list: ";
@@ -117,6 +116,7 @@ int main()
 
     return 0;
 }
+
 
 
 
