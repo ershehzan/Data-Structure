@@ -44,8 +44,7 @@ public:
         }
 
         // If any nodes remain in list 1, append them
-        if (head1)
-        {
+        if (head1){
             tail->next = head1;
         }
         // Otherwise, append remaining nodes from list 2
@@ -120,6 +119,7 @@ int main()
 
     return 0;
 }
+
 
 
 
