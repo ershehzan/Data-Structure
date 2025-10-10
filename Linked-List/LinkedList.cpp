@@ -2,8 +2,7 @@
 #include <iostream>
 using namespace std;
 
-struct Node
-{ // holds the integer value
+struct Node{ // holds the integer value
     int data;
     Node *next; // points to the next node
 };
