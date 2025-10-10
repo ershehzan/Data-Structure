@@ -26,6 +26,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
 
     // Create a linked list
@@ -59,3 +60,4 @@ int main() {
 
     return 0;
 }
+
