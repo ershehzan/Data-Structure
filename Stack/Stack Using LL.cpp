@@ -22,8 +22,7 @@ public:
     // push operation
     void push(int value){
         Node *temp = new Node(value);
-        if (temp == NULL)
-        {
+        if (temp == NULL){
             cout << "Stack Overflow" << endl;
             return;
         }
