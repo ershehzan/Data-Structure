@@ -2,8 +2,8 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-void lpsfind(vector<int>&lps,string txt)
-{
+
+void lpsfind(vector<int>&lps,string txt){
     int prefix=0,suffix=1;
     while(suffix<txt.size())
     {
