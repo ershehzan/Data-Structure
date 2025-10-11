@@ -22,8 +22,7 @@ void lpsfind(vector<int>&lps,string txt){
         }
     }
 }
-int main()
-{
+int main(){
     string txt="cdeabroab";
     string pattern="abcde";
     txt+=txt;
