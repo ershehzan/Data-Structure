@@ -34,6 +34,7 @@ public:
 };
 
 int main() {
+    
     MyStack st;
     st.push(10);
     st.push(20);
