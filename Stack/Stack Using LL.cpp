@@ -58,8 +58,7 @@ public:
             cout << "Stack is empty" << endl;
             return -1;
         }
-        else
-        {
+        else{
             cout << "Peeked " << top->data << " from Stack" << endl;
             return top->data;
      
