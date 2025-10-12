@@ -46,10 +46,7 @@ int main(){
             tail = tail->next;
         }
     }
-
     head=reverse(head,NULL);
-    
-
     node *current;
     current = head;
     cout << "Reversed Linked List: ";
@@ -60,6 +57,7 @@ int main(){
     }
     return 0;
 }
+
 
 
 
