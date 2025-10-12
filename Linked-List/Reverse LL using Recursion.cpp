@@ -24,8 +24,7 @@ node*reverse(node*curr,node*prev)
     return reverse(fut,curr);
 }
 
-int main()
-{
+int main(){
 
     node *head, *tail;
     tail = head = NULL;
@@ -61,5 +60,6 @@ int main()
     }
     return 0;
 }
+
 
 
