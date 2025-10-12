@@ -52,7 +52,6 @@ int main(){
             tail = tail->next;
         }
     }
-
     int x;
     cout << "Enter the value of the node to be deleted: ";
     cin >> x;
