@@ -21,8 +21,7 @@ int display(queue<int> q)
     return 0; 
 };
 
-int main()
-{
+int main(){
     int arr[100]; // Array to hold the elements
     int n, k;     // n = number of elements, k = size of the sliding window
 
