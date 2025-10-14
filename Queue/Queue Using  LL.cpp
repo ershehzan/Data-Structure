@@ -1,5 +1,6 @@
 #include <iostream>
 using namespace std;
+
 class Node{
 public:
     int data;
@@ -10,8 +11,7 @@ public:
         next = NULL;
     }
 };
-class Queue
-{
+class Queue{
     Node *front;
     Node *rear;
 
