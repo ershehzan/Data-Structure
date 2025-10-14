@@ -49,6 +49,7 @@ public:
 };
 
 int main() {
+    
     MyQueue q;
     q.push(1);
     q.push(2);
