@@ -18,8 +18,7 @@ public:
 };
 
 // Insert function to build BST
-Node *insert(Node *root, int val)
-{
+Node *insert(Node *root, int val){
     if (!root)
         return new Node(val);
 
