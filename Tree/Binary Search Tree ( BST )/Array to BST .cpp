@@ -42,7 +42,7 @@ void inorderTraversal(Node* root) {
     inorderTraversal(root->right);
 }
 
-int main() {
+int main(){
     vector<int> arr = {-10, -3, 0, 5, 9};
 
     Solution sol;
