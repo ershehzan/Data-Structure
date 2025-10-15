@@ -223,7 +223,6 @@ void inorder(Node *root)
 // Driver Code
 int main(){
     Node *root = NULL;
-
     // Insert elements into the AVL tree
     root = insert(root, 10);
     root = insert(root, 20);
