@@ -3,8 +3,7 @@
 using namespace std;
 
 // Definition of a Node in AVL Tree
-class Node
-{
+class Node{
 public:
     int data;    // Value of the node
     Node *left;  // Pointer to left child
