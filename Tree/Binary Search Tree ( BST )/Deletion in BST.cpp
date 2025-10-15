@@ -2,7 +2,8 @@
 using namespace std;
 
 // Node class representing a single node in the Binary Search Tree (BST)
-class Node{
+class Node
+{
 public:
     int data;        // Value stored in the node
     Node *left;      // Pointer to the left child
@@ -12,7 +13,7 @@ public:
     Node(int value)
     {
         data = value;
-        left = right = NULL; // Initialize child pointers as NULL
+        left = right = nullptr; // Initialize child pointers as nullptr
     }
 };
 
@@ -65,7 +66,7 @@ bool search(Node *root, int target)
 Node *deleteNode(Node *root, int x)
 {
     if (!root)
-        return NULL; // Value not found, return NULL
+        return nullptr; // Value not found, return nullptr
 
     // If the value to be deleted is smaller, go left
     if (root->data > x)
@@ -86,7 +87,7 @@ Node *deleteNode(Node *root, int x)
         if (!root->left && !root->right)
         {
             delete root;
-            return NULL;
+            return nullptr;
         }
         // Case 2: Node has only left child
         else if (!root->right)
@@ -134,11 +135,50 @@ Node *deleteNode(Node *root, int x)
     }
 }
 
-int main(){
+int main()
+{
     int n; // Number of nodes to be inserted
 
     cout << "Enter the number of nodes in the BST: ";
     cin >> n;
 
-    Node *root = NULL; //*
+Node *root = NULL; //*
+
+    // Read n values and build the BST
+    cout << "Enter " << n << " integers to insert into the BST:\n";
+    for (int i = 0; i < n; ++i)
+    {
+        int val;
+        cin >> val;
+        root = insert(root, val);
+    }
+
+    cout << "Inorder traversal of BST (sorted): ";
+    inorder(root);
+    cout << "\n";
+
+    // Ask how many deletions the user wants to perform
+    int d;
+    cout << "Enter number of deletions to perform: ";
+    cin >> d;
+    for (int i = 0; i < d; ++i)
+    {
+        int x;
+        cout << "Enter value to delete: ";
+        cin >> x;
+
+        if (!search(root, x))
+        {
+            cout << x << " not found in the BST.\n";
+            continue;
+        }
+
+        root = deleteNode(root, x);
+        cout << "Inorder after deleting " << x << ": ";
+        inorder(root);
+        cout << "\n";
+    }
+
+    return 0;
 }
+    
