@@ -2,8 +2,7 @@
 using namespace std;
 
 // Definition of a node in the Binary Search Tree (BST)
-class Node
-{
+class Node{
 public:
     int data;        // Value stored in the node
     Node *left;      // Pointer to the left child
