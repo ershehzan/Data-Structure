@@ -57,6 +57,7 @@ Node* buildTree() {
 }
 
 int main() {
+
     Node* root = buildTree();
     Solution solution;
     vector<int> result = solution.rightView(root);
