@@ -12,8 +12,7 @@ struct Node{
     Node(int val) : data(val), left(NULL), right(NULL) {}
 };
 
-class Solution
-{
+class Solution{
 public:
     vector<int> postOrder(Node *root)
     {
