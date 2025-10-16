@@ -90,8 +90,7 @@ public:
 };
 
 // Helper function to build a simple binary tree for testing
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
     //      1
     //     / \
         //    2   3
