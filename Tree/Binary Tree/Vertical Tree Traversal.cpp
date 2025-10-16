@@ -32,8 +32,7 @@ void find(Node *root, int pos, int &l, int &r)
     find(root->right, pos + 1, l, r);
 }
 
-class Solution
-{
+class Solution{
 public:
     vector<vector<int>> verticalOrder(Node *root)
     {
