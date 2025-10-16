@@ -59,8 +59,7 @@ Node *buildSampleTree(){
     return root;
 }
 
-int main()
-{
+int main(){
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> right_view = sol.rightView(root);
