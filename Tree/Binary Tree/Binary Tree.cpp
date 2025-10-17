@@ -9,8 +9,7 @@ public:
     Node *left, *right; // Pointers to left and right child nodes
 
     // Constructor to initialize node with a value and set children to NULL
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = right = NULL;
     }
