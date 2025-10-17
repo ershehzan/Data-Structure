@@ -15,8 +15,7 @@ public:
 };
 
 // Tree Node
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
