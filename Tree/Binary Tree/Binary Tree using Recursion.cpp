@@ -39,8 +39,8 @@ Node *BinaryTree(){
 }
 
 // Preorder traversal: visit root, then left subtree, then right subtree
-void preorder(Node *root)
-{
+void preorder(Node *root){
+    
     if (root == NULL)
         return;
     cout << root->data << " "; // Print current node's data
