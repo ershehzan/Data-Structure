@@ -15,8 +15,8 @@ struct Node{
     }
 };
 
-int search(vector<int> &arr, int target, int s, int e)
-{
+int search(vector<int> &arr, int target, int s, int e){
+    
     for (int i = s; i <= e; i++)
     {
         if (arr[i] == target)
