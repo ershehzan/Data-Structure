@@ -15,8 +15,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter the Root: ";
     cin >> n; // Input value for the root node
