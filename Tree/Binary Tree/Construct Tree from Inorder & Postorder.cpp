@@ -54,8 +54,7 @@ public:
 };
 
 // Helper function to print level order traversal
-void printLevelOrder(Node *root)
-{
+void printLevelOrder(Node *root){
     if (!root)
         return;
     queue<Node *> q;
