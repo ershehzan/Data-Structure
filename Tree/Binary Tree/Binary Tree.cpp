@@ -41,7 +41,6 @@ int main(){
             temp->left = new Node(first);
             q.push(temp->left); // Add left child to the queue
         }
-
         // Input for the right child
         cout << "Enter the Right child of " << temp->data << ": ";
         cin >> second;
