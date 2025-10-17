@@ -68,8 +68,7 @@ void postorder(Node *root)
     cout << root->data << " "; // Print current node's data
 }
 
-int main()
-{
+int main(){
     cout << "Enter the Root: ";
     Node *Root;
     // Start building the binary tree from the root
