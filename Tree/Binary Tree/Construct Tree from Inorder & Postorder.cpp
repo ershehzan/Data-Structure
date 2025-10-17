@@ -4,8 +4,7 @@
 using namespace std;
 
 // Tree node structure
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
