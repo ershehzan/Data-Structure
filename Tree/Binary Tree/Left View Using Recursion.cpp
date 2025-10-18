@@ -24,8 +24,7 @@ void lv(Node *root, int level, vector<int> &ans){
 
 class Solution{
 public:
-    vector<int> leftView(Node *root)
-    {
+    vector<int> leftView(Node *root) {
         vector<int> ans;
         if (root == NULL)
             return ans;
