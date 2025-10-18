@@ -57,7 +57,6 @@ int main(){
 
     Solution sol;
     sol.flatten(root);
-
     // Print the flattened tree
     printRightLinkedList(root);
 
