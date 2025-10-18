@@ -44,8 +44,8 @@ public:
 };
 
 // Helper function to build a simple binary tree for demonstration
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
+    
     //      1
     //     / \
     //    2   3
