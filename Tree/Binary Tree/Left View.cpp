@@ -14,8 +14,7 @@ struct Node{
 // Solution class as provided
 class Solution{
 public:
-    vector<int> rightView(Node *root)
-    {
+    vector<int> rightView(Node *root) {
         vector<int> ans;
         if (root == NULL)
             return ans;
