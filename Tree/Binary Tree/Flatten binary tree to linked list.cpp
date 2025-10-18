@@ -39,8 +39,8 @@ void printRightLinkedList(Node *root){
     cout << endl;
 }
 
-int main()
-{
+int main(){
+    
     /* Example: Constructing the following tree
           1
          / \
