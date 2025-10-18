@@ -13,8 +13,7 @@ struct Node{
 class Solution{
 public:
     void flatten(Node *root){
-        while (root)
-        {
+        while (root) {
             if (!root->left)
                 root = root->right;
             else
