@@ -22,8 +22,7 @@ void lv(Node *root, int level, vector<int> &ans){
     lv(root->right, level + 1, ans);
 }
 
-class Solution
-{
+class Solution{
 public:
     vector<int> leftView(Node *root)
     {
