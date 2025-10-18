@@ -51,6 +51,7 @@ class Solution {
 
 // Helper function to create a simple binary tree for testing
 Node* createSampleTree() {
+    
     /*   1
         / \
        2   3
