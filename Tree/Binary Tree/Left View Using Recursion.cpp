@@ -67,8 +67,7 @@ int main(){
     Solution solution;
     vector<int> result = solution.leftView(root);
     cout << "Left view of the tree: ";
-    for (int x : result)
-    {
+    for (int x : result) {
         cout << x << " ";
     }
     cout << endl;
