@@ -10,8 +10,7 @@ struct Node{
 };
 
 // Solution class as provided
-class Solution
-{
+class Solution{
 public:
     void flatten(Node *root)
     {
