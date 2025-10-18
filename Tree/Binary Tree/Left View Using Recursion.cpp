@@ -34,8 +34,7 @@ public:
 };
 
 // Utility function to build a simple binary tree from user input (level order)
-Node *buildTree()
-{
+Node *buildTree(){
     int n;
     cout << "Enter number of nodes: ";
     cin >> n;
