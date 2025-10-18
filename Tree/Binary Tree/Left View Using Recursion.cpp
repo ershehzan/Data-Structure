@@ -62,8 +62,7 @@ Node *buildTree(){
     return nodes[0];
 }
 
-int main()
-{
+int main(){
     Node *root = buildTree();
     Solution solution;
     vector<int> result = solution.leftView(root);
