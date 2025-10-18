@@ -16,8 +16,7 @@ public:
         while (root) {
             if (!root->left)
                 root = root->right;
-            else
-            {
+            else {
                 Node *curr = root->left;
                 while (curr->right)
                     curr = curr->right;
