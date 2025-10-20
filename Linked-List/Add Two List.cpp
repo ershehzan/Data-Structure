@@ -14,8 +14,7 @@ public:
 };
 
 // Solution class as provided above
-class Solution
-{
+class Solution{
 public:
     Node *reverse(Node *curr, Node *prev)
     {
