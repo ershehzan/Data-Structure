@@ -11,6 +11,7 @@ public:
         next = NULL;
     }
 };
+
 int main(){
     node*head=NULL;
     node*tail=NULL;
