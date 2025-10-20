@@ -11,8 +11,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
 
     node *head = NULL;
     node *tail = NULL;
@@ -101,5 +100,6 @@ int main()
         trav = trav->next;
     }
 }
+
 
 
