@@ -94,12 +94,13 @@ int main(){
     node *trav = head;
 
     cout << "Linked List after Deletion : ";
-    while (trav)
-    {
+    
+    while (trav)  {
         cout << trav->data << " ";
         trav = trav->next;
     }
 }
+
 
 
 
