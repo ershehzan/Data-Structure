@@ -21,8 +21,7 @@ int main(){
     cin >> n;
     cout << "Enter the values of the nodes: ";
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++)  {
         int val;
         cin >> val;
         if (head == NULL)
@@ -68,6 +67,7 @@ int main(){
         trav = trav->next;
     }
 }
+
 
 
 
