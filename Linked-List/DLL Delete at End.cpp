@@ -61,12 +61,14 @@ int main(){
 
     node *trav = head;
     cout << "The linked list is: ";
+    
     while (trav != NULL)
     {
         cout << trav->data << " ";
         trav = trav->next;
     }
 }
+
 
 
 
