@@ -5,8 +5,7 @@ public:
     int data;
     node *next;
     node *prev;
-    node(int val)
-    {
+    node(int val)  {
         data = val;
         next = prev = NULL;
     }
@@ -102,4 +101,5 @@ int main()
         trav = trav->next;
     }
 }
+
 
