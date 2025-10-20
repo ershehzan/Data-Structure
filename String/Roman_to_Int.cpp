@@ -1,24 +1,25 @@
-<<<<<<< HEAD
 #include <iostream>  // Include the input-output stream library
 #include <string>    // Include the string library for handling strings
 using namespace std; // Use the standard namespace to simplify code
 
 // Class to provide a solution for converting Roman numerals to integers
-class Solution {
+class Solution
+{
 public:
     // Helper function to map a Roman numeral character to its integer value
     // Parameters:
     // c - a Roman numeral character (e.g., 'I', 'V', 'X', etc.)
     // Returns: the integer value corresponding to the Roman numeral
-    int nums(char c) {
+    int nums(char c)
+    {
         if (c == 'I')
-            return 1;   // 'I' represents 1
+            return 1; // 'I' represents 1
         else if (c == 'V')
-            return 5;   // 'V' represents 5
+            return 5; // 'V' represents 5
         else if (c == 'X')
-            return 10;  // 'X' represents 10
+            return 10; // 'X' represents 10
         else if (c == 'L')
-            return 50;  // 'L' represents 50
+            return 50; // 'L' represents 50
         else if (c == 'C')
             return 100; // 'C' represents 100
         else if (c == 'D')
@@ -31,12 +32,17 @@ public:
     // Parameters:
     // s - the Roman numeral string (e.g., "IX", "XLII", etc.)
     // Returns: the integer value corresponding to the Roman numeral
-    int romanToInt(string s) {
-        int sum = 0;    // Variable to store the resulting integer value
-        int index = 0;  // Index to traverse the Roman numeral string
+    int romanToInt(string s)
+    {
+        if (s.empty())
+            return 0; // Return 0 for empty input to avoid out-of-bounds access
+
+        int sum = 0;   // Variable to store the resulting integer value
+        int index = 0; // Index to traverse the Roman numeral string
 
         // Process each character in the string except the last one
-        while (index < s.size() - 1) {
+        while (index < s.size() - 1)
+        {
             // If the current numeral is smaller than the next numeral,
             // subtract its value from the sum (e.g., "IV" -> 4)
             if (nums(s[index]) < nums(s[index + 1]))
@@ -53,55 +59,18 @@ public:
         sum += nums(s[index]);
 
         // Return the resulting integer value
-=======
-#include <iostream>
-#include <string>
-using namespace std;
-
-class Solution {
-public:
-    int nums(char c) {
-        if (c == 'I')
-            return 1;
-        else if (c == 'V')
-            return 5;
-        else if (c == 'X')
-            return 10;
-        else if (c == 'L')
-            return 50;
-        else if (c == 'C')
-            return 100;
-        else if (c == 'D')
-            return 500;
-        else
-            return 1000;
-    }
-
-    int romanToInt(string s) {
-        int sum = 0, index = 0;
-
-        while (index < s.size() - 1) {
-            if (nums(s[index]) < nums(s[index + 1]))
-                sum -= nums(s[index]);
-            else
-                sum += nums(s[index]);
-
-            index++;
-        }
-        sum += nums(s[index]);
->>>>>>> 549b0d8 (file update)
         return sum;
     }
 };
 
-int main() {
-<<<<<<< HEAD
-    Solution solution;        // Create an instance of the Solution class
-    string romanNumeral;      // Variable to store the user-input Roman numeral
+int main()
+{
+    Solution solution;   // Create an instance of the Solution class
+    string romanNumeral; // Variable to store the user-input Roman numeral
 
     // Prompt the user to enter a Roman numeral
     cout << "Enter a Roman numeral: ";
-    cin >> romanNumeral;      // Read the Roman numeral from the user
+    cin >> romanNumeral; // Read the Roman numeral from the user
 
     // Convert the Roman numeral to its integer value
     int result = solution.romanToInt(romanNumeral);
@@ -111,16 +80,3 @@ int main() {
 
     return 0; // End of the program
 }
-=======
-    Solution solution;
-    string romanNumeral;
-
-    cout << "Enter a Roman numeral: ";
-    cin >> romanNumeral;
-
-    int result = solution.romanToInt(romanNumeral);
-    cout << "The integer value is: " << result << endl;
-
-    return 0;
-}
->>>>>>> 549b0d8 (file update)
