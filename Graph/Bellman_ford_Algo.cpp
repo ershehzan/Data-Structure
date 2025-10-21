@@ -9,8 +9,7 @@ public:
         dist[src] = 0;
         int e = edges.size();
 
-        for (int i = 0; i < V - 1; i++)
-        {
+        for (int i = 0; i < V - 1; i++){
             for (int j = 0; j < e; j++)
             {
                 int u = edges[j][0];
