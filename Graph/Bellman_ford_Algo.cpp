@@ -2,8 +2,7 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     vector<int> bellmanFord(int V, vector<vector<int>> &edges, int src)
     {
