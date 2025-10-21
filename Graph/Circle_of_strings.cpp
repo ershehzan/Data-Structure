@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     void DFS(int node, vector<int> adj[], vector<int> &vis)
     {
