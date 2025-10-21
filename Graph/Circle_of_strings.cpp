@@ -65,8 +65,7 @@ int main(){
     cin >> n;
     vector<string> arr(n);
     cout << "Enter the strings:\n";
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i){
         cin >> arr[i];
     }
     Solution sol;
