@@ -31,8 +31,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int V, E;
     cout << "Enter number of vertices and edges: ";
     cin >> V >> E;
@@ -59,6 +58,7 @@ int main()
     return 0;
 
 }
+
 
 
 
