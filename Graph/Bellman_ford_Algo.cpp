@@ -25,8 +25,7 @@ public:
                 }
             }
         }
-        for (int j = 0; j < e; j++)
-        {
+        for (int j = 0; j < e; j++) {
             int u = edges[j][0];
             int v = edges[j][1];
             int wt = edges[j][2];
