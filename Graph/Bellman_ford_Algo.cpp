@@ -44,8 +44,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int V, E, src;
     cout << "Enter number of vertices, edges and source vertex: ";
     cin >> V >> E >> src;
