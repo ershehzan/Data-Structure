@@ -8,8 +8,7 @@ using namespace std;
 
 class Solution{
 public:
-    bool isBipartite(int V, vector<vector<int>> &edges)
-    {
+    bool isBipartite(int V, vector<vector<int>> &edges)  {
         vector<int> adj[V];
         for (auto e : edges)
         {
@@ -76,3 +75,4 @@ int main()
     return 0;
 
 }
+
