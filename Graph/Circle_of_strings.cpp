@@ -14,8 +14,7 @@ public:
         }
     }
 
-    int isCircle(vector<string> &arr)
-    {
+    int isCircle(vector<string> &arr)   {
         int n = arr.size();
         vector<int> adj[26];
         vector<int> Indeg(26, 0), Outdeg(26, 0), vis(26, 0);
