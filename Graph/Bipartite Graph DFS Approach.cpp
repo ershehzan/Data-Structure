@@ -5,8 +5,7 @@ using namespace std;
 class Solution{
 public:
     bool DFS(int node, vector<int> adj[], vector<int> &color) {
-        for (int neigh : adj[node])
-        {
+        for (int neigh : adj[node]){
             if (color[neigh] == -1)
             {
                 color[neigh] = (color[node] + 1) % 2;
@@ -67,4 +66,5 @@ int main()
     return 0;
 
 }
+
 
