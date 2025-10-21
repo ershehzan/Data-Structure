@@ -29,8 +29,7 @@ public:
             Outdeg[u]++;
         }
 
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++)  {
             if (Indeg[i] != Outdeg[i])
                 return 0;
         }
