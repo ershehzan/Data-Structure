@@ -59,8 +59,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter number of strings: ";
     cin >> n;
