@@ -4,8 +4,7 @@ using namespace std;
 
 class Solution{
 public:
-    vector<int> bellmanFord(int V, vector<vector<int>> &edges, int src)
-    {
+    vector<int> bellmanFord(int V, vector<vector<int>> &edges, int src) {
         vector<int> dist(V, 1e8);
         dist[src] = 0;
         int e = edges.size();
