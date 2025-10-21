@@ -6,8 +6,7 @@ using namespace std;
 class Solution{
 public:
     // Function to return Breadth First Traversal of given graph.
-    vector<int> bfs(vector<vector<int>> &adj)
-    {
+    vector<int> bfs(vector<vector<int>> &adj){
         queue<int> q;
         q.push(0);
         vector<bool> visited(adj.size(), 0);
@@ -61,6 +60,7 @@ int main()
     return 0;
 
 }
+
 
 
 
