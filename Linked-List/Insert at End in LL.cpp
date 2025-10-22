@@ -20,8 +20,7 @@ int main(){
 
     int arr[] = {20, 30, 40, 50};
 
-    for (int i = 0; i < 4; i++)
-    {
+    for (int i = 0; i < 4; i++) {
 
         if (head == NULL)
         {
@@ -45,6 +44,7 @@ int main(){
     }
     return 0;
 }
+
 
 
 
