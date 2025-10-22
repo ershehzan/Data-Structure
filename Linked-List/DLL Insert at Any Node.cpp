@@ -66,9 +66,7 @@ int main(){
             head = temp;
         }
     }
-    else
-    {
-
+    else{
         while (--pos)
         {
             curr = curr->next;
