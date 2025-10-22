@@ -80,9 +80,7 @@ int main(){
         }
 
         // insert at the middle
-        else
-        {
-
+        else  {
             temp->next = curr->next;
             temp->prev = curr;
             curr->next = temp;
