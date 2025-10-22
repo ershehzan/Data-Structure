@@ -20,9 +20,7 @@ public:
     }
 };
 
-int main()
-{
-
+int main(){
     node *head;
     head = NULL;
     int arr[] = {20, 30, 40, 50};
@@ -39,6 +37,7 @@ int main()
         temp = temp->next;
     }
 }
+
 
 
 
