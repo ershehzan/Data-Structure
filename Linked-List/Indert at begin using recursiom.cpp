@@ -29,14 +29,15 @@ int main(){
 
     node *temp;
     temp = head;
-    cout << "Linked List: ";
+    cout << "Linked List: "
+        
     while (temp)
     {
-
         cout << temp->data << " ";
         temp = temp->next;
     }
 }
+
 
 
 
