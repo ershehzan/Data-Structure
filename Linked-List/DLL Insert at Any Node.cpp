@@ -30,8 +30,7 @@ int main(){
             head = new node(val);
             tail = head;
         }
-        else
-        {
+        else {
             node *temp = new node(val);
             tail->next = temp;
             temp->prev = tail;
