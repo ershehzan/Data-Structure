@@ -10,8 +10,7 @@ public:
         next = NULL;
     }
 
-    node *insertAtbegin(int arr[], int index, int size, node *prev)
-    {
+    node *insertAtbegin(int arr[], int index, int size, node *prev)  {
         if (index == size)
             return prev;
 
@@ -40,5 +39,6 @@ int main()
         temp = temp->next;
     }
 }
+
 
 
