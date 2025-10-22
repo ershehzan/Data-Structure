@@ -12,8 +12,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
 
     node *head, *tail;
    tail= head = NULL;
@@ -46,5 +45,6 @@ int main()
     }
     return 0;
 }
+
 
 
