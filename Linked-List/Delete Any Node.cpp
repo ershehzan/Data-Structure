@@ -42,8 +42,7 @@ int main(){
     cout << "Enter the value of the node to be deleted: ";
     cin >> x;
 
-    if (x == 1)
-    {
+    if (x == 1){
         node *temp = head;
         head = head->next;
         delete temp;
