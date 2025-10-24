@@ -40,8 +40,7 @@ int main(){
     // Print the linked list
     Node *current = head;
 
-    while (current != NULL)
-    {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->next;
     };
