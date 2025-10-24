@@ -14,8 +14,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     node *head = NULL;
     node*tail=NULL;
     int n;
@@ -51,4 +50,5 @@ int main()
         curr = curr->next;
     }
 }
+
 
