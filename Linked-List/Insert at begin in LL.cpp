@@ -6,8 +6,7 @@ public:
     int data;
     Node *next;
 
-    Node(int value)
-    {
+    Node(int value)   {
         data = value;
         next = NULL;
     }
@@ -46,4 +45,5 @@ while(current !=NULL){
     cout<<endl;
     return 0;
 }
+
 
