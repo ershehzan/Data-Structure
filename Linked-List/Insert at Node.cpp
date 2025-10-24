@@ -32,9 +32,7 @@ int main(){
     node *temp = head;
     int value = 30;
     x--;
-    while (x--)
-    {
-
+    while (x--){
         temp = temp->next;
     };
 
@@ -51,6 +49,7 @@ int main(){
         current = current->next;
     }
 }
+
 
 
 
