@@ -18,8 +18,7 @@ int main(){
    for (int i = 0; i < 5; i++)
     {
 
-        if (head == NULL)
-        {
+        if (head == NULL) {
             head = new node(arr[i]);
             tail=head;
         }
