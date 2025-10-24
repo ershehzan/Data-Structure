@@ -12,9 +12,7 @@ public:
     }
 };
 
-int main()
-{
-
+int main(){
     Node *head, *tail;
     tail = head = NULL;
 
