@@ -57,8 +57,7 @@ int main(){
 
     node *current = head;
 
-    while (current)
-    {
+    while (current) {
         cout << current->data << " ";
         current = current->next;
     }
