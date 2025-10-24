@@ -31,9 +31,8 @@ int main(){
     }
 }
 cout<<"Linked List: ";
-    // Print the linked list
+ // Print the linked list
 Node *current =head;
-
 while(current !=NULL){
     cout<<current->data<<" ";
     current=current->next;
@@ -41,6 +40,7 @@ while(current !=NULL){
     cout<<endl;
     return 0;
 }
+
 
 
 
