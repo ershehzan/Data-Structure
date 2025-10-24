@@ -64,8 +64,7 @@ int main(){
     }
     node *curr = head;
     cout << "Enter the value of the node to be deleted: ";
-    while (curr)
-    {
+    while (curr){
         cout << curr->data << " ";
         curr = curr->next;
     }
