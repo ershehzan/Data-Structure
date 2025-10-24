@@ -38,15 +38,14 @@ int main(){
          
         }
     }
-
     node *curr = head;
     cout << "Doubly Linked List: ";
-    while (curr != NULL)
-    {
+    while (curr != NULL) {
         cout << curr->data << " ";
         curr = curr->next;
     }
 }
+
 
 
 
