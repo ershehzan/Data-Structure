@@ -12,9 +12,7 @@ public:
     }
 };
 
-int main()
-{
-
+int main(){
     Node *head;
     head = NULL;
 
@@ -45,5 +43,6 @@ while(current !=NULL){
     cout<<endl;
     return 0;
 }
+
 
 
