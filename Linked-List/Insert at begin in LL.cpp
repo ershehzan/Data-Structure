@@ -23,9 +23,7 @@ int main(){
     {
         head = new Node(arr[i]);
     }
-    else
-    {
-
+    else{
         Node *temp;
         temp = new Node(arr[i]);
         temp->next = head;
@@ -43,6 +41,7 @@ while(current !=NULL){
     cout<<endl;
     return 0;
 }
+
 
 
 
