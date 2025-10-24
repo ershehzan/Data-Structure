@@ -20,8 +20,7 @@ node *insertAtend(int arr[], int index, int size){
     return temp;
 }
 
-int main()
-{
+int main(){    
     node *head;
     head = NULL;
 
@@ -52,5 +51,6 @@ int main()
         current = current->next;
     }
 }
+
 
 
