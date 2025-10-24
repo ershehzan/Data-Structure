@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
-
+class Node{
 public:
     int data;
     Node *next;
