@@ -9,9 +9,7 @@ public:
         next = NULL;
     }
 };
-int main()
-{
-
+int main(){
     node *head;
     node *tail = NULL; // Declare tail outside the loop
     head = NULL;
