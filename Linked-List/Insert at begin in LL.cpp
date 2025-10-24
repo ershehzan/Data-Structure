@@ -1,9 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
-
+class Node{
 public:
     int data;
     Node *next;
@@ -48,3 +46,4 @@ while(current !=NULL){
     cout<<endl;
     return 0;
 }
+
