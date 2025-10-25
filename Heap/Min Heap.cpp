@@ -21,8 +21,7 @@ public:
     }
 
     // Insert a new value into the heap and maintain the min-heap property
-    void insert(int val)
-    {
+    void insert(int val) {
         if (size == total_size)
         {
             cout << "Heap is full" << endl;
