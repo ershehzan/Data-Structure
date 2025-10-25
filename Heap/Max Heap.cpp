@@ -2,8 +2,7 @@
 using namespace std;
 
 // Class to represent a Max Heap
-class MaxHeap
-{
+class MaxHeap{
 public:
     int *arr;        // Dynamic array to store heap elements
     int size;        // Current number of elements in the heap
