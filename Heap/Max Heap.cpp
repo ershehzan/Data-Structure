@@ -110,9 +110,8 @@ public:
     }
 
     // Function to get the maximum element (root) without deleting
-    int getMax()
-    {
-        if (size == 0)
+    int getMax()  {
+     if (size == 0)
         {
             cout << "Heap is empty" << endl;
             return -1;  // Return -1 as error value
