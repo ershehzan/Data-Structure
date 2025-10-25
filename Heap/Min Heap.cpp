@@ -102,9 +102,8 @@ public:
     }
 
     // Return the minimum (root) element of the heap
-    int getMin()
-    {
-        if (size == 0)
+    int getMin() {
+     if (size == 0)
         {
             cout << "Heap is empty" << endl;
             return -1;  // You could throw an exception here instead
