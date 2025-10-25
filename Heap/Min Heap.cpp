@@ -84,8 +84,7 @@ public:
     }
 
     // Delete the root (minimum element) from the heap
-    void deleteRoot()
-    {
+    void deleteRoot()  {
         if (size == 0)
         {
             cout << "Heap is empty, cannot delete" << endl;
