@@ -39,8 +39,7 @@ public:
     }
 
     // Function to print all elements of the heap
-    void print()
-    {
+    void print()  {
         if (size == 0)
         {
             cout << "Heap is empty" << endl;
