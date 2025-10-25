@@ -42,8 +42,7 @@ void heapsort(vector<int> &arr, int n){
     buildMaxheap(arr, n);
 
     // Extract elements one by one from the heap
-    for (int i = n - 1; i > 0; i--)
-    {
+    for (int i = n - 1; i > 0; i--)  {
         // Move current root (maximum) to the end
         swap(arr[i], arr[0]);
 
