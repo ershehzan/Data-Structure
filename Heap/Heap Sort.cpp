@@ -3,8 +3,7 @@
 using namespace std;
 
 // Iterative version of heapify to maintain the max-heap property
-void heapify(vector<int> &arr, int i, int n)
-{
+void heapify(vector<int> &arr, int i, int n){
     while (i < n)
     {
         int largest = i;           // Assume current index is largest
