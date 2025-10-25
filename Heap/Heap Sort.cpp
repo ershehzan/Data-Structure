@@ -18,8 +18,7 @@ void heapify(vector<int> &arr, int i, int n){
             largest = right;
 
         // If largest is not the current node, swap and continue
-        if (largest != i)
-        {
+        if (largest != i){
             swap(arr[i], arr[largest]);
             i = largest; // Move to the largest child and repeat
         }
