@@ -9,8 +9,7 @@ public:
     int total_size;  // Maximum capacity of the heap
 
     // Constructor to initialize the heap with given capacity
-    MinHeap(int n)
-    {
+    MinHeap(int n)  {
         arr = new int[n];  // Allocate memory for the heap
         size = 0;          // Initially heap is empty
         total_size = n;    // Set maximum capacity
