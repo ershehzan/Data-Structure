@@ -30,8 +30,7 @@ void heapify(vector<int> &arr, int i, int n){
 }
 
 // Function to build a max heap from an unsorted array
-void buildMaxheap(vector<int> &arr, int n)
-{
+void buildMaxheap(vector<int> &arr, int n){
     // Start from the last non-leaf node and apply heapify
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, i, n);
