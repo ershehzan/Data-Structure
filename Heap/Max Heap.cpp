@@ -127,8 +127,7 @@ public:
 };
 
 // Driver code to test the MaxHeap class
-int main()
-{
+int main(){
     int n;
     cout << "Enter the size of the heap: ";
     cin >> n;
