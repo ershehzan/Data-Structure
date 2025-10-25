@@ -38,8 +38,7 @@ void buildMaxheap(vector<int> &arr, int n)
 }
 
 // Function to perform heap sort using max heap
-void heapsort(vector<int> &arr, int n)
-{
+void heapsort(vector<int> &arr, int n){
     // Build max heap first
     buildMaxheap(arr, n);
 
