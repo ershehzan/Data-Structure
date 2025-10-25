@@ -55,8 +55,7 @@ public:
     }
 
     // Function to restore Max Heap property starting from a given index
-    void Heapify(int index)
-    {
+    void Heapify(int index) {
         int largest = index;              // Assume current node is largest
         int left = 2 * index + 1;         // Left child index
         int right = 2 * index + 2;        // Right child index
