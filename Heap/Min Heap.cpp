@@ -2,8 +2,7 @@
 using namespace std;
 
 // Class representing a Min Heap data structure
-class MinHeap
-{
+class MinHeap{
 public:
     int *arr;        // Dynamic array to store heap elements
     int size;        // Current number of elements in the heap
