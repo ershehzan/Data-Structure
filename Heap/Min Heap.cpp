@@ -45,8 +45,7 @@ public:
     }
 
     // Print all elements of the heap in array order
-    void print()
-    {
+    void print() {
         if (size == 0)
         {
             cout << "Heap is empty" << endl;
