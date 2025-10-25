@@ -59,8 +59,7 @@ void print(const vector<int> &arr)
     cout << endl;
 }
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
