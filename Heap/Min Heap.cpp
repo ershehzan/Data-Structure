@@ -16,8 +16,7 @@ public:
     }
 
     // Destructor to free allocated memory and prevent memory leaks
-    ~MinHeap()
-    {
+    ~MinHeap() {
         delete[] arr;
     }
 
