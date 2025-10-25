@@ -86,8 +86,7 @@ public:
     }
 
     // Function to delete the maximum (root) element from the heap
-    void Delete()
-    {
+    void Delete()  {
         if (size == 0)
         {
             cout << "Heap is empty, cannot delete" << endl;
