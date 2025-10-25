@@ -29,8 +29,7 @@ public:
         size++;
 
         // Step 2: Bubble up the element to maintain Max Heap property
-        while (index > 0 && arr[(index - 1) / 2] < arr[index])
-        {
+        while (index > 0 && arr[(index - 1) / 2] < arr[index])  {
             // Swap the current element with its parent if it's greater
             swap(arr[index], arr[(index - 1) / 2]);
             index = (index - 1) / 2;  // Move to the parent index
