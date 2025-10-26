@@ -7,8 +7,7 @@ class Solution{
 public:
     int r;
     int c;
-    bool valid(int i, int j)
-    {
+    bool valid(int i, int j) {
         return i >= 0 && i < r && j >= 0 && j < c;
     }
     int row[8] = {-1, -1, -1, 1, 1, 1, 0, 0};
@@ -76,3 +75,4 @@ int main()
     return 0;
 
 }
+
