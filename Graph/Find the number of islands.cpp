@@ -13,8 +13,7 @@ public:
     int row[8] = {-1, -1, -1, 1, 1, 1, 0, 0};
     int col[8] = {-1, 0, 1, -1, 0, 1, -1, 1};
 
-    int countIslands(vector<vector<char>> &grid)
-    {
+    int countIslands(vector<vector<char>> &grid) {
         r = grid.size();
         c = grid[0].size();
 
@@ -75,4 +74,5 @@ int main()
     return 0;
 
 }
+
 
