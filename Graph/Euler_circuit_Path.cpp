@@ -4,8 +4,7 @@ using namespace std;
 
 class Solution{
 public:
-    void DFS(int node, vector<int> adj[], vector<bool> &vis)
-    {
+    void DFS(int node, vector<int> adj[], vector<bool> &vis) {
         vis[node] = 1;
         for (int j = 0; j < adj[node].size(); j++)
         {
