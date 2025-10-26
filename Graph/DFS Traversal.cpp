@@ -41,8 +41,8 @@ int main(){
     vector<int> traversal = sol.dfs(adj);
 
     cout << "DFS Traversal: ";
-    for (int node : traversal)
-    {
+    for (int node : traversal){
+        
         cout << node << " ";
     }
     cout << endl;
@@ -50,6 +50,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
