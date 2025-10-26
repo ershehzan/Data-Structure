@@ -12,8 +12,7 @@ public:
                 DFS(adj[node][j], adj, vis);
         }
     }
-    int isEulerCircuit(int V, vector<int> adj[])
-    {
+    int isEulerCircuit(int V, vector<int> adj[])  {
         vector<int> deg(V, 0);
         int odd_deg = 0;
         for (int i = 0; i < V; i++)
