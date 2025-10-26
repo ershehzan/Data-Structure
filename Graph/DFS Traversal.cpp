@@ -17,8 +17,7 @@ public:
         }
     }
 
-    vector<int> dfs(vector<vector<int>> &adj)
-    {
+    vector<int> dfs(vector<vector<int>> &adj){
         vector<bool> vis(adj.size(), false);
         vector<int> ans;
 
@@ -52,4 +51,5 @@ int main()
     return 0;
 
 }
+
 
