@@ -9,8 +9,7 @@ public:
     int col[4] = {0, 0, -1, 1};
     int r, c;
 
-    bool valid(int i, int j)
-    {
+    bool valid(int i, int j){
         return i >= 0 && i < r && j >= 0 && j < c;
     }
 
@@ -82,3 +81,4 @@ int main()
     return 0;
 
 }
+
