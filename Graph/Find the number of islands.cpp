@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int r;
     int c;
@@ -75,4 +74,5 @@ int main()
     int islands = sol.countIslands(grid);
     cout << "Number of islands: " << islands << endl;
     return 0;
+
 }
