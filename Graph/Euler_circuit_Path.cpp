@@ -2,8 +2,7 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     void DFS(int node, vector<int> adj[], vector<bool> &vis)
     {
