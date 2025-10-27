@@ -8,7 +8,7 @@ public:
     node *next; // Pointer to the next node in the list
 
     // Constructor to initialize a node with a given value
-    node(int value)   {
+    node(int value) {
         data = value;  // Assign the value to the data field
         next = NULL;   // Initialize the next pointer to NULL
     }
@@ -57,5 +57,6 @@ int main()
 
     return 0; // Indicate successful program completion
 }
+
 
 
