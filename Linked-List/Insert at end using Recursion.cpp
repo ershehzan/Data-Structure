@@ -31,8 +31,7 @@ node *insertAtend(int arr[], int index, int size){
     return temp; // Return the current node
 }
 
-int main()
-{
+int main(){
     node *head;   // Pointer to the head of the linked list
     head = NULL;  // Initialize the head to NULL (empty list)
 
@@ -56,6 +55,7 @@ int main()
 
     return 0; // Indicate successful program completion
 }
+
 
 
 
