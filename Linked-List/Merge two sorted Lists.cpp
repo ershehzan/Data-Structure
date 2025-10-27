@@ -63,8 +63,7 @@ public:
 };
 
 // Utility function to print the linked list
-void printList(Node *head)
-{
+void printList(Node *head){
     while (head)
     {
         cout << head->data << " ";
@@ -119,6 +118,7 @@ int main()
 
     return 0;
 }
+
 
 
 
