@@ -10,8 +10,7 @@ public:
     }
 };
 
-node *insertAtend(int arr[], int index, int size)
-{
+node *insertAtend(int arr[], int index, int size){
 
     if (index == size)
         return NULL;
