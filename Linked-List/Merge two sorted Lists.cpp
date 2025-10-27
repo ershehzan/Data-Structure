@@ -77,8 +77,7 @@ Node *createList(int n)
 {
     Node *head = NULL;
     Node *tail = NULL;
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i)  {
         int value;
         cin >> value;
         Node *newNode = new Node(value);
@@ -117,6 +116,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
