@@ -16,8 +16,7 @@ public:
 };
 
 // Solution class contains the method to merge two sorted linked lists
-class Solution
-{
+class Solution{
 public:
     // Function to merge two sorted linked lists and return the head of the merged list
     Node *sortedMerge(Node *head1, Node *head2)
@@ -122,6 +121,7 @@ int main()
 
     return 0;
 }
+
 
 
 
