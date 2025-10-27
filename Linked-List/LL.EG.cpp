@@ -4,8 +4,7 @@ Store date of at least 4 persons.*/
 #include <iostream>
 using namespace std;
 
-struct person
-{
+struct person{
     int age;
     string name;
     string country;
