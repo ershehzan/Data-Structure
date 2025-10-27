@@ -23,8 +23,7 @@ int main(){
 
     Node *current = first;
 
-    while (current != nullptr)
-    {
+    while (current != nullptr) {
         cout << current->data << " ";
         current = current->next;
     }
