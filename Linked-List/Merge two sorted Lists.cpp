@@ -9,8 +9,7 @@ public:
     Node *next;     // Pointer to the next node
 
     // Constructor to initialize the node with a value
-    Node(int value)
-    {
+    Node(int value)  {
         data = value;
         next = NULL;
     }
@@ -123,5 +122,6 @@ int main()
 
     return 0;
 }
+
 
 
