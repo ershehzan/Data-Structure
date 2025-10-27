@@ -25,8 +25,7 @@ public:
         Node *tail = head; // Tail pointer to add new nodes
 
         // Traverse both lists and append the smaller node to the merged list
-        while (head1 && head2)
-        {
+        while (head1 && head2) {
             if (head1->data <= head2->data)
             {
                 tail->next = head1;     // Append node from list 1
