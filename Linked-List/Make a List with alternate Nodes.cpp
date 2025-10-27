@@ -19,8 +19,7 @@ public:
 class Solution{
 public:
     // Function to merge two sorted linked lists and return the head of the merged list
-    Node *sortedMerge(Node *head1, Node *head2)
-    {
+    Node *sortedMerge(Node *head1, Node *head2)  {
         // Create a dummy node to form the new list
         Node *head = new Node(0);
         Node *tail = head; // Tail pointer to add new nodes
