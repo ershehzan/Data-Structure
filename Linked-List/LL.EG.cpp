@@ -11,8 +11,7 @@ struct person{
     person *next; // Points to the next node
 };
 
-int main()
-{
+int main(){
     // Create nodes
     person *first = new person();
     person *second = new person();
