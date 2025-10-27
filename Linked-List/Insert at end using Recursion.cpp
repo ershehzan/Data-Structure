@@ -19,8 +19,7 @@ public:
 // - arr: Array containing values to insert
 // - index: Current index in the array
 // - size: Total size of the array
-node *insertAtend(int arr[], int index, int size)
-{
+node *insertAtend(int arr[], int index, int size){
     if (index == size) // Base case: If all elements are processed, return NULL
         return NULL;
 
@@ -57,6 +56,7 @@ int main()
 
     return 0; // Indicate successful program completion
 }
+
 
 
 
