@@ -3,8 +3,7 @@
 using namespace std;
 
 // Node class represents a single node in the linked list
-class Node
-{
+class Node{
 public:
     int data;       // Data stored in the node
     Node *next;     // Pointer to the next node
