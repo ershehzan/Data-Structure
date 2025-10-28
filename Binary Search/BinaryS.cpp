@@ -3,6 +3,7 @@ using namespace std;
 
 int BinarySearch(int arr[], int key, int n){
     int start = 0, end = n - 1, mid;
+    
     while (start <= end) {
         
         int mid = (start + end) / 2;
