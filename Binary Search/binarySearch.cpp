@@ -12,9 +12,7 @@ int main(){
     // Begin binary search
     while (l <= r)
     {
-
         m = l + (r - l) / 2; //  calculation of the mid index
-
         if (arr[m] == n)
         {
 
