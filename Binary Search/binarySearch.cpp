@@ -3,9 +3,7 @@
 using namespace std;
 
 int main(){
-
     int n, l = 0, r, m;
-
     cout << "Enter the Number to search: ";
 
     cin >> n;
