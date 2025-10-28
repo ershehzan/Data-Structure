@@ -10,8 +10,7 @@ int main(){
 
     int start = 0, end = 3, mid, ans;
 
-    while (start <= end)
-    {
+    while (start <= end)  {
         mid = start + (end - start) / 2;
         int page = 0, count = 1;
 
