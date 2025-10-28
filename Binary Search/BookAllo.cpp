@@ -27,9 +27,7 @@ int main(){
                 count++;
             page = arr[i];
         }
-        if (count <= n)
-        {
-
+        if (count <= n) {
             ans = mid;
             end = mid - 1;
         }
