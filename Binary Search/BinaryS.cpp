@@ -12,8 +12,7 @@ int BinarySearch(int arr[], int key, int n){
             cout << "Element found at index ";
             return mid;
         }
-        else if (arr[mid] < key)
-        {
+        else if (arr[mid] < key) {
 
             start = mid + 1;
         }
