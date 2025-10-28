@@ -24,8 +24,7 @@ int BinarySearch(int arr[], int key, int n){
     return -1;
 }
 
-int main()
-{
+int main(){
     int arr[1000];
     int n;
     cout << "Enter the index of array : ";
