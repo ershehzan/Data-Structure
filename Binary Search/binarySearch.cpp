@@ -29,7 +29,6 @@ int main(){
 
         else
         {
-
             r = m --; // Move to the left half
         }
     }
