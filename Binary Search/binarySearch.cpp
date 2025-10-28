@@ -8,11 +8,8 @@ int main(){
     cin >> n;
     int arr[] = {1, 2, 4, 6, 7, 9, 10, 21, 34, 45, 65, 78, 99, 100, 107};
     int size = sizeof(arr) / sizeof(arr[0]);
-
     r = size - 1; // Set r to the last index of the array
-
     // Begin binary search
-
     while (l <= r)
     {
 
