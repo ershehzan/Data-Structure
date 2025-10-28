@@ -5,9 +5,7 @@ using namespace std;
 int main(){
     int n, l = 0, r, m;
     cout << "Enter the Number to search: ";
-
     cin >> n;
-
     int arr[] = {1, 2, 4, 6, 7, 9, 10, 21, 34, 45, 65, 78, 99, 100, 107};
 
     int size = sizeof(arr) / sizeof(arr[0]);
