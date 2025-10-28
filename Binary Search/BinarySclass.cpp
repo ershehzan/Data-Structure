@@ -2,8 +2,7 @@
 #include <algorithm> // For sorting the array
 using namespace std;
 // Function to perform binary search
-int binarySearch(int arr[], int n, int target)
-{
+int binarySearch(int arr[], int n, int target){
     int left = 0, right = n - 1, mid;
     while (left <= right) {
         mid = left + (right - left) / 2; // Avoids potential integer overflow
