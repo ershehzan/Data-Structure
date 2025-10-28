@@ -21,6 +21,7 @@ int binarySearch(int arr[], int n, int target){
 }
 
 int main(){
+    
     int n, target;
     int arr[1000]; // Maximum size of array
 
