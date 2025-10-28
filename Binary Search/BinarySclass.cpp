@@ -20,8 +20,7 @@ int binarySearch(int arr[], int n, int target){
     return -1; // Element not found
 }
 
-int main()
-{
+int main(){
     int n, target;
     int arr[1000]; // Maximum size of array
 
