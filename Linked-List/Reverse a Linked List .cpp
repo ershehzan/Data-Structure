@@ -15,10 +15,9 @@ public:
 
 int main(){
 
-    node *head, *tail;
+   node *head, *tail;
    tail= head = NULL;
     
-
     int arr[] = {20, 30, 40, 50};
 
     for (int i = 0; i < 4; i++)
