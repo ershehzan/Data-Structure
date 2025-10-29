@@ -56,7 +56,7 @@ Node* createList(int n) {
     return head;
 }
 
-int main() {
+int main(){
     Solution solution;
     int n;
     cout << "Enter number of nodes in sorted linked list: ";
@@ -71,3 +71,4 @@ int main() {
 
     return 0;
 }
+
