@@ -45,17 +45,16 @@ int main(){
 
     head=reverse(head,NULL);
     
-
     node *current;
     current = head;
     cout << "Reversed Linked List: ";
-    while (current != NULL)
-    {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->next;
     }
     return 0;
 }
+
 
 
 
