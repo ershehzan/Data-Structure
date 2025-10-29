@@ -7,9 +7,7 @@ public:
     int data;
     node *next;
 
-    node(int value)
-    {
-
+    node(int value) {
         data = value;
         next = NULL;
     }
@@ -63,4 +61,5 @@ int main()
     }
     return 0;
 }
+
 
