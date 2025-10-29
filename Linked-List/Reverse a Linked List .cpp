@@ -8,7 +8,6 @@ public:
     node *next;
 
     node(int value){
-
         data = value;
         next = NULL;
     }
