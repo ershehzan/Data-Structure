@@ -37,8 +37,7 @@ int main(){
         }
         current = current->next;
     }
-    if (found)
-    {
+    if (found) {
         cout << "Number " << target << " is found in the linked list :" << endl;
     }
     else{
