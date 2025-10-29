@@ -51,10 +51,6 @@ int main(){
             temp=temp->next;
         }
         //end
-
-
-
-
     node *current;
     current = head;
     cout << "Reversed Linked List: ";
