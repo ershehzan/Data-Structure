@@ -37,8 +37,7 @@ int main(){
             head = new node(arr[i]);
             tail = head;
         }
-        else
-        {
+        else  {
             tail->next = new node(arr[i]);
             tail = tail->next;
         }
@@ -57,6 +56,7 @@ int main(){
     }
     return 0;
 }
+
 
 
 
