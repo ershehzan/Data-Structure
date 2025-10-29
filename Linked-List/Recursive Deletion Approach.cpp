@@ -23,8 +23,7 @@ node *deletenode(node*current,int x){
 }
 
 
-int main()
-{
+int main(){
 
     node *head = NULL;
     node *tail = NULL;
