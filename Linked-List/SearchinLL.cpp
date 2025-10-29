@@ -41,8 +41,7 @@ int main(){
     {
         cout << "Number " << target << " is found in the linked list :" << endl;
     }
-    else
-    {
+    else{
         cout << "Number " << target << " is not found in the linked list :" << endl;
     }
     return 0;
