@@ -13,8 +13,7 @@ public:
     }
 };
 
-node*reverse(node*curr,node*prev)
-{
+node*reverse(node*curr,node*prev){
     if(curr==NULL)
     return prev;
 
@@ -61,5 +60,6 @@ int main()
     }
     return 0;
 }
+
 
 
