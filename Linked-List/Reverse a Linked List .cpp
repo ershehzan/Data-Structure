@@ -37,8 +37,7 @@ int main(){
     vector<int>ans;
         node*temp=head;
 
-        while(temp!=NULL)
-        {
+        while(temp!=NULL) {
             ans.push_back(temp->data);
             temp=temp->next;
         }
