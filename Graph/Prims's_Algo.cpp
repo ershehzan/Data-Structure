@@ -21,6 +21,7 @@ public:
         vector<int> parent(V, -1);
         int cost = 0;
         pq.push({0, {0, -1}});
+        
         while (!pq.empty())
         {
             int wt = pq.top().first;
