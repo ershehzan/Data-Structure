@@ -6,6 +6,7 @@ using namespace std;
 class Solution{
 public:
     bool isPossible(int N, int P, vector<pair<int, int>> &prerequisites)  {
+        
         vector<int> Indeg(N, 0);
         queue<int> q;
         vector<int> adj[N];
@@ -63,4 +64,5 @@ int main()
     return 0;
 
 }
+
 
