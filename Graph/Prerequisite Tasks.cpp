@@ -38,8 +38,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int N, P;
     cout << "Enter number of tasks (N) and prerequisites (P): ";
     cin >> N >> P;
@@ -63,6 +62,7 @@ int main()
     return 0;
 
 }
+
 
 
 
