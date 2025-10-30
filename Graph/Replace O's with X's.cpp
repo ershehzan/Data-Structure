@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int r, c;
     int row[4] = {1, -1, 0, 0};
@@ -125,4 +124,5 @@ int main()
         cout << endl;
     }
     return 0;
+
 }
