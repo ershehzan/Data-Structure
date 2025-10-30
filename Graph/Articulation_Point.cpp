@@ -4,8 +4,8 @@ using namespace std;
 
 class Solution{
 public:
-    void DFS(int node, int parent, vector<int> adj[], vector<bool> &vis, vector<bool> &A, vector<int> &disc, vector<int> &low, int &timer)
-    {
+    void DFS(int node, int parent, vector<int> adj[], vector<bool> &vis, vector<bool> &A, vector<int> &disc, vector<int> &low, int &timer){
+        
         vis[node] = 1;
         low[node] = disc[node] = timer;
         int child = 0;
