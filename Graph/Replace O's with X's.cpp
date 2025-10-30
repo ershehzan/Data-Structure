@@ -13,8 +13,7 @@ public:
         return i >= 0 && i < r && j >= 0 && j < c;
     }
 
-    vector<vector<char>> fill(vector<vector<char>> &mat)
-    {
+    vector<vector<char>> fill(vector<vector<char>> &mat)  {
 
         r = mat.size();
         c = mat[0].size();
@@ -125,4 +124,5 @@ int main()
     return 0;
 
 }
+
 
