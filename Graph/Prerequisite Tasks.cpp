@@ -23,8 +23,7 @@ public:
                 q.push(j);
         }
         int count = 0;
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int node = q.front();
             q.pop();
             count++;
@@ -64,5 +63,6 @@ int main()
     return 0;
 
 }
+
 
 
