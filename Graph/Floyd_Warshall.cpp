@@ -43,8 +43,8 @@ int main(){
     sol.floydWarshall(dist);
 
     cout << "Shortest distances matrix:\n";
-    for (int i = 0; i < n; i++)
-    {
+    
+    for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++)
         {
             if (dist[i][j] == 1e8)
