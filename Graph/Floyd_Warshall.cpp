@@ -16,6 +16,7 @@ public:
                 {
                     if (dist[i][k] == 1e8 || dist[k][j] == 1e8)
                         continue;
+                    
                     dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                 }
             }
