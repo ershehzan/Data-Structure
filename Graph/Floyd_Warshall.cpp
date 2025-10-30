@@ -5,8 +5,8 @@ using namespace std;
 
 class Solution{
 public:
-    void floydWarshall(vector<vector<int>> &dist)
-    {
+    void floydWarshall(vector<vector<int>> &dist) {
+        
         int n = dist.size();
         for (int k = 0; k < n; k++)
         {
