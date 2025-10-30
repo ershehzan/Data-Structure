@@ -3,8 +3,7 @@
 #include <iomanip>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     void floydWarshall(vector<vector<int>> &dist)
     {
