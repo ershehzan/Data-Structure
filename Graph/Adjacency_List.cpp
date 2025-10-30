@@ -10,8 +10,7 @@ int main(){
     vector<int> list[vertex];
     int u, v;
 
-    for (int i = 0; i < edges; i++)
-    {
+    for (int i = 0; i < edges; i++)  {
         cin >> u >> v;
         list[u].push_back(v);
         list[v].push_back(u);
