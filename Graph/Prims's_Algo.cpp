@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    int spanningTree(int V, vector<vector<int>> &edges)
-    {
+    int spanningTree(int V, vector<vector<int>> &edges){
         vector<vector<pair<int, int>>> adj(V);
         for (auto &e : edges)
         {
