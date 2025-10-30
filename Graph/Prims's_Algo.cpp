@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int spanningTree(int V, vector<vector<int>> &edges)
     {
