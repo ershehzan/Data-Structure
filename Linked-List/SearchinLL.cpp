@@ -6,6 +6,7 @@ struct Node{ // holds the integer value
     int data;
     Node *next; // points to the next node
 };
+
 int main(){
 
     Node *first = new Node();
