@@ -26,8 +26,7 @@ public:
                 profit += value;
                 capacity -= weight;
             }
-            else
-            {
+            else   {
                 profit += ratio * capacity;
                 capacity = 0;
             }
