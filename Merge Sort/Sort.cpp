@@ -3,8 +3,7 @@
 using namespace std;
 
 // Function to merge two sorted halves of the array into a single sorted section
-void merge(int arr[], int start, int mid, int end)
-{
+void merge(int arr[], int start, int mid, int end){
     // Temporary vector to store the merged elements
     vector<int> temp(end - start + 1);
 
