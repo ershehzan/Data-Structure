@@ -19,8 +19,7 @@ void merge(int arr[], int start, int mid, int end){
             temp[index] = arr[left];
             index++, left++;
         }
-        else
-        {
+        else  {
             // If the element in the right half is smaller, add it to the temp array
             temp[index] = arr[right];
             index++, right++;
