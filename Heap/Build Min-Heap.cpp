@@ -4,8 +4,8 @@ using namespace std;
 
 // Function to maintain the min heap property for a subtree rooted at index 'i'.
 // 'n' is the total number of elements in the heap (array).
-void heapify(vector<int>& arr, int i, int n)
-{
+void heapify(vector<int>& arr, int i, int n){
+    
     int smallest = i;          // Assume current index as smallest
     int left = 2 * i + 1;      // Index of left child
     int right = 2 * i + 2;     // Index of right child
