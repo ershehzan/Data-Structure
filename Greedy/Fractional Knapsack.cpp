@@ -22,8 +22,7 @@ public:
             int weight = pq.top().second.second;
             pq.pop();
             
-            if(capacity >= weight)
-            {
+            if(capacity >= weight)  {
                 profit += value;
                 capacity -= weight;
             }
