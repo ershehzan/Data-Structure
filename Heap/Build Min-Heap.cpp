@@ -34,8 +34,7 @@ void buildMinheap(vector<int>& arr, int n){
 }
 
 // Function to print the elements of the heap
-void print(const vector<int>& arr)
-{
+void print(const vector<int>& arr){
     cout << "Min Heap: ";
     for (int val : arr)
         cout << val << " ";
