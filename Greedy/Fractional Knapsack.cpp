@@ -6,8 +6,7 @@ using namespace std;
 
 class Solution {
 public:
-    double fractionalKnapsack(vector<int>& val, vector<int>& wt, int capacity)
-    {
+    double fractionalKnapsack(vector<int>& val, vector<int>& wt, int capacity){
         priority_queue<pair<double,pair<int,int>>> pq;
         int n = val.size();
         
