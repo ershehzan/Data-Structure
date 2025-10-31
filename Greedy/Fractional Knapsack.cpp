@@ -36,6 +36,7 @@ public:
 };
 
 int main() {
+    
     Solution sol;
 
     // Example input
