@@ -9,7 +9,6 @@ void merge(int arr[], int start, int mid, int end){
 
     // Pointers for the left and right halves of the array
     int left = start, right = mid + 1, index = 0;
-
     // Merge elements from both halves into the temporary array
     while (left <= mid && right <= end) {
         if (arr[left] < arr[right])
