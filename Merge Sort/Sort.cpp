@@ -50,8 +50,7 @@ void merge(int arr[], int start, int mid, int end){
 }
 
 // Function to perform merge sort on an array
-void mergesort(int arr[], int start, int end)
-{
+void mergesort(int arr[], int start, int end){
     // Calculate the middle index
     int mid = start + (end - start) / 2;
 
