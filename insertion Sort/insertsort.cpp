@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+    
     int i, j, key;
     int arr[6] = {10, 41, 64, 29, 11, 9};
 
