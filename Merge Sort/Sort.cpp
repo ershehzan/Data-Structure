@@ -11,8 +11,7 @@ void merge(int arr[], int start, int mid, int end){
     int left = start, right = mid + 1, index = 0;
 
     // Merge elements from both halves into the temporary array
-    while (left <= mid && right <= end)
-    {
+    while (left <= mid && right <= end) {
         if (arr[left] < arr[right])
         {
             // If the element in the left half is smaller, add it to the temp array
