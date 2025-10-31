@@ -10,8 +10,7 @@ public:
         priority_queue<pair<double,pair<int,int>>> pq;
         int n = val.size();
         
-        for(int i = 0; i < n; i++)
-        {
+        for(int i = 0; i < n; i++){
             pq.push({(double)val[i]/wt[i], {val[i], wt[i]}});
         }
 
