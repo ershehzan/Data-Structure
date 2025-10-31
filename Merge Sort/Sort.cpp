@@ -25,8 +25,7 @@ void merge(int arr[], int start, int mid, int end){
     }
 
     // Add any remaining elements from the left half
-    while (left <= mid)
-    {
+    while (left <= mid)  {
         temp[index] = arr[left];
         index++, left++;
     }
