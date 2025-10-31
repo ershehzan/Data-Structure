@@ -3,8 +3,7 @@
 using namespace std;
 
 // Main function where execution starts
-int main()
-{
+int main(){
     int n, i, j, key; // Declare variables: 'n' for array size, 'i' and 'j' for loops, 'key' for sorting
     int arr[1000];    // Declare an array of size 1000 to store user input
 
