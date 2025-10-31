@@ -20,8 +20,7 @@ int main(){
     }
 
     // Insertion Sort Algorithm
-    for (i = 1; i < n; i++) // Start from the second element (index 1) to the last
-    {
+    for (i = 1; i < n; i++){
         key = arr[i]; // Store the current element (key) to be placed correctly
         j = i - 1;    // Start comparing with the previous element
 
