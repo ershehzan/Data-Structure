@@ -16,8 +16,7 @@ public:
 
         double profit = 0.0;
         
-        while(capacity > 0 && !pq.empty())
-        {
+        while(capacity > 0 && !pq.empty()){
             double ratio = pq.top().first;
             int value = pq.top().second.first;
             int weight = pq.top().second.second;
