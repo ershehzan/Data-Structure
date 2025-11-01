@@ -5,7 +5,6 @@ int main() {
     
     string s = "nazhehs"; // Initialize the string
     int start = 0, end = s.size() - 1; // Set start and end pointers
-    
     // Reverse the string using two-pointer approach
     while (start < end)
     {
