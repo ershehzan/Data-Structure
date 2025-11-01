@@ -25,7 +25,8 @@ public:
         }
     }
 
-    int strStr(string haystack, string needle) {
+    int strStr(string haystack, string needle)
+{
         if (needle.empty()) return 0;
 
         vector<int> lps(needle.size(), 0);
