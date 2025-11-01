@@ -25,7 +25,6 @@ public:
         else
             return 1000; // 'M' represents 1000
     }
-
     // Function to convert a Roman numeral string to its integer value
     // Parameters:
     // s - the Roman numeral string (e.g., "IX", "XLII", etc.)
