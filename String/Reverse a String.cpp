@@ -15,6 +15,7 @@ int main() {
     cout << s << endl; // Print the reversed string
 
 int size=0;
+    
 while(s[size] != '\0') // Calculate the size of the string
 {
     size++; // Increment size for each character until null terminator
