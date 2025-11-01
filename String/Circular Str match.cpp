@@ -34,6 +34,7 @@ int main(){
     vector<int>lps(pattern.size(),0);
     lpsfind(lps,pattern);
     int first=0,second=0;
+    
     while(second<pattern.size() && first<txt.size())
     {
         if(pattern[second]==txt[first])
