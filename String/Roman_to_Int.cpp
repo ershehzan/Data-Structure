@@ -30,8 +30,8 @@ public:
     // Parameters:
     // s - the Roman numeral string (e.g., "IX", "XLII", etc.)
     // Returns: the integer value corresponding to the Roman numeral
-    int romanToInt(string s)
-    {
+    int romanToInt(string s) {
+        
         if (s.empty())
             return 0; // Return 0 for empty input to avoid out-of-bounds access
 
