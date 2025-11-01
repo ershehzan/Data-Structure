@@ -12,7 +12,6 @@ int main() {
         start++; // Move start pointer forward
         end--; // Move end pointer backward
     }
-    
     cout << s << endl; // Print the reversed string
 
 int size=0;
