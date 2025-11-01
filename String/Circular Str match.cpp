@@ -24,6 +24,7 @@ void lpsfind(vector<int>&lps,string txt){
         }
     }
 }
+
 int main()
 {
     string txt="cdeabroab";
