@@ -13,8 +13,7 @@ void lpsfind(vector<int>&lps,string txt){
             lps[suffix]=prefix+1;
             prefix++,suffix++;
         }
-        else
-        {
+        else {
             if(prefix==0)
             {
                 lps[suffix]=0;
