@@ -64,17 +64,14 @@ int main() {
   
     Solution solution;
 
-<<<<<<< HEAD
     // Input strings
     string s1 = "amazon"; // Original string
     string s2 = "azonam"; // Target string to check for rotation
 
     // Check if `s2` is a 2-place rotation of `s1`
-=======
     string s1 = "amazon";
     string s2 = "azonam";
 
->>>>>>> 549b0d8 (file update)
     if (solution.isRotated(s1, s2)) {
         cout << s2 << " is a rotated version of " << s1 << " by 2 places." << endl;
     } else {
