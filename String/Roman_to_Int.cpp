@@ -3,8 +3,7 @@
 using namespace std; // Use the standard namespace to simplify code
 
 // Class to provide a solution for converting Roman numerals to integers
-class Solution
-{
+class Solution{
 public:
     // Helper function to map a Roman numeral character to its integer value
     // Parameters:
