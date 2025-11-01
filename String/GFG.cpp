@@ -19,7 +19,8 @@ class Solution {
         s[s.size() - 1] = n; // Move the first character to the last position
     }
     
-    void rcw(string &s) {
+    void rcw(string &s) 
+{
         char n = s[s.size() - 1];
         int index = s.size() - 2;
 
