@@ -8,7 +8,8 @@ class Solution {
     // Function to check if a string can be obtained by rotating
     // another string by exactly 2 places.
     
-    void racw(string &s) {
+    void racw(string &s) 
+{
         char n = s[0]; // Store the first character
         int index = 1;
 
