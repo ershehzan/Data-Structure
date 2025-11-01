@@ -60,8 +60,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;   // Create an instance of the Solution class
     string romanNumeral; // Variable to store the user-input Roman numeral
 
