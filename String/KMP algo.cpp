@@ -38,7 +38,8 @@ public:
             if (haystack[first] == needle[second]) {
                 first++;
                 second++;
-            } else {
+            } 
+            else {
                 if (second == 0)
                     first++;
                 else
