@@ -29,6 +29,7 @@ int main(){
     
     string txt="cdeabroab";
     string pattern="abcde";
+    
     txt+=txt;
     vector<int>lps(pattern.size(),0);
     lpsfind(lps,pattern);
