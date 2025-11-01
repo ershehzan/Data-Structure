@@ -4,9 +4,10 @@
 using namespace std;
 
 void lpsfind(vector<int>&lps,string txt){
+    
     int prefix=0,suffix=1;
-    while(suffix<txt.size())
-    {
+    while(suffix<txt.size()) {
+        
         if(txt[prefix]==txt[suffix])
         {
             lps[suffix]=prefix+1;
