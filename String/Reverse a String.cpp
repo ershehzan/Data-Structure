@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-
-int main() // Corrected function name from 'msin' to 'main'
+// Corrected function name from 'msin' to 'main'
+int main() 
 {
     string s = "nazhehs"; // Initialize the string
 
