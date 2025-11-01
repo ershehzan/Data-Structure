@@ -5,7 +5,8 @@ using namespace std;
 
 class Solution {
 public:
-    void lpsfind(vector<int> &lps, string s) {
+    void lpsfind(vector<int> &lps, string s) 
+{
         int pre = 0, suf = 1;
 
         while (suf < s.size()) {
