@@ -9,8 +9,7 @@ public:
     // Parameters:
     // c - a Roman numeral character (e.g., 'I', 'V', 'X', etc.)
     // Returns: the integer value corresponding to the Roman numeral
-    int nums(char c)
-    {
+    int nums(char c) {
         if (c == 'I')
             return 1; // 'I' represents 1
         else if (c == 'V')
