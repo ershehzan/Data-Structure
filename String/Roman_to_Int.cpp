@@ -39,8 +39,7 @@ public:
         int index = 0; // Index to traverse the Roman numeral string
 
         // Process each character in the string except the last one
-        while (index < s.size() - 1)
-        {
+        while (index < s.size() - 1) {
             // If the current numeral is smaller than the next numeral,
             // subtract its value from the sum (e.g., "IV" -> 4)
             if (nums(s[index]) < nums(s[index + 1]))
