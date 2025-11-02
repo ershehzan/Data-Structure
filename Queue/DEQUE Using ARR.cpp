@@ -5,6 +5,7 @@ class dequeue{
     int front, rear;
     int *arr;
     int size;
+
     public:
     dequeue(int n){
         size=n;
