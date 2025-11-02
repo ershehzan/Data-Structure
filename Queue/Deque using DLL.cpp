@@ -47,8 +47,7 @@ public:
     }
 
     // Adds an element to the rear of the deque
-    void push_back(int x)
-    {
+    void push_back(int x) {
         if (isEmpty())
         {
             // If empty, both front and rear point to the new node
