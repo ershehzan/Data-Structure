@@ -27,7 +27,8 @@ public:
         }
         return 1;
     }
-    bool find(int i, int j, vector<vector<char>>& board) {
+    bool find(int i, int j, vector<vector<char>>& board)
+{
         if (i == 9)
             return 1;
         if (j == 9)
