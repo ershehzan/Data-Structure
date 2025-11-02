@@ -91,6 +91,7 @@ class dequeue {
             return arr[rear];
         }
     }
+
     void display(){
     if (isEmpty()) {
         cout << "Dequeue is Empty\n";
