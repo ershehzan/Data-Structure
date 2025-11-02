@@ -6,8 +6,8 @@ class Node{
 public:
     int data;        // Value stored in the node
     Node *next, *prev; // Pointers to the next and previous nodes
-    Node(int val)
-    {
+
+    Node(int val)  {
         data = val;
         next = prev = NULL;
     }
