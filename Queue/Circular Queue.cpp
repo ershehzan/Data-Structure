@@ -17,8 +17,7 @@ public:
         return (front == -1);
     }
 
-    bool isFull()
-    {
+    bool isFull() {
         return ((rear + 1) % size == front);
     }
 
