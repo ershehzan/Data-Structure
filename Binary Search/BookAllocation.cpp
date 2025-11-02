@@ -21,7 +21,6 @@ bool isPossible(int arr[], int n, int students, int maxPages) {
             pagesSum += arr[i]; // Add book pages to the current student's allocation
         }
     }
-
     return true; // If allocation is possible within 'students', return true
 }
 
