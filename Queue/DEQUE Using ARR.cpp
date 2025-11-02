@@ -33,6 +33,7 @@ class dequeue {
             arr[front]=x;
         }
     }
+
     void push_back(int x){
          if(isFull()){
             cout << "Dequeue is full\n";
