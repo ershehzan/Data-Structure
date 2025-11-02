@@ -72,6 +72,7 @@ class dequeue {
            rear=(rear-1+size)%size;
         }
     }
+
     int start(){
         if(isEmpty()){
             cout<<"Dequeue is Empty";
