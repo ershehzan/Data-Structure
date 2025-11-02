@@ -19,8 +19,7 @@ class Deque{
 
 public:
     // Constructor: initializes an empty deque
-    Deque()
-    {
+    Deque()  {
         front = rear = NULL;
     }
 
