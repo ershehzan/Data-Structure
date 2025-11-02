@@ -16,7 +16,6 @@ public:
 // Deque class using a doubly linked list
 class Deque{
     Node *front, *rear; // Pointers to the front and rear of the deque
-
 public:
     // Constructor: initializes an empty deque
     Deque()  {
