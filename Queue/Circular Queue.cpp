@@ -59,8 +59,7 @@ public:
         }
     }
 
-    int start()
-    {
+    int start()  {
         if (isEmpty())
         {
             cout << "Queue is Empty" << endl;
