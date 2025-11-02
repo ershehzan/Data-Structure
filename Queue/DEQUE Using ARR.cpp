@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-class dequeue{
+class dequeue {
     int front, rear;
     int *arr;
     int size;
