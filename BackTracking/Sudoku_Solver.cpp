@@ -12,7 +12,8 @@ public:
                 return 0;
         }
         // check Col
-        for (int row = 0; row < 9; row++) {
+        for (int row = 0; row < 9; row++) 
+        {
             if (board[row][j] == c)
                 return 0;
         }
