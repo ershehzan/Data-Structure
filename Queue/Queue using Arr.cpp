@@ -20,8 +20,7 @@ public:
         return (rear == size - 1);
     }
 
-    void enqueue(int x)
-    {
+    void enqueue(int x) {
         if (isEmpty())
         {
             cout << "Inserting " << x<<" in Queue" << endl;
