@@ -4,8 +4,7 @@
 using namespace std;
 
 // Function to return the first negative number in the queue
-int display(queue<int> q)
-{
+int display(queue<int> q){
     // Traverse the queue until it's empty
     while (!q.empty())
     {
