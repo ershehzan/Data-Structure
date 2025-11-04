@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 // Function to convert a lowercase character to uppercase
 char convert(char name)
 {
