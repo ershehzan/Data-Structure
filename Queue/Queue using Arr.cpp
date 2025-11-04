@@ -39,8 +39,7 @@ public:
             arr[rear] = x;
         }
     }
-    void dequeue()
-    {
+    void dequeue() {
         if (isEmpty())
         {
             cout << "Queue is Empty" << endl;
