@@ -13,6 +13,5 @@ int main(){
     cout << "Enter a character  : ";
     cin >> name;
     cout << convert(name); // Call the convert function with 'name' as an argument and output the result
-
     return 0;
 }
