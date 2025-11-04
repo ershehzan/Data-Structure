@@ -18,8 +18,7 @@ public:
     Queue() {
         front = rear = NULL;
     }
-    bool isEmpty()
-    {
+    bool isEmpty(){
         return front == NULL;
     }
     // Enqueue operation
