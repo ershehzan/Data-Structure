@@ -8,6 +8,7 @@ char convert(char name){
                                  // effectively changes the character from lowercase to uppercase.
     return ans;
 }
+
 int main(){
     char name;
     cout << "Enter a character  : ";
