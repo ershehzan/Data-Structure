@@ -6,8 +6,7 @@ using namespace std;
 // Function to return the first negative number in the queue
 int display(queue<int> q){
     // Traverse the queue until it's empty
-    while (!q.empty())
-    {
+    while (!q.empty())  {
         // If the front element is negative, return it
         if (q.front() < 0)
         {
