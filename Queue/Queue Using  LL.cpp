@@ -10,8 +10,7 @@ public:
         next = NULL;
     }
 };
-class Queue
-{
+class Queue{
     Node *front;
     Node *rear;
 
