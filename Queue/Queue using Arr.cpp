@@ -12,8 +12,7 @@ public:
         size = n;
         front = rear = -1;
     }
-    bool isEmpty()
-    {
+    bool isEmpty(){
         return (front == -1 && rear == -1);
     }
     bool isFull()
