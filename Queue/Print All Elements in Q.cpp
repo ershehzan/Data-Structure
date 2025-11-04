@@ -44,8 +44,7 @@ public:
             arr[rear] = x;
         }
     }
-    void pop()
-    {
+    void pop(){
         if (isEmpty())
         {
             cout << "Queue is Empty" << endl;
