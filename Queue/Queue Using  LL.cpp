@@ -15,8 +15,7 @@ class Queue{
     Node *rear;
 
 public:
-    Queue()
-    {
+    Queue() {
         front = rear = NULL;
     }
     bool isEmpty()
