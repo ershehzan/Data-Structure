@@ -11,6 +11,7 @@ public:
         next = NULL;
     }
 };
+
 class Stack{
     Node *top;
     int size;
