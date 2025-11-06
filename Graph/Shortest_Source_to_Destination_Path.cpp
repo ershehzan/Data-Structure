@@ -4,8 +4,7 @@
 using namespace std;
 
 // User function Template for C++
-class Solution
-{
+class Solution{
 public:
     int row[4] = {1, -1, 0, 0};
     int col[4] = {0, 0, 1, -1};
