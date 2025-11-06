@@ -11,8 +11,7 @@ public:
         next = NULL;
     }
 };
-class Stack
-{
+class Stack{
     Node *top;
     int size;
 
