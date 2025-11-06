@@ -17,8 +17,7 @@ class Stack{
     int size;
 
 public:
-    Stack()
-    {
+    Stack() {
         top = NULL;
         size = 0;
     }
