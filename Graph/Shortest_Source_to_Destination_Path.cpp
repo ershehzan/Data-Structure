@@ -14,8 +14,7 @@ public:
         return i >= 0 && j >= 0 && i < n && j < m;
     }
 
-    int shortestDistance(int N, int M, vector<vector<int>> A, int X, int Y)
-    {
+    int shortestDistance(int N, int M, vector<vector<int>> A, int X, int Y) {
         if (A[0][0] == 0)
             return -1; // start blocked
         if (X == 0 && Y == 0)
