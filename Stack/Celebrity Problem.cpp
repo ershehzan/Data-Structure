@@ -47,6 +47,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
     int n;
     cout << "Enter the number of people: ";
