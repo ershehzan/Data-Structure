@@ -55,8 +55,7 @@ public:
         }
     };
     //  peek operation
-    int peek()
-    {
+    int peek(){
         if (top == NULL)
         {
             cout << "Stack is empty" << endl;
