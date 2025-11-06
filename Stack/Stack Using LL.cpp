@@ -23,8 +23,7 @@ public:
     }
 
     // push operation
-    void push(int value)
-    {
+    void push(int value){
         Node *temp = new Node(value);
         if (temp == NULL)
         {
