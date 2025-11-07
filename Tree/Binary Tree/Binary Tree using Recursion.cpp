@@ -2,8 +2,7 @@
 using namespace std;
 
 // Definition of a Node in the binary tree
-class Node
-{
+class Node{
 public:
     int data;         // Value stored in the node
     Node *left, *right; // Pointers to the left and right child nodes
