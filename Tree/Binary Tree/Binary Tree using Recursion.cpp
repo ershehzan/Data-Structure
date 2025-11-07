@@ -15,8 +15,7 @@ public:
 };
 
 // Function to build the binary tree recursively
-Node *BinaryTree()
-{
+Node *BinaryTree(){
     int n;
 
     cin >> n; // Read the value for the current node from user input
