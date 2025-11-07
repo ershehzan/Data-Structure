@@ -8,8 +8,7 @@ public:
     Node *left, *right; // Pointers to the left and right child nodes
 
     // Constructor to initialize the node with a value and null children
-    Node(int val)
-    {
+    Node(int val){
         data = val;
         left = right = NULL;
     }
