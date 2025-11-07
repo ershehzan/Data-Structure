@@ -23,8 +23,7 @@ int search(vector<int> &arr, int target, int s, int e){
     return -1;
 }
 
-class Solution
-{
+class Solution{
 public:
     Node *tree(vector<int> &inorder, vector<int> &postorder, int start, int end, int index)
     {
