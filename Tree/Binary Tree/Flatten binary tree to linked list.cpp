@@ -58,10 +58,8 @@ int main(){
 
     Solution sol;
     sol.flatten(root);
-
     // Print the flattened tree
     printRightLinkedList(root);
-
     // Free memory (not strictly necessary for short-lived programs)
     // In practice, you'd want to delete all nodes.
 
