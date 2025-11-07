@@ -43,8 +43,7 @@ public:
     }
 
     // Function to return a tree created from postorder and inorder traversals.
-    Node *buildTree(vector<int> inorder, vector<int> postorder)
-    {
+    Node *buildTree(vector<int> inorder, vector<int> postorder){
         int idx = postorder.size() - 1;
         return tree(inorder, postorder, 0, inorder.size() - 1, idx);
     }
