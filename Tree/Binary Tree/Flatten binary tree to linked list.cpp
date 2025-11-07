@@ -32,8 +32,7 @@ public:
 };
 
 // Helper function to print the flattened tree
-void printRightLinkedList(Node *root)
-{
+void printRightLinkedList(Node *root){
     while (root)
     {
         cout << root->data << " ";
