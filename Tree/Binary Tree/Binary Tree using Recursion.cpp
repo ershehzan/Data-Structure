@@ -74,8 +74,7 @@ int main(){
     cout << "Binary Tree created successfully." << endl;
 
     // Example usage: print the root node's data if tree is not empty
-    if (Root != NULL)
-    {
+    if (Root != NULL){
         cout << "Root node value: " << Root->data << endl;
     }
 
