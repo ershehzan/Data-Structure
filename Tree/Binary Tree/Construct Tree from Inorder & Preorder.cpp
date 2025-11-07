@@ -17,8 +17,7 @@ public:
     }
 };
 
-int search(vector<int> &arr, int key, int start, int end)
-{
+int search(vector<int> &arr, int key, int start, int end){
     for (int i = start; i <= end; i++)
     {
         if (arr[i] == key)
