@@ -45,8 +45,7 @@ int main(){
         // Input for the right child
         cout << "Enter the Right child of " << temp->data << ": ";
         cin >> second;
-        if (second != -1) // If input is not -1, create the right child
-        {
+        if (second != -1) {// If input is not -1, create the right child 
             temp->right = new Node(second);
             q.push(temp->right); // Add right child to the queue
         }
