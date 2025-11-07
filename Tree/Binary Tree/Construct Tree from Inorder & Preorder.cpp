@@ -65,8 +65,7 @@ void printInorder(Node *root)
 }
 
 // Helper function to print the tree in level order
-void printLevelOrder(Node *root)
-{
+void printLevelOrder(Node *root){
     if (!root)
         return;
     queue<Node *> q;
