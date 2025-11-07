@@ -12,8 +12,7 @@ struct Node{
 // Solution class as provided
 class Solution{
 public:
-    void flatten(Node *root)
-    {
+    void flatten(Node *root) {
         while (root)
         {
             if (!root->left)
