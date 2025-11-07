@@ -25,8 +25,7 @@ int search(vector<int> &arr, int target, int s, int e){
 
 class Solution{
 public:
-    Node *tree(vector<int> &inorder, vector<int> &postorder, int start, int end, int index)
-    {
+    Node *tree(vector<int> &inorder, vector<int> &postorder, int start, int end, int index) {
         if (start > end)
         {
             return NULL;
