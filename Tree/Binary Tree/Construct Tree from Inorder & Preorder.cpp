@@ -4,8 +4,7 @@
 using namespace std;
 
 // Definition of the Node class
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
