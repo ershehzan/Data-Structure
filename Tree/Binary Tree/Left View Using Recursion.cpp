@@ -13,8 +13,7 @@ struct Node{
     }
 };
 
-void lv(Node *root, int level, vector<int> &ans)
-{
+void lv(Node *root, int level, vector<int> &ans){
     if (root == NULL)
         return;
     if (level == static_cast<int>(ans.size()))
