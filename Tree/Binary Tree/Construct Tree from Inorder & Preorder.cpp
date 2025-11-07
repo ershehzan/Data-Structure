@@ -88,8 +88,7 @@ void printLevelOrder(Node *root)
     }
 }
 
-int main()
-{
+int main(){
     vector<int> inorder = {4, 2, 5, 1, 6, 3};
     vector<int> preorder = {1, 2, 4, 5, 3, 6};
 
