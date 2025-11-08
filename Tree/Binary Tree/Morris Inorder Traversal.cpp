@@ -56,8 +56,7 @@ Node *buildSampleTree(){
     return root;
 }
 
-int main()
-{
+int main(){
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> inorder = sol.inOrder(root);
