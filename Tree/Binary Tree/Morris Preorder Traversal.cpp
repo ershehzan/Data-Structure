@@ -14,8 +14,7 @@ class Solution{
 public:
     vector<int> preOrder(Node *root) {
         vector<int> ans;
-        while (root)
-        {
+        while (root){
             if (!root->left)
             {
                 ans.push_back(root->data);
