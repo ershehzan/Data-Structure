@@ -20,8 +20,7 @@ public:
                 ans.push_back(root->data);
                 root = root->right;
             }
-            else
-            {
+            else{
                 Node *curr = root->left;
                 while (curr->right && curr->right != root)
                     curr = curr->right;
