@@ -58,8 +58,7 @@ Node *buildSampleTree(){
     return root;
 }
 
-int main()
-{
+int main(){
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> preorder = sol.preOrder(root);
