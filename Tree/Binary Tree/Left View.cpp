@@ -26,8 +26,7 @@ public:
             ans.push_back(q.front()->data);
             int n = q.size();
 
-            while (n--)
-            {
+            while (n--){
                 Node *temp = q.front();
                 q.pop();
 
