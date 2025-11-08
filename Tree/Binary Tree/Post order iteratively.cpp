@@ -21,8 +21,7 @@ public:
             return ans;
         s.push(root);
 
-        while (!s.empty())
-        {
+        while (!s.empty())   {
             Node *temp = s.top();
             s.pop();
             ans.push_back(temp->data);
