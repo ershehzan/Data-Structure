@@ -16,8 +16,7 @@ public:
     vector<int> inOrder(Node *root)  {
         vector<int> ans;
         while (root) {
-            if (!root->left)
-            {
+            if (!root->left) {
                 ans.push_back(root->data);
                 root = root->right;
             }
