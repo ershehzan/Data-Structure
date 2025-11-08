@@ -14,8 +14,7 @@ struct Node{
 
 class Solution{
 public:
-    vector<int> postOrder(Node *root)
-    {
+    vector<int> postOrder(Node *root)  {
         stack<Node *> s;
         vector<int> ans;
         if (root == NULL)
