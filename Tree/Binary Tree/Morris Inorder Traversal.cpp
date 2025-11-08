@@ -29,8 +29,7 @@ public:
                     curr->right = root;
                     root = root->left;
                 }
-                else
-                {
+                else {
                     curr->right = NULL;
                     ans.push_back(root->data);
                     root = root->right;
