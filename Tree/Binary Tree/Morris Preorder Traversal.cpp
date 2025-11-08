@@ -12,8 +12,7 @@ struct Node{
 
 class Solution{
 public:
-    vector<int> preOrder(Node *root)
-    {
+    vector<int> preOrder(Node *root) {
         vector<int> ans;
         while (root)
         {
