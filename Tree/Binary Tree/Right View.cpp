@@ -12,8 +12,7 @@ struct Node{
 };
 
 // Solution class as provided
-class Solution
-{
+class Solution{
 public:
     vector<int> rightView(Node *root)
     {
