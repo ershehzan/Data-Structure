@@ -11,8 +11,7 @@ struct Node{
 };
 
 // Solution class with Morris Inorder Traversal
-class Solution
-{
+class Solution{
 public:
     vector<int> inOrder(Node *root)
     {
