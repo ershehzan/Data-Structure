@@ -22,8 +22,7 @@ public:
         queue<Node *> q;
         q.push(root);
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             ans.push_back(q.front()->data);
             int n = q.size();
 
