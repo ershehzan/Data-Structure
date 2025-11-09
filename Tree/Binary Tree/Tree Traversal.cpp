@@ -43,8 +43,7 @@ void inorder(Node *root) {
     inorder(root->right);
 }
 
-void postorder(Node *root)
-{
+void postorder(Node *root){
     if (root == NULL)
         return;
     postorder(root->left);
