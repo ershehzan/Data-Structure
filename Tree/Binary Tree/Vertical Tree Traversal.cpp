@@ -19,8 +19,7 @@ public:
     }
 };
 
-void find(Node *root, int pos, int &l, int &r)
-{
+void find(Node *root, int pos, int &l, int &r){
     if (!root)
         return;
 
