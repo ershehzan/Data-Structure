@@ -51,8 +51,7 @@ void postorder(Node *root){
     cout << root->data << " ";
 }
 
-int main()
-{
+int main(){
 
     cout << "Enter the Root: ";
     Node *Root;
