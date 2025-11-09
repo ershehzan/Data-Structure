@@ -12,8 +12,7 @@ public:
     }
 };
 
-Node *BinaryTree()
-{
+Node *BinaryTree(){
     int n;
 
     cin >> n;
