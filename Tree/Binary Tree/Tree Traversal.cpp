@@ -27,8 +27,7 @@ Node *BinaryTree(){
     return temp;
 }
 
-void preorder(Node *root)
-{
+void preorder(Node *root){
     if (root == NULL)
         return;
     cout << root->data << " ";
