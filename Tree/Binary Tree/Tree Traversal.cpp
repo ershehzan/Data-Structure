@@ -35,8 +35,7 @@ void preorder(Node *root){
     preorder(root->right);
 }
 
-void inorder(Node *root)
-{
+void inorder(Node *root) {
     if (root == NULL)
         return;
     inorder(root->left);
