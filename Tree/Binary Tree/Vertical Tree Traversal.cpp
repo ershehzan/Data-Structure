@@ -104,8 +104,8 @@ Node *buildSampleTree(){
     return root;
 }
 
-int main()
-{
+int main(){
+    
     Node *root = buildSampleTree();
     Solution sol;
     vector<vector<int>> result = sol.verticalOrder(root);
