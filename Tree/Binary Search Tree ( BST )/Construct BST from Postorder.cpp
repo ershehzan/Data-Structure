@@ -36,8 +36,7 @@ Node *constructTree(int post[], int size){
 }
 
 // Inorder traversal to verify the BST
-void inorder(Node *root)
-{
+void inorder(Node *root){
     if (!root)
         return;
     inorder(root->left);
@@ -58,6 +57,7 @@ int main()
 
     return 0;
 }
+
 
 
 
