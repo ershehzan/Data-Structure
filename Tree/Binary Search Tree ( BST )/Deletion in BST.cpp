@@ -57,8 +57,7 @@ bool search(Node *root, int target){
 }
 
 // Function to delete a node with value x from the BST
-Node *deleteNode(Node *root, int x)
-{
+Node *deleteNode(Node *root, int x){
     if (!root)
         return nullptr; // Value not found, return nullptr
 
