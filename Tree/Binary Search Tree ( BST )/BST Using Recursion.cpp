@@ -44,8 +44,8 @@ void inorder(Node *root){
     inorder(root->right);       // Traverse the right subtree
 }
 
-int main()
-{    int n; // Number of nodes to be inserted
+int main(){    
+    int n; // Number of nodes to be inserted
 
     // Ask the user for the number of nodes in the BST
     cout << "Enter the number of nodes in the BST: ";
