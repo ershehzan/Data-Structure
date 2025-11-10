@@ -31,6 +31,7 @@ Node *Bst(int arr[], int &index, int lower, int upper){
 
 // Function to construct BST from postorder traversal
 Node *constructTree(int post[], int size){
+    
     int index = size - 1;
     return Bst(post, index, INT_MIN, INT_MAX);
 }
@@ -56,6 +57,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
