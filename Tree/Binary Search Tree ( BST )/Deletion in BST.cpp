@@ -62,8 +62,7 @@ Node *deleteNode(Node *root, int x){
         return nullptr; // Value not found, return nullptr
 
     // If the value to be deleted is smaller, go left
-    if (root->data > x)
-    {
+    if (root->data > x) {
         root->left = deleteNode(root->left, x);
         return root;
     }
