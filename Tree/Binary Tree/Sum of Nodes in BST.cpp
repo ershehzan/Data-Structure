@@ -7,8 +7,7 @@ struct Node{
     Node *left;
     Node *right;
 
-    Node(int x)
-    {
+    Node(int x) {
         data = x;
         left = right = NULL;
     }
