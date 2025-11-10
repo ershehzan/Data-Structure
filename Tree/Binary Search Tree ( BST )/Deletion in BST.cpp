@@ -126,6 +126,7 @@ Node *deleteNode(Node *root, int x){
 }
 
 int main(){
+    
     int n; // Number of nodes to be inserted
 
     cout << "Enter the number of nodes in the BST: ";
