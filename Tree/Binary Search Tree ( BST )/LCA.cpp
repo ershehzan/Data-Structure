@@ -45,8 +45,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     // Create a sample BST
     Node *root = NULL;
     root = insert(root, 20);
