@@ -14,8 +14,7 @@ struct Node{
     }
 };
 
-void pre(int &sum, Node *root)
-{
+void pre(int &sum, Node *root){
     if (root == NULL)
         return;
     sum += root->data;
