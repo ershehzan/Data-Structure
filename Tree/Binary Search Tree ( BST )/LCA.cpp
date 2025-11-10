@@ -32,8 +32,7 @@ Node *insert(Node *root, int val)
 
 class Solution{
 public:
-    Node *LCA(Node *root, Node *n1, Node *n2)
-    {
+    Node *LCA(Node *root, Node *n1, Node *n2){
         if (!root)
             return NULL;
 
