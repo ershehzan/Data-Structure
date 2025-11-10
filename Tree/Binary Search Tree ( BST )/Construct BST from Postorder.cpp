@@ -9,8 +9,7 @@ public:
     Node *left;
     Node *right;
 
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = right = NULL;
     }
@@ -60,4 +59,5 @@ int main()
 
     return 0;
 }
+
 
