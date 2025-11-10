@@ -38,7 +38,8 @@ public:
 };
 
 // Inorder traversal for validation
-void inorder(TreeNode* root) {
+void inorder(TreeNode* root)
+{
     if (!root) return;
     inorder(root->left);
     cout << root->val << " ";
