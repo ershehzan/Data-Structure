@@ -151,8 +151,7 @@ Node *root = NULL; //*
     int d;
     cout << "Enter number of deletions to perform: ";
     cin >> d;
-    for (int i = 0; i < d; ++i)
-    {
+    for (int i = 0; i < d; ++i) {
         int x;
         cout << "Enter value to delete: ";
         cin >> x;
