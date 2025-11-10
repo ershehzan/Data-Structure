@@ -95,8 +95,7 @@ Node *deleteNode(Node *root, int x){
             return temp;
         }
         // Case 4: Node has two children
-        else
-        {
+        else {
             // Find the largest value in left subtree (inorder predecessor)
             Node *child = root->left;
             Node *parent = root;
