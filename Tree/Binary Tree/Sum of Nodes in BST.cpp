@@ -21,8 +21,7 @@ void pre(int &sum, Node *root){
     pre(sum, root->right);
 }
 
-class Solution
-{
+class Solution{
 public:
     int sumBT(Node *root)
     {
