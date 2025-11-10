@@ -30,8 +30,7 @@ Node *insert(Node *root, int val)
     return root;
 }
 
-class Solution
-{
+class Solution{
 public:
     Node *LCA(Node *root, Node *n1, Node *n2)
     {
