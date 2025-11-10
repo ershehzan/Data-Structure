@@ -42,7 +42,6 @@ int main(){
     Solution sol;
     int sum = sol.sumBT(root);
     cout << "Sum of all nodes in BST: " << sum << endl;
-
     // Free allocated memory
     delete root->left->left;
     delete root->left->right;
