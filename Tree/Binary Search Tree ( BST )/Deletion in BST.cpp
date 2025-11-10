@@ -74,8 +74,7 @@ Node *deleteNode(Node *root, int x){
         return root;
     }
     // Node found
-    else
-    {
+    else{
         // Case 1: Node is a leaf (no children)
         if (!root->left && !root->right)
         {
