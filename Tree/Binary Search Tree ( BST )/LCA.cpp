@@ -9,8 +9,7 @@ public:
     Node *right;
 
     // Constructor to initialize a new node
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = NULL;
         right = NULL;
