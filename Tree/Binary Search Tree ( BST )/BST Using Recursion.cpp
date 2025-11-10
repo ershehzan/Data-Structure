@@ -34,8 +34,7 @@ Node *insert(Node *root, int value){
 }
 
 // Function to perform inorder traversal of the BST (prints values in sorted order)
-void inorder(Node *root)
-{
+void inorder(Node *root){
     // If the current node is NULL, return (base case for recursion)
     if (!root)
         return;
