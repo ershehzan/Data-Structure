@@ -3,8 +3,7 @@
 using namespace std;
 
 // Node structure
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
@@ -61,3 +60,4 @@ int main()
 
     return 0;
 }
+
