@@ -32,8 +32,7 @@ Node *insert(Node *root, int value){
 }
 
 // Inorder traversal to print the BST in sorted order (LNR: Left, Node, Right)
-void inorder(Node *root)
-{
+void inorder(Node *root){
     if (!root)
         return;
 
