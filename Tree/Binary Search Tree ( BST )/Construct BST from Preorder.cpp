@@ -47,6 +47,7 @@ void inorder(TreeNode* root)
 }
 
 int main() {
+    
     vector<int> preorder = {10, 5, 1, 7, 40, 50};
 
     Solution sol;
