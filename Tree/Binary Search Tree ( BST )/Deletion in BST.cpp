@@ -42,8 +42,7 @@ void inorder(Node *root){
 }
 
 // Search function to check if a target value exists in the BST
-bool search(Node *root, int target)
-{
+bool search(Node *root, int target){
     if (!root)
         return 0; // Tree is empty or not found
 
