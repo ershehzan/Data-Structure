@@ -17,6 +17,7 @@ public:
 
 // Helper function to build BST from postorder
 Node *Bst(int arr[], int &index, int lower, int upper){
+    
     if (index < 0 || arr[index] < lower || arr[index] > upper)
         return NULL;
 
@@ -58,6 +59,7 @@ int main()
 
     return 0;
 }
+
 
 
 
