@@ -16,8 +16,7 @@ public:
 };
 
 // Function to insert a new value into the BST using recursion
-Node *insert(Node *root, int value)
-{
+Node *insert(Node *root, int value){
     // If the current subtree is empty, create a new node and return it
     if (!root)
     {
