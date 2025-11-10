@@ -23,8 +23,7 @@ void pre(int &sum, Node *root){
 
 class Solution{
 public:
-    int sumBT(Node *root)
-    {
+    int sumBT(Node *root) {
         int sum = 0;
         pre(sum, root);
         return sum;
