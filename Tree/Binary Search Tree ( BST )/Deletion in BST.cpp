@@ -17,8 +17,7 @@ public:
 };
 
 // Recursive function to insert a value into the BST
-Node *insert(Node *root, int value)
-{
+Node *insert(Node *root, int value){
     // If the tree/subtree is empty, create a new node and return it
     if (!root)
     {
