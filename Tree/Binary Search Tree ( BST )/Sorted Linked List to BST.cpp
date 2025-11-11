@@ -8,8 +8,7 @@ public:
     int data;
     LNode *next;
 
-    LNode(int x)
-    {
+    LNode(int x) {
         data = x;
         next = NULL;
     }
