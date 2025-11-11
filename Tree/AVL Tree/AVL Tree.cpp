@@ -215,8 +215,7 @@ void inorder(Node *root)
 }
 
 // Driver Code
-int main()
-{
+int main(){
     Node *root = NULL;
 
     // Insert elements into the AVL tree
