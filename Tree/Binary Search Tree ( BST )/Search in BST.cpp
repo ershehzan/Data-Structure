@@ -18,8 +18,7 @@ public:
 // Function to insert a value into the BST recursively
 Node *insert(Node *root, int value){
     // If the current node is NULL, create and return a new node with the given value
-    if (!root)
-    {
+    if (!root) {
         Node *temp = new Node(value);
         return temp;
     }
