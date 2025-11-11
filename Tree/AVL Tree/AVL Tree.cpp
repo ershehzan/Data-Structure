@@ -80,8 +80,7 @@ Node *deleteNode(Node *root, int key){
 
     else {
         // Leaf Node
-        if (!root->left && !root->right)
-        {
+        if (!root->left && !root->right) {
             delete root;
             return NULL;
         }
