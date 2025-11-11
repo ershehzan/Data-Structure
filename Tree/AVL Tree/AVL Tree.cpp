@@ -78,8 +78,7 @@ Node *deleteNode(Node *root, int key){
     else if (key > root->data)
         root->right = deleteNode(root->right, key);
 
-    else
-    {
+    else {
         // Leaf Node
         if (!root->left && !root->right)
         {
