@@ -78,8 +78,7 @@ LNode *createLinkedList(vector<int> values){
     return head;
 }
 
-int main()
-{
+int main(){
     vector<int> sortedList = {1, 2, 3, 4, 5, 6, 7};
     LNode *head = createLinkedList(sortedList);
 
