@@ -34,8 +34,7 @@ int getbalance(Node *root){
 }
 
 // Right Rotation (for Left-Left case)
-Node *rightrotation(Node *root)
-{
+Node *rightrotation(Node *root){
     Node *child = root->left;
     Node *childright = child->right;
 
