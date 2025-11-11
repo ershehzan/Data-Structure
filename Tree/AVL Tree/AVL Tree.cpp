@@ -26,8 +26,7 @@ int getheight(Node *root){
 }
 
 // Function to get the balance factor of a node
-int getbalance(Node *root)
-{
+int getbalance(Node *root){
     if (!root)
         return 0;
     // Balance = height of left subtree - height of right subtree
