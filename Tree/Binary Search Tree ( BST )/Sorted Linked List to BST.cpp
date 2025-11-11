@@ -44,8 +44,7 @@ public:
     }
 
     // Convert sorted linked list to BST
-    Node *sortedListToBST(LNode *head)
-    {
+    Node *sortedListToBST(LNode *head) {
         vector<int> arr;
         while (head)
         {
