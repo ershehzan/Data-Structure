@@ -3,8 +3,7 @@
 using namespace std;
 
 // Linked List Node
-class LNode
-{
+class LNode{
 public:
     int data;
     LNode *next;
