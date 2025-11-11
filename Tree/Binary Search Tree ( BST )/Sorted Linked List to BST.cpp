@@ -56,8 +56,7 @@ public:
 };
 
 // Inorder traversal of BST
-void inorder(Node *root)
-{
+void inorder(Node *root){
     if (!root)
         return;
     inorder(root->left);
