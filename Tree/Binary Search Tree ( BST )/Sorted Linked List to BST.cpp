@@ -30,8 +30,7 @@ public:
 class Solution{
 public:
     // Convert sorted array to Balanced BST
-    Node *BST(vector<int> &arr, int start, int end)
-    {
+    Node *BST(vector<int> &arr, int start, int end){
         if (start > end)
             return NULL;
 
