@@ -11,8 +11,7 @@ public:
     int height;  // Height of the node
 
     // Constructor
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = right = NULL;
         height = 1; // A newly created node is a leaf, so height is 1
