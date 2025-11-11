@@ -65,8 +65,7 @@ void inorder(Node *root){
 }
 
 // Helper function to create a sorted linked list
-LNode *createLinkedList(vector<int> values)
-{
+LNode *createLinkedList(vector<int> values){
     if (values.empty())
         return NULL;
     LNode *head = new LNode(values[0]);
