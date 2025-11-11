@@ -42,8 +42,7 @@ void inorder(Node *root){
 }
 
 // Function to search for a target value in the BST
-bool search(Node *root, int target)
-{
+bool search(Node *root, int target){
     if (!root)
         return 0; // Base case: reached a NULL node, target not found
 
