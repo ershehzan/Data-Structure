@@ -57,6 +57,7 @@ bool search(Node *root, int target){
 }
 
 int main(){
+    
     int n; // Number of nodes to insert into the BST
 
     cout << "Enter the number of nodes in the BST: ";
