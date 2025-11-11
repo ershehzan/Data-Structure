@@ -120,8 +120,7 @@ Node *deleteNode(Node *root, int key){
     int balance = getbalance(root);
 
     // Left Side
-    if (balance > 1)
-    {
+    if (balance > 1){
         // LL
         if (getbalance(root->left) >= 0)
         {
