@@ -19,8 +19,7 @@ public:
 };
 
 // Function to get the height of a node
-int getheight(Node *root)
-{
+int getheight(Node *root){
     if (!root)
         return 0; // Null node has height 0
     return root->height;
