@@ -67,8 +67,7 @@ Node *leftrotation(Node *root){
     return child;
 }
 
-Node *deleteNode(Node *root, int key)
-{
+Node *deleteNode(Node *root, int key){
 
     if (!root)
         return NULL;
