@@ -149,8 +149,7 @@ Node *deleteNode(Node *root, int key){
 }
 
 // Function to insert a node in the AVL tree
-Node *insert(Node *root, int key)
-{
+Node *insert(Node *root, int key){
     // Step 1: Perform normal BST insertion
     if (!root)
         return new Node(key); // Create a new node if root is NULL
