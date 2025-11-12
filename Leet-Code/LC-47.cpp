@@ -24,13 +24,14 @@ void permute(vector<int> &arr, vector<vector<int>> &ans, int index,int n){
 int main(){
 
     vector<int> arr = {1, 2, 2, 1};
-int n = arr.size();
+    int n = arr.size();
     vector<vector<int>> ans;
 
     permute(arr, ans, 0,n);
 
     for(size_t i=0;i<ans.size();i++){
-        for(size_t j=0;j<ans[i].size();j++){
+        for(size_t j=0;j<ans[i].size();j++)
+        {
             cout<<ans[i][j]<<" ";
         }
         cout<<endl;
@@ -38,6 +39,7 @@ int n = arr.size();
 
     return 0;
 }
+
 
 
 
