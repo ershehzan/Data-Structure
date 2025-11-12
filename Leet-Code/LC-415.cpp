@@ -30,8 +30,7 @@ public:
         return ans;
     }
 
-    string addStrings(string num1, string num2)
-    {
+    string addStrings(string num1, string num2) {
         if (num1.size() < num2.size())
             return add(num2, num1);
         else
@@ -55,6 +54,7 @@ int main()
 
     return 0;
 }
+
 
 
 
