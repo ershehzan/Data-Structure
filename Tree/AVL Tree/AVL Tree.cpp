@@ -120,8 +120,7 @@ Node *deleteNode(Node *root, int key){
     // Left Side
     if (balance > 1){
         // LL
-        if (getbalance(root->left) >= 0)
-        {
+        if (getbalance(root->left) >= 0) {
             return rightrotation(root);
         }
         // LR
