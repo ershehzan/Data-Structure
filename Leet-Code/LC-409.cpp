@@ -9,8 +9,7 @@ public:
         vector<int> lower(26, 0);
         vector<int> upper(26, 0);
 
-        for (int i = 0; i < s.size(); i++)
-        {
+        for (int i = 0; i < s.size(); i++)  {
             if (s[i] >= 'a')
                 lower[s[i] - 'a']++;
             else
@@ -61,6 +60,7 @@ int main()
 
     return 0;
 }
+
 
 
 
