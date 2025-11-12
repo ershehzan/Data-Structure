@@ -87,8 +87,7 @@ Node *deleteNode(Node *root, int key){
 
         // One child
         // Right Child
-        else if (root->left && !root->right)
-        {
+        else if (root->left && !root->right) {
             Node *temp = root->left;
             delete root;
             return temp;
