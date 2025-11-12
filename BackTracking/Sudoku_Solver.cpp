@@ -68,7 +68,8 @@ int main() {
     sol.solveSudoku(board);
 
     for (const auto& row : board) {
-        for (const auto& c : row) {
+        for (const auto& c : row) 
+        {
             cout << c << " ";
         }
         cout << endl;
