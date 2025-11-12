@@ -10,8 +10,7 @@ public:
         int index1 = num1.size() - 1, index2 = num2.size() - 1;
         int sum, carry = 0;
 
-        while (index2 >= 0)
-        {
+        while (index2 >= 0) {
             sum = (num1[index1] - '0') + (num2[index2] - '0') + carry;
             carry = sum / 10;
             char c = '0' + sum % 10;
@@ -57,5 +56,6 @@ int main()
 
     return 0;
 }
+
 
 
