@@ -123,8 +123,7 @@ Node *deleteNode(Node *root, int key){
             return rightrotation(root);
         }
         // LR
-        else
-        {
+        else{
             root->left = leftrotation(root->left);
             return rightrotation(root);
         }
