@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    int longestPalindrome(string s)
-    {
+    int longestPalindrome(string s) {
         vector<int> lower(26, 0);
         vector<int> upper(26, 0);
 
@@ -62,5 +61,6 @@ int main()
 
     return 0;
 }
+
 
 
