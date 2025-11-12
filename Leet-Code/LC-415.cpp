@@ -3,8 +3,7 @@
 #include <algorithm>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     string add(string num1, string num2)
     {
@@ -59,3 +58,4 @@ int main()
 
     return 0;
 }
+
