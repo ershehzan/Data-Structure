@@ -47,8 +47,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string input;
     cout << "Enter a string: ";
@@ -59,6 +58,7 @@ int main()
 
     return 0;
 }
+
 
 
 
