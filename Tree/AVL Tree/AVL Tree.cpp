@@ -100,8 +100,7 @@ Node *deleteNode(Node *root, int key){
         }
 
         // Both Child
-        else
-        {
+        else{
             // Right Side Smallest Element
             Node *curr = root->right;
             while (curr->left)
