@@ -38,8 +38,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string num1, num2;
 
@@ -54,6 +53,7 @@ int main()
 
     return 0;
 }
+
 
 
 
