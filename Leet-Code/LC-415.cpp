@@ -17,8 +17,7 @@ public:
             ans += c;
             index1--, index2--;
         }
-        while (index1 >= 0)
-        {
+        while (index1 >= 0)  {
             sum = (num1[index1] - '0') + carry;
             carry = sum / 10;
             char c = '0' + sum % 10;
@@ -56,6 +55,7 @@ int main()
 
     return 0;
 }
+
 
 
 
