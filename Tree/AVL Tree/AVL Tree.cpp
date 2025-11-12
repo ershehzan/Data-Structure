@@ -143,9 +143,7 @@ Node *deleteNode(Node *root, int key){
             return leftrotation(root);
         }
     }
-    else
-    {
-
+    else{
         return root;
     }
 }
