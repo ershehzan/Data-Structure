@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    string add(string num1, string num2)
-    {
+    string add(string num1, string num2) {
         string ans;
         int index1 = num1.size() - 1, index2 = num2.size() - 1;
         int sum, carry = 0;
@@ -58,4 +57,5 @@ int main()
 
     return 0;
 }
+
 
