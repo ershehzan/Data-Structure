@@ -24,8 +24,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string ipAddress;
 
@@ -39,6 +38,7 @@ int main()
 
     return 0;
 }
+
 
 
 
