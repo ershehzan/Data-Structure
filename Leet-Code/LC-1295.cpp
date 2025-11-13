@@ -4,8 +4,7 @@ using namespace std;
 
 class Solution{
 public:
-    int findNumbers(vector<int> &nums)
-    {
+    int findNumbers(vector<int> &nums){
         int count = 0;
         for (size_t i = 0; i < nums.size(); i++)
         {
@@ -33,4 +32,5 @@ int main()
     cout << "The count of numbers with an even number of digits is: " << result << endl;
     return 0;
 }
+
 
