@@ -2,8 +2,7 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int findNumbers(vector<int> &nums)
     {
@@ -34,3 +33,4 @@ int main()
     cout << "The count of numbers with an even number of digits is: " << result << endl;
     return 0;
 }
+
