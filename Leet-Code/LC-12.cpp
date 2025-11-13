@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    string intToRoman(int num)
-    {
+    string intToRoman(int num){
         // Define the values of Roman numerals in descending order
         vector<int> values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         // Define the corresponding Roman numeral symbols for the values
