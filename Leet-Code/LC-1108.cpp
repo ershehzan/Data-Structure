@@ -10,8 +10,7 @@ public:
         size_t index = 0;
 
         while (index < address.size()) {
-            if (address[index] == '.')
-            {
+            if (address[index] == '.'){
                 ans += "[.]";
             }
             else
@@ -40,6 +39,7 @@ int main()
 
     return 0;
 }
+
 
 
 
