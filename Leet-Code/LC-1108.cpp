@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     string lc(string address)
     {
@@ -43,3 +42,4 @@ int main()
 
     return 0;
 }
+
