@@ -3,8 +3,7 @@ using namespace std;
 
 class Solution{
 public:
-    string lc(string address)
-    {
+    string lc(string address)  {
 
         // start here
         string ans;
@@ -42,4 +41,5 @@ int main()
 
     return 0;
 }
+
 
