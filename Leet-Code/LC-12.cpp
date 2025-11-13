@@ -3,8 +3,7 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     string intToRoman(int num)
     {
