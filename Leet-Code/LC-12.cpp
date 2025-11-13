@@ -15,8 +15,7 @@ public:
         string result = "";
 
         // Iterate through each value-symbol pair
-        for (size_t i = 0; i < values.size(); i++)
-        {
+        for (size_t i = 0; i < values.size(); i++) {
             // While the current value can be subtracted from the number
             while (num >= values[i])
             {
