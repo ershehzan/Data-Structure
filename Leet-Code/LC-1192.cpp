@@ -33,8 +33,7 @@ public:
         }
     }
 
-    vector<vector<int>> criticalConnections(int n, vector<vector<int>> &connections)
-    {
+    vector<vector<int>> criticalConnections(int n, vector<vector<int>> &connections){
         vector<vector<int>> adj(n);
         for (auto &c : connections)
         {
