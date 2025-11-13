@@ -8,8 +8,7 @@ int main(){
 
     while (start <= end){
         int mid = start + (end - start) / 2;
-        if (arr[mid] >= arr[0])
-        {
+        if (arr[mid] >= arr[0]){
             start = mid + 1;
         }
         else
@@ -21,6 +20,7 @@ int main(){
     cout << ans;
     return 0;
 }
+
 
 
 
