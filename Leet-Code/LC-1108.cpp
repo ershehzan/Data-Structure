@@ -9,8 +9,7 @@ public:
         string ans;
         size_t index = 0;
 
-        while (index < address.size())
-        {
+        while (index < address.size()) {
             if (address[index] == '.')
             {
                 ans += "[.]";
@@ -41,5 +40,6 @@ int main()
 
     return 0;
 }
+
 
 
