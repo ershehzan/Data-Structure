@@ -11,8 +11,7 @@ int main(){
         if (arr[mid] >= arr[0]){
             start = mid + 1;
         }
-        else
-        {
+        else{
             ans = arr[mid];
             end = mid - 1;
         }
@@ -20,6 +19,7 @@ int main(){
     cout << ans;
     return 0;
 }
+
 
 
 
