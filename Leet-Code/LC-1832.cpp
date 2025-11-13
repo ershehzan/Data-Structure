@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    bool checkIfPangram(string sentence)
-    {
+    bool checkIfPangram(string sentence) {
 // start here
         vector<bool> alpha(26, 0);
 
@@ -45,4 +44,5 @@ int main()
 
     return 0;
 }
+
 
