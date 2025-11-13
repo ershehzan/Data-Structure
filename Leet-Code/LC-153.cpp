@@ -2,7 +2,6 @@
 using namespace std;
 
 int main(){
-
     int arr[1000] = {4, 5, 6, 7, 8, 10, 1, 2};
     int start = 0, end = 7, ans = arr[0];
 
@@ -19,6 +18,7 @@ int main(){
     cout << ans;
     return 0;
 }
+
 
 
 
