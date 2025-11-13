@@ -13,8 +13,7 @@ public:
             alpha[sentence[i] - 'a'] = 1;
         }
 
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++) {
             if (alpha[i] == 0)
                 return 0;
         }
@@ -43,6 +42,7 @@ int main()
 
     return 0;
 }
+
 
 
 
