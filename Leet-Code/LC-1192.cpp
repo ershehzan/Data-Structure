@@ -10,7 +10,7 @@ public:
            disc[node] = low[node] = count;
            vis[node] = 1;
            for (int j = 0; j < adj[node].size(); j++)
-        {
+             {
             int neigh = adj[node][j];
             if (neigh == parent)
                 continue;
