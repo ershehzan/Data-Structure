@@ -3,8 +3,7 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     bool checkIfPangram(string sentence)
     {
@@ -46,3 +45,4 @@ int main()
 
     return 0;
 }
+
