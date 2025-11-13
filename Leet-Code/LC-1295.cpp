@@ -23,14 +23,14 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     vector<int> nums = {12, 345, 2, 6, 7896};
     int result = solution.findNumbers(nums);
     cout << "The count of numbers with an even number of digits is: " << result << endl;
     return 0;
 }
+
 
 
 
