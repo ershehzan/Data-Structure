@@ -6,9 +6,10 @@ class Solution{
 public:
     void DFS(int node, int parent, vector<vector<int>> &adj, vector<vector<int>> &bridges,
              vector<int> &disc, vector<int> &low, vector<bool> &vis, int &count){
-        disc[node] = low[node] = count;
-        vis[node] = 1;
-        for (int j = 0; j < adj[node].size(); j++)
+        
+           disc[node] = low[node] = count;
+           vis[node] = 1;
+           for (int j = 0; j < adj[node].size(); j++)
         {
             int neigh = adj[node][j];
             if (neigh == parent)
