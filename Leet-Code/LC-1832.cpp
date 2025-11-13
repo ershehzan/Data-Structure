@@ -9,8 +9,7 @@ public:
 // start here
         vector<bool> alpha(26, 0);
 
-        for (int i = 0; i < sentence.size(); i++)
-        {
+        for (int i = 0; i < sentence.size(); i++){
             alpha[sentence[i] - 'a'] = 1;
         }
 
@@ -44,5 +43,6 @@ int main()
 
     return 0;
 }
+
 
 
