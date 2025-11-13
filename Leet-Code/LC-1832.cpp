@@ -23,8 +23,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string sentence;
 
@@ -42,6 +41,7 @@ int main()
 
     return 0;
 }
+
 
 
 
