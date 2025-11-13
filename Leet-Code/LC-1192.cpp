@@ -18,8 +18,7 @@ public:
             {
                 low[node] = min(low[node], disc[neigh]);
             }
-            else
-            {
+            else  {
                 count++;
                 DFS(neigh, node, adj, bridges, disc, low, vis, count);
                 if (disc[node] < low[neigh])
