@@ -30,8 +30,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     int num;
 
