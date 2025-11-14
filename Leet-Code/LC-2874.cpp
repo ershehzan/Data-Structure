@@ -34,8 +34,7 @@ long long maxTripletValue(vector<int> &nums){
     return maxValue;
 }
 
-int main()
-{
+int main(){
     vector<int> nums = {1000000, 1, 999999, 2, 1000000};
     cout << maxTripletValue(nums) << endl; // Expected output: large but valid
     return 0;
