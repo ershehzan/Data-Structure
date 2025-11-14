@@ -33,8 +33,7 @@ public:
         }
 
         // lower
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++) {
             char c = 'a' + i;
             while (lower[i])
             {
