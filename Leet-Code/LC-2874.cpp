@@ -23,8 +23,7 @@ long long maxTripletValue(vector<int> &nums){
     long long maxValue = 0;
 
     // Iterate through j and find max value for triplet (i, j, k)
-    for (int j = 1; j < n - 1; j++)
-    {
+    for (int j = 1; j < n - 1; j++) {
         int leftMax = prefixMax[j - 1];  // Max nums[i] where i < j
         int rightMax = suffixMax[j + 1]; // Max nums[k] where k > j
 
