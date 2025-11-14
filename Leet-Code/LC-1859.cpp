@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    string sortSentence(string s)
-    {
+    string sortSentence(string s) {
         vector<string> ans(10);
         string temp = "";
         int idx = 0;
