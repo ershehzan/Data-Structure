@@ -37,8 +37,7 @@ int main(){
     // start
     node *curr = head, *prev = NULL, *future = NULL;
 
-    while (curr)
-    {
+    while (curr)  {
 
         future = curr->next;
 
