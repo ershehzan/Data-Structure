@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    string sortVowels(string s)
-    {
+    string sortVowels(string s) {
         vector<int> lower(26, 0);
         vector<int> upper(26, 0);
 
