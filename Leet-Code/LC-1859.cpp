@@ -11,8 +11,7 @@ public:
         int idx = 0;
         int count = 0;
 
-        while (idx < s.size())
-        {
+        while (idx < s.size()){
             if (s[idx] == ' ')
             {
                 int pos = temp[temp.size() - 1] - '0';
