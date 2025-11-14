@@ -12,8 +12,7 @@ public:
         int count = 0;
 
         while (idx < s.size()){
-            if (s[idx] == ' ')
-            {
+            if (s[idx] == ' ') {
                 int pos = temp[temp.size() - 1] - '0';
                 temp.pop_back();
                 ans[pos] = temp;
