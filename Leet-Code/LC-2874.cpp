@@ -9,8 +9,7 @@ long long maxTripletValue(vector<int> &nums){
     // Prefix max array to keep track of maximum nums[i] for i < j
     vector<int> prefixMax(n, 0);
     prefixMax[0] = nums[0];
-    for (int i = 1; i < n; i++)
-    {
+    for (int i = 1; i < n; i++){
         prefixMax[i] = max(prefixMax[i - 1], nums[i]);
     }
 
