@@ -23,8 +23,7 @@ public:
 
         string vowel;
         // upper
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++) {
             char c = 'A' + i;
             while (upper[i])
             {
