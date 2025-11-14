@@ -46,8 +46,7 @@ public:
         int first = 0;
         size_t sec = 0;
 
-        while (sec < vowel.size())
-        {
+        while (sec < vowel.size()) {
             if (s[first] == '#')
             {
                 s[first] = vowel[sec];
