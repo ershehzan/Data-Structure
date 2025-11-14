@@ -31,8 +31,7 @@ public:
         temp.clear();
         count++;
 
-        for (int i = 1; i <= count; i++)
-        {
+        for (int i = 1; i <= count; i++) {
             temp += ans[i];
             temp += ' ';
         }
