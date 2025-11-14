@@ -19,8 +19,7 @@ public:
                 temp.clear();
                 count++;
             }
-            else
-            {
+            else {
                 temp += s[idx];
             }
             idx++;
