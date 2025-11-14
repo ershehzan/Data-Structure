@@ -52,6 +52,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
     string haystack, needle;
 
