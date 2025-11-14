@@ -16,8 +16,7 @@ long long maxTripletValue(vector<int> &nums){
     // Suffix max array to keep track of maximum nums[k] for k > j
     vector<int> suffixMax(n, 0);
     suffixMax[n - 1] = nums[n - 1];
-    for (int k = n - 2; k >= 0; k--)
-    {
+    for (int k = n - 2; k >= 0; k--) {
         suffixMax[k] = max(suffixMax[k + 1], nums[k]);
     }
 
