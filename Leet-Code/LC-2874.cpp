@@ -4,8 +4,7 @@
 
 using namespace std;
 
-long long maxTripletValue(vector<int> &nums)
-{
+long long maxTripletValue(vector<int> &nums){
     int n = nums.size();
 
     // Prefix max array to keep track of maximum nums[i] for i < j
