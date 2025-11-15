@@ -1,5 +1,3 @@
-// Leet code 35
-
 #include <iostream>
 using namespace std;
 
