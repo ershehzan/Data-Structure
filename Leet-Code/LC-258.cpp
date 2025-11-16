@@ -1,8 +1,7 @@
 #include <iostream>  
 using namespace std;
 
-int main()
-{
+int main(){
     int num;  // Variable to store the input number
 
     // Prompt user for input
