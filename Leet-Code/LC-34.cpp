@@ -3,9 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int BinarySearch(int arr[], int key, int n)
-{
-
+int BinarySearch(int arr[], int key, int n){
 int start=0,end=n-1,first=-1,last=-1,mid;
         while (start <= end)
     {
@@ -65,3 +63,4 @@ int main()
     cout << BinarySearch(arr, key, n) << endl;
     return 0;
 }
+
