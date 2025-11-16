@@ -9,8 +9,7 @@ int main(){
     cin >> num;
 
     // Loop until the number reduces to a single digit
-    while (num > 9) 
-    {
+    while (num > 9)   {
         int rem, ans = 0;  // Variables to store remainder and sum of digits
         
         while (num != 0) // Extract each digit and add it
