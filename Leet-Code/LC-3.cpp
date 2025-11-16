@@ -7,8 +7,7 @@ using namespace std;
 
 class Solution{
 public:
-    int lengthOfLongestSubstring(string s)
-    {
+    int lengthOfLongestSubstring(string s)   {
         vector<bool> count(256, 0);
         int len = 0, first = 0, second = 0;
 
