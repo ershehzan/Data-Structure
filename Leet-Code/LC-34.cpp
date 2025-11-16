@@ -42,8 +42,7 @@ int start=0,end=n-1,first=-1,last=-1,mid;
     } 
     return -1;
 }
-int main()
-{
+int main(){
     int arr[1000];
     int n;
     cout << "Enter the index of array : ";
@@ -59,6 +58,7 @@ int main()
     cout << BinarySearch(arr, key, n) << endl;
     return 0;
 }
+
 
 
 
