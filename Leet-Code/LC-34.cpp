@@ -1,4 +1,3 @@
-
 //first and last occurrance in binary search problem of leet code 34.
 #include <iostream>
 using namespace std;
@@ -60,6 +59,7 @@ int main()
     cout << BinarySearch(arr, key, n) << endl;
     return 0;
 }
+
 
 
 
