@@ -10,8 +10,7 @@ public:
         vector<bool> count(256, 0);
         int len = 0, first = 0, second = 0;
 
-        while (second < s.size())
-        {
+        while (second < s.size()){
             while (count[s[second]])
             {
                 count[s[first]] = 0;
