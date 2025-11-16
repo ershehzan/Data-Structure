@@ -4,7 +4,7 @@
 #include <algorithm>
 using namespace std;
 
-class Solution{
+class Solution {
 public:
     int lengthOfLongestSubstring(string s)   {
         vector<bool> count(256, 0);
