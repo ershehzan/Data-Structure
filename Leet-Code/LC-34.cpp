@@ -26,8 +26,7 @@ int start=0,end=n-1,first=-1,last=-1,mid;
     start=0,end=n-1;
     while (start <= end) {
         int mid = (start + end) / 2;
-        if (arr[mid] == key)
-        {
+        if (arr[mid] == key){
            last=mid;
            start=mid-1;
         }
@@ -61,6 +60,7 @@ int main()
     cout << BinarySearch(arr, key, n) << endl;
     return 0;
 }
+
 
 
 
