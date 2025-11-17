@@ -12,7 +12,6 @@ int main(){
         ans = ans * 10 + rem; // Shift digits in `ans` left and add the new digit
         n /= 10;              // Remove the last digit from `n`
     }
-
     cout << "Reversed number: " << ans << endl;
     return 0;
 }
