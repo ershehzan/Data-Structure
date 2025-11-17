@@ -12,8 +12,7 @@ int main(){
     int n = matrix.size();
 
     // Transpose the matrix
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++)
         {
             swap(matrix[i][j], matrix[j][i]);
@@ -45,6 +44,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
