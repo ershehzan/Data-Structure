@@ -25,8 +25,7 @@ int BinarySearch(int arr[], int key){
     // end here
 }
 
-int main()
-{
+int main(){
     int arr[1000]={2,4,4,4,4,5,6};
     int key;
     cout << "Enter the number to search : ";
