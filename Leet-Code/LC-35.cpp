@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int BinarySearch(int arr[], int key){
+int BinarySearch(int arr[], int key) {
     int start = 0, end = 6, ans, mid;
 
     while (start <= end)   {
