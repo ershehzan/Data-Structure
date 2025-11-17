@@ -18,12 +18,9 @@ int main(){
     start = sum / h;
     if (!start)
         start = 1;
-    while (start <= end)
-    {
+    while (start <= end){
         mid = start + (end - start) / 2;
-
         int time = 0;
-
         for (int i = 0; i < n; i++)
         {
             time += piles[i] / mid;
@@ -46,6 +43,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
