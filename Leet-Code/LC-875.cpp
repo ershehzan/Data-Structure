@@ -27,7 +27,6 @@ int main(){
             if (piles[i] % mid)
                 time++;
         }
-
         if (time > h)
         {
             start = mid + 1;
@@ -43,6 +42,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
