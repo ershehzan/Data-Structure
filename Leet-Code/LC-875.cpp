@@ -31,9 +31,7 @@ int main(){
         {
             start = mid + 1;
         }
-
-        else
-        {
+        else{
             ans = mid;
             end = mid - 1;
         }
@@ -42,6 +40,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
