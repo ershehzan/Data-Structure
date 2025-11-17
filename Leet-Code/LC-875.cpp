@@ -10,9 +10,7 @@ int main(){
 
     int start = 0, end = 0, mid, ans, n = 3;
     long long sum = 0;
-    for (int i = 0; i < n; i++)
-    {
-
+    for (int i = 0; i < n; i++) {
         sum += piles[i];
         end = max(end, piles[i]);
     }
@@ -47,4 +45,5 @@ int main(){
 
     return 0;
 }
+
 
