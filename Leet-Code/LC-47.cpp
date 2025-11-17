@@ -2,7 +2,6 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
 void permute(vector<int> &arr, vector<vector<int>> &ans, int index,int n){
 
     if (index == n)  {
@@ -40,6 +39,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
