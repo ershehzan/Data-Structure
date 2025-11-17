@@ -7,8 +7,8 @@ int BinarySearch(int arr[], int key) {
     while (start <= end)   {
         
         mid = start + (end - start) / 2;
-        if (arr[mid] == key)
-        {
+        
+        if (arr[mid] == key){
             ans = mid;
             break;
         }
