@@ -25,9 +25,7 @@ int main(){
     vector<int> arr = {1, 2, 2, 1};
     int n = arr.size();
     vector<vector<int>> ans;
-
     permute(arr, ans, 0,n);
-
     for(size_t i=0;i<ans.size();i++)
        {
             for(size_t j=0;j<ans[i].size();j++)
@@ -39,6 +37,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
