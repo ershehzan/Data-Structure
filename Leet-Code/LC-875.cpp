@@ -3,6 +3,7 @@
 using namespace std;
 
 int main(){
+    
     int piles[1000] = {3, 6, 11, 7};
     int h;
     cout << "Enter the hours : ";
@@ -45,5 +46,6 @@ int main(){
 
     return 0;
 }
+
 
 
