@@ -32,9 +32,7 @@ int main(){
 
     cout << "Matrix after 90 degree rotation:" << endl;
     for (int i = 0; i < 4; i++) {
-        
-        for (int j = 0; j < 4; j++)
-        {
+        for (int j = 0; j < 4; j++){
             cout << matrix[i][j] << " ";
         }
         cout << endl;
@@ -42,6 +40,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
