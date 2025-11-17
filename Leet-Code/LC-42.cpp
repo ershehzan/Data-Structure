@@ -1,7 +1,6 @@
 // Find the amount of water that can be trapped between the buildings
 // Time Complexity: O(n)
 // Space Complexity: O(1)
-
 #include <iostream>
 #include <vector>
 using namespace std;
