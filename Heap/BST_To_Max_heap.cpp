@@ -2,6 +2,7 @@
 #include <vector>
 using namespace std;
 // Structure of node
+
 struct Node {
     int data;
     Node *left, *right;
