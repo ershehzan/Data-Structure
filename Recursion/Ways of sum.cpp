@@ -16,8 +16,7 @@ int way(int arr[], int m, int sum)  {
     return ans;
 }
 
-int main()
-{
+int main(){
     int arr[] = {1, 6, 5};
     int n = 3;      // number of elements in the array
     int target = 7; // target sum
