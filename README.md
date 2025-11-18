@@ -93,7 +93,7 @@ This project is open-source. Feel free to use, modify and distribute the code un
 
 📬 Contact
 
-– Repository by: erin Shehzan
-– GitHub: ershehzan
+– Repository by : Shehzan Khan
+– GitHub : ershehzan
 
 – Feedback and suggestions welcomed!
