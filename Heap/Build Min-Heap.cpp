@@ -1,7 +1,6 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 // Function to maintain the min heap property for a subtree rooted at index 'i'.
 // 'n' is the total number of elements in the heap (array).
 void heapify(vector<int>& arr, int i, int n){
