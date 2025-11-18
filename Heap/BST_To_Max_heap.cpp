@@ -48,7 +48,6 @@ void printPostorder(Node* root) {
     printPostorder(root->right);
     cout << root->data << " ";
 }
-
 int main() {
     /*
         Construct this BST:
