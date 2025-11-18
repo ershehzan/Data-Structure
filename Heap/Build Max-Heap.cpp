@@ -32,7 +32,6 @@ void buildMaxheap(vector<int>& arr, int n)
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, i, n); // Call heapify for each node
 }
-
 // Function to print the elements of the heap
 void print(const vector<int>& arr)
 {
