@@ -7,8 +7,7 @@ int way(int arr[], int m, int sum)  {
     if (sum == 0)  {
         return 1;
     }
-    if (sum < 0)
-    {
+    if (sum < 0) {
         return 0;
     }
     int ans = 0;
