@@ -11,8 +11,7 @@ int way(int arr[], int m, int sum)  {
         return 0;
     }
     int ans = 0;
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++){
         ans += way(arr, m, sum - arr[i]);
     }
     return ans;
