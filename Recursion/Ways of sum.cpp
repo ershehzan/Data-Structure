@@ -2,8 +2,7 @@
 using namespace std;
 
 // Function to count the number of ways to reach the sum
-int way(int arr[], int m, int sum)
-{
+int way(int arr[], int m, int sum){
     if (sum == 0)
     {
         return 1;
