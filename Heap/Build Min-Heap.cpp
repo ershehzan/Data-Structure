@@ -18,8 +18,7 @@ void heapify(vector<int>& arr, int i, int n) {
         smallest = right;
 
     // If the smallest is not the current index, swap and continue heapifying
-    if (smallest != i)
-    {
+    if (smallest != i){
         swap(arr[i], arr[smallest]);      // Swap with smaller child
         heapify(arr, smallest, n);        // Recursively heapify the affected subtree
     }
