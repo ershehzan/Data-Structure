@@ -17,7 +17,6 @@ int main(){
         cout<<"Factorial of negative number doesn't exist"<<endl;
         return 0;
     }
-
     cout << "Factorial of " << n << " is:" << fact(n);
     return 0;
 }
