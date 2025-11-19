@@ -19,7 +19,6 @@ int fab(int n){
 int main(){
     // Declare a variable to store the number of terms in the Fibonacci series
     int n;
-
     // Prompt the user to enter the number of terms
     cout << "Enter the number of terms: ";
     cin >> n;
