@@ -6,8 +6,7 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 // - x: The element to search for
 // - start: The starting index of the search range
 // - end: The ending index of the search range
-bool BinarySearch(int arr[], int x, int start, int end)
-{
+bool BinarySearch(int arr[], int x, int start, int end){
     // Base case: If the start index exceeds the end index,
     // the element is not present in the array
     if (start > end)
