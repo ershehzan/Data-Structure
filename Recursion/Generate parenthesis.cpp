@@ -40,6 +40,5 @@ int main() {
     for (const string& s : result) {
         cout << s << endl;
     }
-
     return 0;
 }
