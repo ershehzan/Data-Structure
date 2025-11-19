@@ -6,8 +6,7 @@ using namespace std;
 // Parameters:
 // - `arr[]`: The array whose elements need to be printed
 // - `index`: The current index of the array being processed
-void print(int arr[], int index)
-{
+void print(int arr[], int index){
     // Base case: If the index is -1, all elements have been printed, so return
     if (index == -1)
     {
