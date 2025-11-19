@@ -8,8 +8,7 @@ using namespace std;
 // Otherwise, it recursively computes the sum of the previous two Fibonacci numbers
 int fab(int n){
     // Base case: if n is 0 or 1, return n
-    if (n <= 1)
-    {
+    if (n <= 1)   {
         return n;
     }
 
