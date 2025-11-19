@@ -41,7 +41,6 @@ int main(){
     // Prompt the user to enter the element to search
     cout << "Enter the element to be searched: ";
     cin >> x;
-
     // Call the BinarySearch function and print the result
     // Parameters passed:
     // - arr: The sorted array to search in
