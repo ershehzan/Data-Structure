@@ -14,7 +14,6 @@ bool BinarySearch(int arr[], int x, int start, int end){
     }
     // Calculate the middle index of the current search range
     int mid = start + (end - start) / 2;
-
     // If the element at the middle index matches the element being searched for,
     // return true (element found)
     if (arr[mid] == x)
