@@ -16,8 +16,7 @@ int fab(int n){
     return fab(n - 1) + fab(n - 2);
 }
 
-int main()
-{
+int main(){
     // Declare a variable to store the number of terms in the Fibonacci series
     int n;
 
