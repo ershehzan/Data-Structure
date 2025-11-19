@@ -22,7 +22,6 @@ public:
             temp.pop_back();
         }
     }
-
     vector<string> generateParenthesis(int n) {
         vector<string> ans;
         string temp;
