@@ -31,8 +31,7 @@ bool BinarySearch(int arr[], int x, int start, int end){
     }
 }
 
-int main()
-{
+int main(){
     // Declare and initialize a sorted array with 10 elements
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
