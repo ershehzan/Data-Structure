@@ -1,7 +1,6 @@
 // Include the iostream library for input and output operations
 #include <iostream>
 using namespace std;
-
 // Recursive function to print the elements of an array in sequence
 // Parameters:
 // - `arr[]`: The array whose elements need to be printed
