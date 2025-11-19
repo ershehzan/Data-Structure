@@ -17,8 +17,7 @@ void print(int arr[], int index){
     cout << arr[index] << " ";
 }
 
-int main()
-{
+int main(){
     // Initialize an array with 5 elements
     int arr[5] = {1, 2, 3, 4, 5};
     
