@@ -6,8 +6,7 @@ using namespace std;
 // The function takes an integer input `n`
 // If n <= 1, it returns n directly as the base case (0 or 1)
 // Otherwise, it recursively computes the sum of the previous two Fibonacci numbers
-int fab(int n)
-{
+int fab(int n){
     // Base case: if n is 0 or 1, return n
     if (n <= 1)
     {
