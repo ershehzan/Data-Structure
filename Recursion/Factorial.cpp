@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int fact(int n)
-{
+int fact(int n){
 
     if (n == 0)
     {
