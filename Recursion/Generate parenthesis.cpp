@@ -2,6 +2,7 @@
 #include <vector>
 #include <string>
 using namespace std;
+
 class Solution {
 public:
     void parenthesis(int n, int l, int r, vector<string>& ans, string& temp) {
