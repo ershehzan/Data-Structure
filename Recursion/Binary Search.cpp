@@ -1,6 +1,5 @@
 #include <iostream> // Include the iostream header for input/output operations
 using namespace std; // Use the standard namespace to avoid prefixing std::
-
 // Recursive function to perform binary search in a sorted array
 // Parameters:
 // - arr: The sorted array in which to search
