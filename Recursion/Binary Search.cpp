@@ -21,8 +21,7 @@ bool BinarySearch(int arr[], int x, int start, int end){
     }
     // If the element at the middle index is greater than the element being searched for,
     // recursively search the left half of the array
-    else if (arr[mid] > x)
-    {
+    else if (arr[mid] > x)  {
         return BinarySearch(arr, x, start, mid - 1);
     }
     // Otherwise, recursively search the right half of the array
