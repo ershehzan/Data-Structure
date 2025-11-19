@@ -10,6 +10,7 @@ public:
             ans.push_back(temp);
             return;
         }
+        
         if (l < n) {
             temp.push_back('(');
             parenthesis(n, l + 1, r, ans, temp);
