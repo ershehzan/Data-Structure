@@ -7,8 +7,7 @@ using namespace std;
 // - `index`: The current index of the array being processed
 void print(int arr[], int index){
     // Base case: If the index is -1, all elements have been printed, so return
-    if (index == -1)
-    {
+    if (index == -1){
         return;
     }
 
