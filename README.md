@@ -1,99 +1,151 @@
-# 🧠 Data-Structure  
-A complete collection of essential **Data Structure and Algorithm implementations in C++**.
+# 🧠 Data Structures & Algorithms in C++
+
+A complete, well-organized collection of essential **Data Structure and Algorithm implementations in C++** — perfect for learning, interview prep, and competitive programming.
 
 ---
 
 ## 📘 Overview
-This repository contains well-structured C++ implementations of various **Data Structures** (like Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Heaps, etc.) and **Algorithms** (like Sorting, Searching, Recursion, Greedy, Backtracking, etc.).  
-It is designed for:
-- Students learning DSA fundamentals  
-- Competitive programmers  
-- Interview preparation and practice  
-- Developers who want quick reference implementations  
+
+This repository provides clean and modular C++ implementations of fundamental:
+
+### **📌 Data Structures**
+
+* Arrays
+* Linked Lists
+* Stacks
+* Queues
+* Trees
+* Graphs
+* Heaps / Priority Queues
+* Vectors
+* Strings
+
+### **📌 Algorithms**
+
+* Sorting (Bubble, Merge, Quick, Selection, Insertion)
+* Searching (Linear, Binary)
+* Recursion
+* Greedy Algorithms
+* Backtracking
+* Graph Algorithms (BFS, DFS, etc.)
+* STL usage in C++
+
+Ideal for:
+✔ Students learning DSA
+✔ Interview preparation
+✔ Competitive programming
+✔ Developers looking for reference implementations
 
 ---
 
 ## 📁 Folder Structure
 
-├─ .vscode/ ← Editor configuration files
-├─ Array/ ← Array‐based problems & implementations
-├─ BackTracking/ ← Backtracking algorithms (e.g., sudoku, subsets)
-├─ Basic Codes/ ← Basic C++ code samples & utilities
-├─ Binary Search/ ← Binary search algorithms & variations
-├─ Bubble Sort/ ← Bubble sort examples
-├─ Experiments/ ← Experimental or misc code
-├─ Graph/ ← Graph data structure & graph algorithms
-├─ Greedy/ ← Greedy algorithm implementations
-├─ Heap/ ← Heap / Priority Queue implementations
-├─ Inheritance/ ← OOP / Inheritance based examples
-├─ Leet-Code/ ← Solutions for LeetCode style problems
-├─ Linear Search/ ← Linear search and variations
-├─ Linked-List/ ← Linked list data structure & operations
-├─ Merge Sort/ ← Merge sort implementation
-├─ Pattern-printing/ ← C++ pattern printing problems
-├─ Pointers/ ← Pointer & memory management examples
-├─ Polymorphism/ ← Polymorphism / OOP advanced examples
-├─ Queue/ ← Queue data structure & operations
-├─ Quick sort/ ← Quick sort implementation
-├─ Recursion/ ← Recursion based problems & examples
-├─ STL in C++/ ← Use of STL containers & utilities
-├─ Selection Sort/ ← Selection sort implementation
-├─ Stack/ ← Stack data structure & operations
-├─ String/ ← String manipulation & algorithms
-├─ Tree/ ← Tree data structure & tree algorithms
-├─ Vector/ ← Vector / dynamic array examples
-├─ Z.Temporary/ ← Temporary or work‐in‐progress folder
-└─ insertion Sort/ ← Insertion sort implementation
+```
+├── .vscode/              # VS Code settings
+├── Array/                # Array-based problems & implementations
+├── BackTracking/         # Backtracking algorithms (subsets, sudoku, etc.)
+├── Basic Codes/          # Core C++ basics & utility programs
+├── Binary Search/        # Binary search problems & variations
+├── Bubble Sort/
+├── Experiments/          # Experimental or WIP code
+├── Graph/                # Graph data structure + traversal algorithms
+├── Greedy/               # Greedy algorithm implementations
+├── Heap/                 # Min-heap, max-heap, priority queue
+├── Inheritance/          # C++ OOP examples (inheritance)
+├── Leet-Code/            # LeetCode-style problem solutions
+├── Linear Search/
+├── Linked-List/          # Singly/doubly linked list implementations
+├── Merge Sort/
+├── Pattern-printing/     # Pattern printing programs
+├── Pointers/             # Pointer and memory examples
+├── Polymorphism/         # OOP polymorphism examples
+├── Queue/
+├── Quick sort/
+├── Recursion/
+├── STL in C++/
+├── Selection Sort/
+├── Stack/
+├── String/
+├── Tree/                 # Binary trees, BST operations, traversals
+├── Vector/
+├── Z.Temporary/          # Temporary / work-in-progress files
+└── insertion Sort/
+```
 
+---
 
-## ✅ Features  
-- Pure C++ (no external dependencies required)  
-- Clear, modular implementations for each data structure and algorithm  
-- Suitable for learners and interview preparation  
-- Easy to extend: Add your own implementations or LeetCode‐style problems  
+## ✅ Features
 
-## 🚀 Getting Started  
+* 📚 **Pure C++** — no external libraries required
+* 🧩 **Beginner-friendly** — clean code and clear structure
+* 🧠 **Great for interview prep** — includes fundamental logic & patterns
+* 🧪 **Tested & modular** — each DSA topic in its dedicated folder
+* 🚀 **Easy to navigate** — ideal as a personal DSA reference book
 
-### Prerequisites  
-- C++ compiler supporting C++11 or later (e.g., g++, clang++)  
-- Basic understanding of C++ and data structures  
+---
 
-### Running Code  
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/ershehzan/Data-Structure.git
-🧩 How to Contribute
+## 🚀 Getting Started
 
-Contributions are welcome! If you’d like to contribute, please follow these steps:
+### **Prerequisites**
 
-Fork the repo
+* C++ compiler (g++, clang++, or MSVC)
+* Basic knowledge of C++
 
-Create a branch: git checkout -b feature/<your‐feature>
+### **Clone the repository**
 
-Add your code, with clear comments and appropriate file placement
+```bash
+git clone https://github.com/ershehzan/Data-Structure.git
+cd Data-Structure
+```
 
-Ensure your code compiles and runs correctly
+### **Compile & run a file**
 
-Submit a pull request with description of your changes
+```bash
+g++ .\Array\your_file.cpp -o output
+./output
+```
 
-📚 Why This Project
+---
 
-Data structures and algorithms form the backbone of efficient and high-quality software. This project is a hands-on reference designed to help learners:
+## 🧩 How to Contribute
 
-Understand how data structures work under the hood
+Contributions are welcome!
+Follow these simple steps:
 
-Compare different algorithmic approaches (sorting, searching, etc.)
+1. **Fork** this repository
+2. **Create a branch**
 
-Prepare for technical coding interviews with concrete examples
+   ```
+   git checkout -b feature/<your-feature-name>
+   ```
+3. Add your code (with comments + correct folder placement)
+4. Ensure it **compiles and runs correctly**
+5. Submit a **Pull Request** with a clear description
 
-📝 License
+---
 
-This project is open-source. Feel free to use, modify and distribute the code under the terms of the MIT License
-, if included.
+## 📚 Why This Project?
 
-📬 Contact
+Data Structures and Algorithms are the foundation of efficient software.
+This project helps learners:
 
-– Repository by : Shehzan Khan
-– GitHub : ershehzan
+* Understand how data structures work internally
+* Compare algorithmic techniques
+* Prepare for coding interviews with real implementations
+* Build confidence in C++ problem solving
 
-– Feedback and suggestions welcomed!
+---
+
+## 📝 License
+
+This project is open-source.
+You may use, modify, and distribute the code freely under the **MIT License** (if included in the repository).
+
+---
+
+## 📬 Contact
+
+**Author:** Shehzan Khan
+**GitHub:** [ershehzan](https://github.com/ershehzan)
+
+Feedback and suggestions are always welcome!
