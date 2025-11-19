@@ -16,8 +16,7 @@ bool BinarySearch(int arr[], int x, int start, int end){
     int mid = start + (end - start) / 2;
     // If the element at the middle index matches the element being searched for,
     // return true (element found)
-    if (arr[mid] == x)
-    {
+    if (arr[mid] == x) {
         return 1; // Return true
     }
     // If the element at the middle index is greater than the element being searched for,
