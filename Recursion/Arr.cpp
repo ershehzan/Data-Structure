@@ -10,7 +10,6 @@ void print(int arr[], int index){
     if (index == -1){
         return;
     }
-
     // Recursive call: Process the previous element in the array
     print(arr, index - 1);
 
