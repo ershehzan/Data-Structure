@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 void toh(int n, int sou, int help, int des){
     if (n == 1) {
         cout << "Move disk 1 from rod " << sou << " to rod " << des << endl;
