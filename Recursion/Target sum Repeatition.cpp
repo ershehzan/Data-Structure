@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int subsum(int arr[], int index,int sum,int n)
-{
+int subsum(int arr[], int index,int sum,int n){
 
     if(sum==0)
     return 1;
