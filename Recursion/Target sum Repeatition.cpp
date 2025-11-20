@@ -7,8 +7,7 @@ int subsum(int arr[], int index,int sum,int n){
     return 0;
     return subsum(arr, index+1 , sum,n) + subsum(arr, index, sum - arr[index],n);
 }
-int main()
-{
+int main(){
     int arr[] = {2,3,4};
     int sum = 6;
 
