@@ -8,7 +8,7 @@ bool find(int arr[], int index, int n, int target){
     
     if (index == n || target < 0){
         return 0;
-    }
+    
     return find(arr, index + 1, n, target) || find(arr, index + 1, n, target - arr[index]);
 }
 
