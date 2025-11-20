@@ -2,6 +2,7 @@
 using namespace std;
 
 int subsum(int arr[], int index,int sum,int n){
+    
     if(sum==0)
     return 1;
     if(index==n|| sum<0)
