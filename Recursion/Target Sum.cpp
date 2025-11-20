@@ -12,8 +12,7 @@ bool find(int arr[], int index, int n, int target){
     return find(arr, index + 1, n, target) || find(arr, index + 1, n, target - arr[index]);
 }
 
-int main()
-{
+int main(){
     int arr[] = {1, 2, 3, 4};
     int n = 4;
     int target = 8;
