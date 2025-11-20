@@ -3,9 +3,9 @@ using namespace std;
 
 bool find(int arr[], int index, int n, int target){
 
-    if (target == 0){
+    if (target == 0)
         return 1;
-    }
+    
     if (index == n || target < 0){
         return 0;
     }
