@@ -8,6 +8,7 @@ int subsum(int arr[], int index,int sum,int n){
     
     if(index==n|| sum<0)
     return 0;
+    
     return subsum(arr, index+1 , sum,n) + subsum(arr, index, sum - arr[index],n);
 }
 int main(){
