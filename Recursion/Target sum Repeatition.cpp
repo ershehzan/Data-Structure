@@ -16,5 +16,6 @@ int main(){
     int arr[] = {2,3,4};
     int sum = 6;
     cout << subsum(arr, 0, sum,3); // Call the function to find the target sum
+    
     return 0;
 }
