@@ -11,8 +11,7 @@ void toh(int n, int sou, int help, int des){
     cout << "Move disk " << n << " from rod " << sou << " to rod " << des << endl;
     toh(n - 1, help, sou, des);
 }
-int main()
-{
+int main(){
 
     int n;
     cout << "Enter the number of disks: ";
