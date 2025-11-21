@@ -19,7 +19,6 @@ int main(){
     string s = "abc";
     vector<string> ans;
     string temp = "";
-
     subseq(s, 0, s.size(), ans, temp);
 
     cout << "The power set is: " << endl;
