@@ -34,6 +34,5 @@ int main(){
     rev(str, 0, 3);
     // Print the reversed string
     cout << "The reversed string is: " << str << endl;
-
     return 0; // Exit the program
 }
