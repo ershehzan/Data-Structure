@@ -9,8 +9,7 @@ void permute(vector<int> &arr, vector<vector<int>> &ans, int index,int n){
         return;
     }
     vector<bool> use(21, 0);
-    for (size_t i = index; i < arr.size(); i++)
-    {
+    for (size_t i = index; i < arr.size(); i++) {
         if (use[arr[i] + 10] == 0)
         {
             swap(arr[i], arr[index]);
