@@ -4,8 +4,7 @@
 using namespace std;
 
 void subseq(string &s, int index, int n, vector<string>& ans, string temp){
-    if (index == n)
-    {
+    if (index == n) {
         ans.push_back(temp);
         return;
     }
