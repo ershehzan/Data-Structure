@@ -1,5 +1,4 @@
 // Power set
-
 #include <iostream>
 #include <vector>
 using namespace std;
