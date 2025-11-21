@@ -4,8 +4,7 @@
 #include <vector>
 using namespace std;
 
-void subseq(int arr[], int index, int n, vector<vector<int>> &ans, vector<int>&temp)
-{
+void subseq(int arr[], int index, int n, vector<vector<int>> &ans, vector<int>&temp){
 
     if (index == n)
     {
