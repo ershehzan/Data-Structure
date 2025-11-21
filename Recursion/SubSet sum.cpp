@@ -3,8 +3,7 @@
 using namespace std;
 
 void subsetsum(int arr[], int index, int n, int sum ,vector<int>&ans){
-    if (index == n)
-    {
+    if (index == n) {
        ans.push_back(sum); // Store the sum of the current subset
         return;
     }
