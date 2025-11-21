@@ -24,8 +24,7 @@ void rev(string &str, int start, int end){
     rev(str, start + 1, end - 1);
 }
 
-int main()
-{
+int main(){
     // Declare and initialize a string to be reversed
     string str = "Nosh";
 
