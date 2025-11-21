@@ -23,8 +23,7 @@ int main(){
     subseq(arr, 0, n, ans, temp);
     cout << "The power set is: " << endl;
 
-    for (size_t i = 0; i < ans.size(); i++)
-    {
+    for (size_t i = 0; i < ans.size(); i++){
         {
             for (size_t j = 0; j < ans[i].size(); j++)
             {
