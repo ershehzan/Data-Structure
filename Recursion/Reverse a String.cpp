@@ -10,8 +10,7 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 void rev(string &str, int start, int end){
     // Base case: If the start index is greater than or equal to the end index,
     // the string is fully reversed, so return
-    if (start >= end)
-    {
+    if (start >= end){
         return; // Exit the function
     }
 
