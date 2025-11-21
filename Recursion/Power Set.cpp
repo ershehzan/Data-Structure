@@ -20,7 +20,6 @@ int main(){
     vector<string> ans;
     string temp = "";
     subseq(s, 0, s.size(), ans, temp);
-
     cout << "The power set is: " << endl;
     for (size_t i = 0; i < ans.size(); i++)
         cout << "{" << ans[i] << "} ";
