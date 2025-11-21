@@ -6,7 +6,8 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 // - str: The string to be reversed (passed by reference to modify the original string)
 // - start: The starting index of the current character to swap
 // - end: The ending index of the current character to swap
-void rev(string &str, int start, int end){
+void rev(string &str, int start, int end)
+   {
     // Base case: If the start index is greater than or equal to the end index,
     // the string is fully reversed, so return
     if (start >= end){
