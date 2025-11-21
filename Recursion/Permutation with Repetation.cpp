@@ -20,8 +20,7 @@ void permute(vector<int> &arr, vector<vector<int>> &ans, int index,int n){
     }
 }
 
-int main()
-{
+int main(){
 
     vector<int> arr = {1, 2, 2, 1};
 int n = arr.size();
