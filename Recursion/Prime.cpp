@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bool isPrimeRecursive(int n, int i = 2)
-{
+bool isPrimeRecursive(int n, int i = 2){
     if (n <= 1)
         return false;
     if (i == n)
