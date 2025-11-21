@@ -11,8 +11,7 @@ void subsetsum(int arr[], int index, int n, int sum ,vector<int>&ans){
     subsetsum(arr, index + 1, n, sum + arr[index],ans); // include the current element
 }
 
-int main()
-{
+int main(){
     int arr[] = {3, 4, 5,6};
     int n = 4;
     vector<int> ans; // Vector to store the sums of all subsets
