@@ -8,10 +8,8 @@ void subseq(string &s, int index, int n, vector<string>& ans, string temp){
         ans.push_back(temp);
         return;
     }
-
     // Exclude the current character
     subseq(s, index + 1, n, ans, temp);
-
     // Include the current character
     temp.push_back(s[index]);
     subseq(s, index + 1, n, ans, temp);
