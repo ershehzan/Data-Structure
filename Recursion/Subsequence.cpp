@@ -8,7 +8,6 @@ void subseq(int arr[], int index, int n, vector<vector<int>> &ans, vector<int>&t
         ans.push_back(temp);
         return;
     }
-
     subseq(arr, index + 1, n, ans, temp);
     temp.push_back(arr[index]);
     subseq(arr, index + 1, n, ans, temp);
