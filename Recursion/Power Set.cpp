@@ -15,8 +15,7 @@ void subseq(string &s, int index, int n, vector<string>& ans, string temp){
     subseq(s, index + 1, n, ans, temp);
 }
 
-int main()
-{
+int main(){
     string s = "abc";
     vector<string> ans;
     string temp = "";
