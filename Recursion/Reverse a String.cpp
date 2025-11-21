@@ -33,7 +33,6 @@ int main(){
     // - 0: The starting index of the string
     // - 3: The ending index of the string (str.length() - 1)
     rev(str, 0, 3);
-
     // Print the reversed string
     cout << "The reversed string is: " << str << endl;
 
