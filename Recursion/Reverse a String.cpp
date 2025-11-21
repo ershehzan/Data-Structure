@@ -23,7 +23,6 @@ void rev(string &str, int start, int end){
     // to continue reversing the remaining substring
     rev(str, start + 1, end - 1);
 }
-
 int main(){
     // Declare and initialize a string to be reversed
     string str = "Nosh";
