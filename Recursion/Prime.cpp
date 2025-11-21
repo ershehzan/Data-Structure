@@ -8,7 +8,6 @@ bool isPrimeRecursive(int n, int i = 2){
         return true;
     if (n % i == 0)
         return false;
-
     return isPrimeRecursive(n, i + 1);
 }
 
