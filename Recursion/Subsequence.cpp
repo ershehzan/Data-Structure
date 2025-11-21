@@ -24,9 +24,7 @@ int main(){
     cout << "The power set is: " << endl;
 
     for (size_t i = 0; i < ans.size(); i++){
-        {
-            for (size_t j = 0; j < ans[i].size(); j++)
-            {
+            for (size_t j = 0; j < ans[i].size(); j++){
                 cout <<"{"<< ans[i][j]<<"}"<<","<<"";
             }
         }
