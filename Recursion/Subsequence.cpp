@@ -15,7 +15,6 @@ void subseq(int arr[], int index, int n, vector<vector<int>> &ans, vector<int>&t
 }
 
 int main(){
-
     int arr[] = {1, 2, 3};
     int n = 3;
     vector<vector<int>> ans;
