@@ -3,8 +3,7 @@
 #include <string>
 using namespace std;
 
-void subseq(string &s, int index, int n, vector<string>& ans, string temp)
-{
+void subseq(string &s, int index, int n, vector<string>& ans, string temp){
     if (index == n)
     {
         ans.push_back(temp);
