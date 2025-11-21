@@ -19,8 +19,7 @@ int main(){
     
     subsetsum(arr,0,n,0,ans);
     
-    for(size_t i=0;i<ans.size();i++)
-    {
+    for(size_t i=0;i<ans.size();i++){
         cout << ans[i] << " ";
     }
     cout << endl;
