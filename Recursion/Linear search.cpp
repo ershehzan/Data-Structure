@@ -27,7 +27,6 @@ int main(){
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     // Declare a variable to store the element to be searched
     int x;
-
     // Prompt the user to enter the element to search
     cout << "Enter the element to be searched: ";
     cin >> x;
