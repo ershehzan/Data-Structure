@@ -31,6 +31,5 @@ int main(){
     // - 0: The starting index of the string
     // - 4: The ending index of the string (str.length() - 1)
     cout << "The string is palindrome: " << pal(str, 0, 4) << endl;
-
     return 0; // Exit the program
 }
