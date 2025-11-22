@@ -22,8 +22,7 @@ bool pal(string str, int start, int end){
         return pal(str, start + 1, end - 1);
 }
 
-int main()
-{
+int main(){
     // Declare and initialize a string to check for palindrome
     string str = "madam";
 
