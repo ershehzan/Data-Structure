@@ -1,6 +1,5 @@
 #include <iostream> // Include the iostream header for input/output operations
 using namespace std; // Use the standard namespace to avoid prefixing std::
-
 // Recursive function to perform linear search in an array
 // Parameters:
 // - arr: The array in which to search
