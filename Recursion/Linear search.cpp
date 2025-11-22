@@ -14,8 +14,7 @@ bool LinearSearch(int arr[], int x, int index){
 
     // If the current element matches the element being searched for,
     // return true (element found)
-    if (arr[index] == x)
-    {
+    if (arr[index] == x) {
         return 1; // Return true
     }
 
