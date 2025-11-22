@@ -1,7 +1,6 @@
 #include <iostream> // Include the iostream header for input/output operations
 #include <string>   // Include the string header to use the string class
 using namespace std; // Use the standard namespace to avoid prefixing std::
-
 // Recursive function to check if a string is a palindrome
 // Parameters:
 // - str: The string to be checked
