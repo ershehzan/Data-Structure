@@ -28,7 +28,6 @@ int main(){
     // starting index (0), and the size of the array (5)
     // Output the minimum element in the array
     cout << "Minimum Element is: " << minelement(arr, 0, 5) << endl;
-
     // Return 0 to indicate successful program termination
     return 0;
 }
