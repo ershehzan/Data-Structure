@@ -37,6 +37,5 @@ int main(){
     // - 9: The last index of the array (arr.length - 1)
     // The result (1 for found, 0 for not found) is directly printed
     cout << LinearSearch(arr, x, 9);
-
     return 0; // Exit the program
 }
