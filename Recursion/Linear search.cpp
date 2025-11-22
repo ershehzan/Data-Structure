@@ -30,7 +30,6 @@ int main(){
     // Prompt the user to enter the element to search
     cout << "Enter the element to be searched: ";
     cin >> x;
-
     // Call the LinearSearch function and print the result
     // Parameters passed:
     // - arr: The array to search in
