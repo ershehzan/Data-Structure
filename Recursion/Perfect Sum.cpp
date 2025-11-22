@@ -2,7 +2,6 @@
 using namespace std;
 
 int subset(int arr[], int index,int sum,int n){
-
     if (index == n)
         return sum == 0;
 
