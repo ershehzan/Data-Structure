@@ -10,8 +10,7 @@ using namespace std;
 // - `n`: The total number of elements in the array
 // Base case: When the current index is the last element of the array, return the value at that index.
 // Recursive case: Compare the current element (`arr[index]`) with the result of the recursive call for the remaining elements.
-int minelement(int arr[], int index, int n)
-{
+int minelement(int arr[], int index, int n){
     // Base case: If the current index is the last element, return its value
     if (index == n - 1)
     {
