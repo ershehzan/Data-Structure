@@ -22,8 +22,7 @@ bool LinearSearch(int arr[], int x, int index){
     return LinearSearch(arr, x, index - 1);
 }
 
-int main()
-{
+int main(){
     // Initialize an array with 10 elements
     int arr[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 
