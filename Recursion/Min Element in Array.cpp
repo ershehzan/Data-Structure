@@ -2,7 +2,6 @@
 #include <iostream>
 // Include the climits library to use the INT_MIN and INT_MAX macros if needed
 #include <climits>
-
 using namespace std;
 
 // Recursive function to find the minimum element in an array
