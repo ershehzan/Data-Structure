@@ -8,8 +8,7 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 bool LinearSearch(int arr[], int x, int index){
     // Base case: If the index reaches -1, the entire array has been searched,
     // and the element was not found
-    if (index == -1)
-    {
+    if (index == -1){
         return 0; // Return false (element not found)
     }
 
