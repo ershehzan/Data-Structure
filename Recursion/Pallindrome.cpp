@@ -17,7 +17,6 @@ bool pal(string str, int start, int end){
     // the string is not a palindrome
     if (str[start] != str[end])
         return 0; // Return false
-
     // Recursive case: Move the start index forward and the end index backward,
     // and check the remaining substring
     else
