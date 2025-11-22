@@ -24,7 +24,6 @@ int minelement(int arr[], int index, int n){
 int main(){
     // Initialize an array with 5 elements
     int arr[5] = {1, 2, 3, 4, 5};
-
     // Call the recursive function `minelement` with the array,
     // starting index (0), and the size of the array (5)
     // Output the minimum element in the array
