@@ -12,8 +12,7 @@ using namespace std;
 // Recursive case: Compare the current element (`arr[index]`) with the result of the recursive call for the remaining elements.
 int minelement(int arr[], int index, int n){
     // Base case: If the current index is the last element, return its value
-    if (index == n - 1)
-    {
+    if (index == n - 1){
         return arr[index];
     }
 
