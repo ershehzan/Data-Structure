@@ -12,7 +12,6 @@ bool pal(string str, int start, int end){
     if (start >= end) {
         return 1; // Return true
     }
-
     // If the characters at the current start and end indices are not equal,
     // the string is not a palindrome
     if (str[start] != str[end])
