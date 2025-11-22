@@ -21,8 +21,7 @@ int minelement(int arr[], int index, int n){
     return min(arr[index], minelement(arr, index + 1, n));
 }
 
-int main()
-{
+int main(){
     // Initialize an array with 5 elements
     int arr[5] = {1, 2, 3, 4, 5};
 
