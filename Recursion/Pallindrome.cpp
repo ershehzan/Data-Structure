@@ -6,8 +6,7 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 // - str: The string to be checked
 // - start: The starting index of the string being checked
 // - end: The ending index of the string being checked
-bool pal(string str, int start, int end)
-{
+bool pal(string str, int start, int end){
     // Base case: If the start index is greater than or equal to the end index,
     // the string (or the substring being checked) is a palindrome
     if (start >= end)
