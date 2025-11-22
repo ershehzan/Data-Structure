@@ -9,8 +9,7 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 bool pal(string str, int start, int end){
     // Base case: If the start index is greater than or equal to the end index,
     // the string (or the substring being checked) is a palindrome
-    if (start >= end)
-    {
+    if (start >= end) {
         return 1; // Return true
     }
 
