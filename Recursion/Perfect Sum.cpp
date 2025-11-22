@@ -9,8 +9,7 @@ int subset(int arr[], int index,int sum,int n){
     return subset(arr, index + 1, sum,n) + subset(arr, index + 1, sum - arr[index],n);
 }
 
-int main()
-{
+int main(){
     int arr[] = {2, 5, 6, 1,3,2};
     int sum = 8;
 
