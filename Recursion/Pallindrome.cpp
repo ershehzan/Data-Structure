@@ -25,7 +25,6 @@ bool pal(string str, int start, int end){
 int main(){
     // Declare and initialize a string to check for palindrome
     string str = "madam";
-
     // Print whether the string is a palindrome by calling the `pal` function
     // The parameters passed are:
     // - str: The string to check
