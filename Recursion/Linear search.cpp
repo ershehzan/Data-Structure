@@ -6,8 +6,7 @@ using namespace std; // Use the standard namespace to avoid prefixing std::
 // - arr: The array in which to search
 // - x: The element to search for
 // - index: The current index being checked in the array
-bool LinearSearch(int arr[], int x, int index)
-{
+bool LinearSearch(int arr[], int x, int index){
     // Base case: If the index reaches -1, the entire array has been searched,
     // and the element was not found
     if (index == -1)
