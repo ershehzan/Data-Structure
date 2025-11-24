@@ -68,8 +68,7 @@ public:
         return top == NULL;
     };
 
-    int isSize()
-    {
+    int isSize(){
         return size;
     };
 };
