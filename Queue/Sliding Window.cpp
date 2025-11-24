@@ -4,8 +4,7 @@ using namespace std;
 
 void display(queue<int> q){
     cout << "Sliding Window:";
-    while (!q.empty())
-    {
+    while (!q.empty()){
         cout << q.front() << " ";
         q.pop();
     }
