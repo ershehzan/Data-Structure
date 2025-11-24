@@ -21,6 +21,7 @@ public:
             }
             
             st.push(i);
+            
         }
         while (!st.empty()) {
             index = st.top();
