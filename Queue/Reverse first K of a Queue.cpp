@@ -18,8 +18,7 @@ public:
         }
 
         // Step 2: Enqueue back the reversed elements
-        while (!st.empty())
-        {
+        while (!st.empty()) {
             q.push(st.top());
             st.pop();
         }
