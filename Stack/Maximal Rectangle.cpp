@@ -19,6 +19,7 @@ public:
                 else
                     ans = max(ans, heights[index] * i);
             }
+            
             st.push(i);
         }
         while (!st.empty()) {
