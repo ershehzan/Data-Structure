@@ -3,8 +3,7 @@
 #include <stack>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     queue<int> reverseFirstK(queue<int> q, int k)
     {
