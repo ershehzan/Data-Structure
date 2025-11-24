@@ -74,6 +74,7 @@ public:
     };
 };
 int main(){
+    
     Stack s;
     s.push(10);
     s.push(20);
