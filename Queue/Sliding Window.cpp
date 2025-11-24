@@ -2,8 +2,7 @@
 #include <queue>
 using namespace std;
 
-void display(queue<int> q)
-{
+void display(queue<int> q){
     cout << "Sliding Window:";
     while (!q.empty())
     {
