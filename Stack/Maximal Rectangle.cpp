@@ -66,7 +66,8 @@ int main() {
     for (int i = 0; i < m; i++) {
         string row;
         cin >> row;
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < n; j++)
+            {
             matrix[i][j] = row[j];
         }
     }
