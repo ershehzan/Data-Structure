@@ -12,8 +12,7 @@ public:
         stack<int> st;
 
         // Step 1: Push first k elements into stack
-        for (int i = 0; i < k; ++i)
-        {
+        for (int i = 0; i < k; ++i) {
             st.push(q.front());
             q.pop();
         }
