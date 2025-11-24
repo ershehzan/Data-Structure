@@ -11,8 +11,7 @@ void display(queue<int> q){
     cout << endl;
 }
 
-int main()
-{
+int main(){
     int arr[100];
     int n, k;
     cout << "Enter the number of elements in the array: ";
