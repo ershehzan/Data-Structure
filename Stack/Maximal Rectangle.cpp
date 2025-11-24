@@ -54,6 +54,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
     int m, n;
     cout << "Enter number of rows: ";
