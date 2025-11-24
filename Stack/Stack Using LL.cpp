@@ -42,8 +42,7 @@ public:
             cout << "Stack Underflow" << endl;
             return;
         }
-        else
-        {
+        else{
             Node *temp = top;
             cout << "Popped " << temp->data << " from Stack" << endl;
             top = top->next;
