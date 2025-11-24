@@ -34,7 +34,8 @@ public:
         return ans;
     }
 
-    int maximalRectangle(vector<vector<char>>& matrix) {
+    int maximalRectangle(vector<vector<char>>& matrix)
+{
         if (matrix.empty() || matrix[0].empty()) return 0;
         int ans = 0;
         int row = matrix.size();
