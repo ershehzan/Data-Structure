@@ -5,8 +5,7 @@ using namespace std;
 
 class Solution{
 public:
-    queue<int> reverseFirstK(queue<int> q, int k)
-    {
+    queue<int> reverseFirstK(queue<int> q, int k){
         if (k > q.size() || k < 0)
             return q; // ❗ Important: guard condition
 
