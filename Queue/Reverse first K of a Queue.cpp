@@ -36,8 +36,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     queue<int> q;
     int n, k, val;
     cout << "Enter number of elements in queue: ";
