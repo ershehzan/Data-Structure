@@ -38,8 +38,7 @@ public:
     };
     // pop operation
     void pop(){
-        if (top == NULL)
-        {
+        if (top == NULL){
             cout << "Stack Underflow" << endl;
             return;
         }
