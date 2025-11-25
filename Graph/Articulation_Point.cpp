@@ -37,8 +37,7 @@ public:
             A[node] = 1;
         }
     }
-    vector<int> articulationPoints(int V, vector<int> adj[])
-    {
+    vector<int> articulationPoints(int V, vector<int> adj[]) {
         vector<bool> A(V, 0);
         vector<int> disc(V);
         vector<int> low(V);
