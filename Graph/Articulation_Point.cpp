@@ -10,8 +10,7 @@ public:
         low[node] = disc[node] = timer;
         int child = 0;
 
-        for (int j = 0; j < adj[node].size(); j++)
-        {
+        for (int j = 0; j < adj[node].size(); j++)  {
             int neigh = adj[node][j];
 
             if (neigh == parent)
