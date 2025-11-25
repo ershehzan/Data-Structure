@@ -20,8 +20,7 @@ public:
             {
                 low[node] = min(low[node], disc[neigh]);
             }
-            else
-            {
+            else {
                 child++;
                 timer++;
                 DFS(neigh, node, adj, vis, A, disc, low, timer);
