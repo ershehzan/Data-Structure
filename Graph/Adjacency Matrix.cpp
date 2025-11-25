@@ -9,7 +9,6 @@ int main(){
     cin >> vertex>>edges;
     vector<vector<bool>> adjmat(vertex, vector<bool>(vertex, 0));
     int u, v;
-
     for (int i = 0; i < edges; i++) {
         cin >> u >> v;
         adjmat[u][v] = 1;
