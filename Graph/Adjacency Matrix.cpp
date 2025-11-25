@@ -15,8 +15,7 @@ int main(){
         adjmat[v][u] = 1; // Since the graph is undirected
     }
     cout << "Adjacency Matrix:" << endl;
-    for(int i=0;i<vertex;i++)
-    {
+    for(int i=0;i<vertex;i++){
         for(int j=0;j<vertex;j++)
         {
             cout<<adjmat[i][j]<<" ";
