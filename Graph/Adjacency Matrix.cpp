@@ -7,7 +7,6 @@ int main(){
     int vertex, edges;
     cout << "Enter number of vertices and edges: ";
     cin >> vertex>>edges;
-
     vector<vector<bool>> adjmat(vertex, vector<bool>(vertex, 0));
     int u, v;
 
