@@ -20,8 +20,8 @@ int main(){
     }
 
     cout << "Adjacency Matrix:" << endl;
-    for (int i = 0; i < vertex; i++) {
-        
+    for (int i = 0; i < vertex; i++) 
+    {
         cout<<i<<"->";
         // Print the adjacency list for vertex i
         for (size_t j = 0; j < list[i].size(); j++)
