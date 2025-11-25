@@ -28,6 +28,7 @@ int main(){
         {
             cout << list[i][j] << " ";
         }
+        
         cout << endl;
     }
 }
