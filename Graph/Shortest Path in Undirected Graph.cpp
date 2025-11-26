@@ -6,8 +6,7 @@ using namespace std;
 
 class Solution{
 public:
-    vector<int> shortestPath(vector<vector<int>> &adj, int src)
-    {
+    vector<int> shortestPath(vector<vector<int>> &adj, int src) {
         int n = adj.size();
         vector<int> dist(n, -1);
         vector<bool> vis(n, 0);
@@ -65,4 +64,5 @@ int main()
 
     return 0;
 }
+
 
