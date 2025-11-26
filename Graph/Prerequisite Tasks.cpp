@@ -11,7 +11,8 @@ public:
         queue<int> q;
         vector<int> adj[N];
         
-        for (auto &p : prerequisites) {
+        for (auto &p : prerequisites) 
+        {
             int u = p.second;
             int v = p.first;
             adj[u].push_back(v);
@@ -62,6 +63,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
