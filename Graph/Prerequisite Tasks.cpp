@@ -18,6 +18,7 @@ public:
             adj[u].push_back(v);
             Indeg[v]++;
         }
+        
         for (int j = 0; j < N; j++)
         {
             if (!Indeg[j])
@@ -63,6 +64,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
