@@ -19,8 +19,7 @@ public:
             int node = q.front();
             q.pop();
 
-            for (int j = 0; j < adj[node].size(); j++)
-            {
+            for (int j = 0; j < adj[node].size(); j++){
                 if (vis[adj[node][j]])
                     continue;
 
@@ -62,6 +61,7 @@ int main()
 
     return 0;
 }
+
 
 
 
