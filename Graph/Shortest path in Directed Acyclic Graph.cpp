@@ -19,8 +19,7 @@ public:
 
     vector<int> shortestPath(int V, int E, vector<vector<int>> &edges) {
         vector<pair<int, int>> adj[V];
-        for (int i = 0; i < E; i++)
-        {
+        for (int i = 0; i < E; i++) {
             int u = edges[i][0];
             int v = edges[i][1];
             int weight = edges[i][2];
@@ -77,3 +76,4 @@ int main()
     return 0;
 
 }
+
