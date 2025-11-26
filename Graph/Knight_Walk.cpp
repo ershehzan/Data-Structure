@@ -29,8 +29,7 @@ public:
 
         while (!q.empty()) {
             int count = q.size();
-            while (count--)
-            {
+            while (count--) {
                 int i = q.front().first;
                 int j = q.front().second;
                 q.pop();
