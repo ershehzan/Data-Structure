@@ -11,8 +11,7 @@ public:
     bool valid(int i, int j, int n) {
         return i >= 0 && i < n && j >= 0 && j < n;
     }
-    int minStepToReachTarget(vector<int> &KnightPos, vector<int> &TargetPos, int N)
-    {
+    int minStepToReachTarget(vector<int> &KnightPos, vector<int> &TargetPos, int N)  {
 
         KnightPos[0]--;
         KnightPos[1]--;
