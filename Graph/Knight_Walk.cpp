@@ -55,6 +55,7 @@ public:
 };
 
 int main(){
+    
     int N;
     cout << "Enter board size N: ";
     cin >> N;
