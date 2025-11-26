@@ -34,8 +34,7 @@ public:
                 int j = q.front().second;
                 q.pop();
 
-                for (int k = 0; k < 8; k++)
-                {
+                for (int k = 0; k < 8; k++) {
                     int ni = i + row[k];
                     int nj = j + col[k];
 
