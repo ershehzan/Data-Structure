@@ -15,8 +15,7 @@ public:
         dist[src] = 0;
         vis[src] = 1;
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int node = q.front();
             q.pop();
 
@@ -63,6 +62,7 @@ int main()
 
     return 0;
 }
+
 
 
 
