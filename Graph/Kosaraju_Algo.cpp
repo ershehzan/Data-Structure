@@ -28,8 +28,7 @@ class Solution {
             //Topological sort 
             stack<int>s;
             vector<bool>vis(V,0);
-            for(int i=0;i<V;i++)
-            {
+            for(int i=0;i<V;i++){
                     if(!vis[i])
                     topo_sort(i,adj,vis,s);
             }
