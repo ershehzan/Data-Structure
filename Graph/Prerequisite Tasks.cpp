@@ -24,6 +24,7 @@ public:
             if (!Indeg[j])
                 q.push(j);
         }
+        
         int count = 0;
         while (!q.empty()) {
             int node = q.front();
@@ -64,6 +65,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
