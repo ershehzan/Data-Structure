@@ -36,8 +36,7 @@ class Solution {
             // Transpose the edges or revere it 
             vector<vector<int>>adj2(V);
             for(int i=0;i<V;i++)
-            for(int j=0;j<adj[i].size();j++)
-            {
+            for(int j=0;j<adj[i].size();j++){
                     int u=i;
                     int v=adj[i][j];
                     adj2[v].push_back(u);
