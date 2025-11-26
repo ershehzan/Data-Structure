@@ -27,8 +27,7 @@ public:
         chess[KnightPos[0]][KnightPos[1]] = 1;
         int step = 0;
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int count = q.size();
             while (count--)
             {
