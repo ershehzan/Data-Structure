@@ -8,8 +8,7 @@ public:
     int row[8] = {2, 2, -2, -2, 1, -1, 1, -1};
     int col[8] = {1, -1, 1, -1, 2, 2, -2, -2};
 
-    bool valid(int i, int j, int n)
-    {
+    bool valid(int i, int j, int n) {
         return i >= 0 && i < n && j >= 0 && j < n;
     }
     int minStepToReachTarget(vector<int> &KnightPos, vector<int> &TargetPos, int N)
