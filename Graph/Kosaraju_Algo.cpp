@@ -17,8 +17,7 @@ class Solution {
     
         void DFS(int node,vector<vector<int>>&adj,vector<bool>&vis) {
                 vis[node]=1;
-                for(int neigh:adj[node])
-                {
+                for(int neigh:adj[node])  {
                         if(!vis[neigh])
                         DFS(neigh,adj,vis);
                 }
