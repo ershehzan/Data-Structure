@@ -37,8 +37,7 @@ int main(){
     cin >> n >> m; // number of nodes and edges
 
     vector<vector<int>> adj(n);
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++) {
         int u, v;
         cin >> u >> v;
         // undirected graph
@@ -60,6 +59,7 @@ int main(){
 
     return 0;
 }
+
 
 
 
