@@ -15,8 +15,7 @@ class Solution {
             s.push(node);
         }
     
-        void DFS(int node,vector<vector<int>>&adj,vector<bool>&vis)
-        {
+        void DFS(int node,vector<vector<int>>&adj,vector<bool>&vis) {
                 vis[node]=1;
                 for(int neigh:adj[node])
                 {
