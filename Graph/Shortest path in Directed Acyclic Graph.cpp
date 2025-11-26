@@ -7,8 +7,7 @@ using namespace std;
 // User function Template for C++
 class Solution{
 public:
-    void DFS(int node, vector<pair<int, int>> adj[], stack<int> &s, vector<bool> &vis)
-    {
+    void DFS(int node, vector<pair<int, int>> adj[], stack<int> &s, vector<bool> &vis) {
         vis[node] = 1;
         for (int j = 0; j < adj[node].size(); j++)
         {
@@ -76,4 +75,5 @@ int main()
     }
     cout << endl;
     return 0;
+
 }
