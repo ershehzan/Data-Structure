@@ -2,7 +2,6 @@
 #include <vector>
 #include <queue>
 using namespace std;
-
 class Solution{
 public:
     int row[8] = {2, 2, -2, -2, 1, -1, 1, -1};
