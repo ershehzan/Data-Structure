@@ -5,8 +5,7 @@ using namespace std;
 class Solution {
 public:
     void find(int row, int n, int &ans, vector<bool>& column, vector<bool>& RD, vector<bool>& LD)  {
-        if (row == n) 
-        {
+        if (row == n) {
             ans++;
             return;
         }
