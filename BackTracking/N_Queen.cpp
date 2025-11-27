@@ -11,7 +11,8 @@ public:
             ans.push_back(board);
             return;
         }
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < n; j++) 
+        {
             if (column[j] == 0 && LD[n - 1 + j - row] == 0 && RD[row + j] == 0) {
                 column[j] = 1;
                 board[row][j] = 'Q';
