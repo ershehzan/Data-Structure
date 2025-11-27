@@ -49,7 +49,8 @@ int main() {
     cout << "Number of solutions: " << solutions.size() << endl;
     for (const auto& board : solutions)
         {
-        for (const auto& row : board) {
+        for (const auto& row : board) 
+        {
             cout << row << endl;
         }
         cout << endl;
