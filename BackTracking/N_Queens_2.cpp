@@ -23,9 +23,8 @@ public:
         }
     }
 
-    int totalNQueens(int n) 
-    {
-        
+    int totalNQueens(int n) {
+    
         if (n == 1)
             return 1;
         int ans = 0;
