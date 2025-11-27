@@ -47,7 +47,8 @@ int main() {
     Solution sol;
     vector<vector<string>> solutions = sol.solveNQueens(n);
     cout << "Number of solutions: " << solutions.size() << endl;
-    for (const auto& board : solutions) {
+    for (const auto& board : solutions)
+        {
         for (const auto& row : board) {
             cout << row << endl;
         }
