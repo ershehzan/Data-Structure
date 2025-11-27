@@ -27,7 +27,8 @@ public:
         }
     }
 
-    vector<vector<string>> solveNQueens(int n) {
+    vector<vector<string>> solveNQueens(int n) 
+    {
         vector<vector<string>> ans;
         vector<string> board(n, string(n, '.'));
         vector<bool> column(n, 0);
