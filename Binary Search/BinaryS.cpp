@@ -16,8 +16,7 @@ int start = 0, end = n - 1, mid;
 
             start = mid + 1;
         }
-        else
-        {
+        else{
             end = mid - 1;
         }
     }
