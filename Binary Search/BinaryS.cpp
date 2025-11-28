@@ -7,8 +7,7 @@ using namespace std;
     while (start <= end) {
         
         int mid = (start + end) / 2;
-        if (arr[mid] == key)
-        {
+        if (arr[mid] == key){
             cout << "Element found at index ";
             return mid;
         }
