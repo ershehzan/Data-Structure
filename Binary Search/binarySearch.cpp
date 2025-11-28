@@ -22,8 +22,7 @@ int main(){
             return 0; // Exit if element is found
         }
 
-        else if (arr[m] < n)
-        {
+        else if (arr[m] < n){
 
             l = m ++; // Move to the right half
         }
