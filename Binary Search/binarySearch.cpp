@@ -15,8 +15,7 @@ int main(){
     while (l <= r){
         
         m = l + (r - l) / 2; //  calculation of the mid index
-        if (arr[m] == n)
-        {
+        if (arr[m] == n){
 
             cout << "Element is present at index " << m << endl;
 
