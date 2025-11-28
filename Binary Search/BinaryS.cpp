@@ -12,7 +12,8 @@ int start = 0, end = n - 1, mid;
             cout << "Element found at index ";
             return mid;
         }
-        else if (arr[mid] < key) {
+        else if (arr[mid] < key)
+        {
 
             start = mid + 1;
         }
