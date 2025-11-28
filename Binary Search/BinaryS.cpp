@@ -25,6 +25,7 @@ int start = 0, end = n - 1, mid;
 }
 
 int main(){
+    
     int arr[1000];
     int n;
     cout << "Enter the index of array : ";
