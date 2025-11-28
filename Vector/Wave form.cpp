@@ -13,8 +13,7 @@ int main(){
 
     cout << "wave form" << endl;
 
-    for (int j = 0; j < 4; j++)
-    {
+    for (int j = 0; j < 4; j++) {
         if (j % 2 == 0)
         {
             for (int i = 0; i < 3; i++)
