@@ -27,8 +27,7 @@ int main(){
             l = m ++; // Move to the right half
         }
 
-        else
-        {
+        else{
             r = m --; // Move to the left half
         }
     }
