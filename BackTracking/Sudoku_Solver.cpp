@@ -20,7 +20,8 @@ public:
         }
         // check at same box
         int row = (i / 3) * 3, col = (j / 3) * 3;
-        for (int a = row; a < row + 3; a++) {
+        for (int a = row; a < row + 3; a++) 
+        {
             for (int b = col; b < col + 3; b++) 
             {
                 if (board[a][b] == c)
