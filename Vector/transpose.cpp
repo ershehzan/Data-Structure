@@ -14,7 +14,8 @@ int main() {
     // Transpose the matrix
     for (int i = 0; i < 4; i++) 
     {
-        for (int j = i + 1; j < 4; j++) {
+        for (int j = i + 1; j < 4; j++) 
+        {
             swap(arr[i][j], arr[j][i]);
         }
     }
