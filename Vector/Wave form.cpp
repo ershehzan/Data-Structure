@@ -2,9 +2,7 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-int main()
-{
-
+int main(){
     vector<vector<int>> matrix = 
     {
         {1, 2, 3, 4},
