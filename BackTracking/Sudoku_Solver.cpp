@@ -7,7 +7,8 @@ public:
     bool check(int n, vector<vector<char>>& board, int i, int j) {
         char c = '0' + n;
         // check Row
-        for (int col = 0; col < 9; col++) {
+        for (int col = 0; col < 9; col++) 
+        {
             if (board[i][col] == c)
                 return 0;
         }
