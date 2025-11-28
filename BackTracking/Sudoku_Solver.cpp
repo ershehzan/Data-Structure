@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 using namespace std;
+
 class Solution {
 public:
     bool check(int n, vector<vector<char>>& board, int i, int j) {
