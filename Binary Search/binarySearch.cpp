@@ -12,8 +12,7 @@ int main(){
     int size = sizeof(arr) / sizeof(arr[0]);
     r = size - 1; // Set r to the last index of the array
     // Begin binary search
-    while (l <= r)
-    {
+    while (l <= r){
         m = l + (r - l) / 2; //  calculation of the mid index
         if (arr[m] == n)
         {
