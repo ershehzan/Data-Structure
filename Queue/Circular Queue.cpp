@@ -8,7 +8,7 @@ class Queue{
 
 public:
     Queue(int n) 
-{
+    {
         arr = new int[n];
         size = n;
         front = rear = -1;
