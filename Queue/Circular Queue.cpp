@@ -5,6 +5,7 @@ class Queue{
     int front, rear;
     int *arr;
     int size;
+
 public:
     Queue(int n) {
         arr = new int[n];
