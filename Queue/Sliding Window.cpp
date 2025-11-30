@@ -1,7 +1,6 @@
 #include <iostream>
 #include <queue>
 using namespace std;
-
 void display(queue<int> q){
     cout << "Sliding Window:";
     while (!q.empty()){
