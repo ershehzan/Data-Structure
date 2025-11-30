@@ -33,7 +33,6 @@ int main() {
         cin >> x;
         q.push(x);
     }
-
     q = solution.reverseQueue(q);
 
     cout << "Reversed queue: ";
