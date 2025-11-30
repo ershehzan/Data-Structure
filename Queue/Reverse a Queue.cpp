@@ -7,7 +7,8 @@ class Solution {
   public:
     queue<int> reverseQueue(queue<int> &q) {
         stack<int> st;
-        while (!q.empty()) {
+        while (!q.empty()) 
+        {
             st.push(q.front());
             q.pop();
         }
