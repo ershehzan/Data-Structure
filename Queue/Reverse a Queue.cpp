@@ -21,6 +21,7 @@ class Solution {
 };
 
 int main() {
+  
     Solution solution;
     int n;
     cout << "Enter the number of elements in the queue: ";
