@@ -61,7 +61,8 @@ int main() {
         }
         else if (op == 2) {
             stack.pop();
-        } else if (op == 3) {
+        } 
+        else if (op == 3) {
             cout << "Top element: " << stack.peek() << endl;
         } else if (op == 4) {
             cout << "Minimum element: " << stack.getMin() << endl;
