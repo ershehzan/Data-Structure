@@ -7,7 +7,8 @@ public:
     queue<int> q;
     MyStack() {}
 
-    bool empty() { 
+    bool empty() 
+    { 
         return q.empty(); 
     }
 
