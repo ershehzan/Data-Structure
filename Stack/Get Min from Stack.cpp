@@ -12,7 +12,8 @@ public:
         
     }
 
-    void push(int x) {
+    void push(int x) 
+    {
         if (s1.empty()) 
         {
             s1.push(x * 101 + x);  // First element: min = x
