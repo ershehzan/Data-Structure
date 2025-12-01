@@ -7,10 +7,7 @@ class Solution {
 
 public:
     // Constructor
-    Solution() 
-    {
-        
-    }
+    Solution() {}
 
     void push(int x) 
     {
