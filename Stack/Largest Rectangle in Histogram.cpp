@@ -50,6 +50,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
     int n;
     cout << "Enter the number of bars in the histogram: ";
