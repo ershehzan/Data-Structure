@@ -18,7 +18,8 @@ public:
             }
             st.push(i);
         }
-        while (!st.empty()) {
+        while (!st.empty()) 
+        {
             right[st.top()] = n;
             st.pop();
         }
