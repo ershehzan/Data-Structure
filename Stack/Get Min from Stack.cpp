@@ -58,7 +58,8 @@ int main() {
             int x;
             cin >> x;
             stack.push(x);
-        } else if (op == 2) {
+        }
+        else if (op == 2) {
             stack.pop();
         } else if (op == 3) {
             cout << "Top element: " << stack.peek() << endl;
