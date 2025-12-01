@@ -54,7 +54,8 @@ int main() {
     while (q--) {
         int op;
         cin >> op;
-        if (op == 1) {
+        if (op == 1) 
+        {
             int x;
             cin >> x;
             stack.push(x);
