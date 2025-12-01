@@ -32,7 +32,8 @@ public:
     }
 
     // Return top element
-    int peek() {
+    int peek() 
+    {
         if (s1.empty())
             return -1;
         return s1.top() / 101;
