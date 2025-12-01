@@ -26,7 +26,8 @@ public:
         // Next Smallest Left
         for (int i = n - 1; i >= 0; i--) 
         {
-            while (!st.empty() && heights[st.top()] > heights[i]) {
+            while (!st.empty() && heights[st.top()] > heights[i]) 
+            {
                 left[st.top()] = i;
                 st.pop();
             }
