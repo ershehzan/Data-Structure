@@ -45,6 +45,7 @@ public:
 };
 
 int main() {
+    
     Solution stack;
     int q;
     cout << "Enter number of operations: ";
