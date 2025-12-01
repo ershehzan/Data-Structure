@@ -35,7 +35,8 @@ public:
             }
             st.push(i);
         }
-        while (!st.empty()) {
+        while (!st.empty()) 
+        {
             left[st.top()] = -1;
             st.pop();
         }
