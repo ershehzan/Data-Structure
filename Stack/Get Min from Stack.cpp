@@ -7,7 +7,9 @@ class Solution {
 
 public:
     // Constructor
-    Solution() {}
+    Solution() {
+        
+    }
 
     void push(int x) {
         if (s1.empty()) {
