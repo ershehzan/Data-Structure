@@ -67,7 +67,8 @@ int main() {
         {
             cout << "Top element: " << stack.peek() << endl;
         }
-        else if (op == 4) {
+        else if (op == 4) 
+        {
             cout << "Minimum element: " << stack.getMin() << endl;
         }
     }
