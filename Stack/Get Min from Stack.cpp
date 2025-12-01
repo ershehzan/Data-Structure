@@ -59,7 +59,8 @@ int main() {
             cin >> x;
             stack.push(x);
         }
-        else if (op == 2) {
+        else if (op == 2) 
+        {
             stack.pop();
         } 
         else if (op == 3) {
