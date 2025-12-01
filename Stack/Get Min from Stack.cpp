@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stack>
 using namespace std;
-
 class Solution {
     stack<int> s1; // main stack
 
