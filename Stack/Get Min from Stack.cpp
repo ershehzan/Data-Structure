@@ -24,7 +24,8 @@ public:
     }
 
     // Remove the top element
-    void pop() {
+    void pop() 
+    {
         if (s1.empty())
             return;
         s1.pop();
