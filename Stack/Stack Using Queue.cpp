@@ -8,8 +8,7 @@ public:
 
     MyStack() {}
 
-    bool empty() 
-    { 
+    bool empty() { 
         return q.empty(); 
     }
 
