@@ -63,7 +63,8 @@ int main() {
         {
             stack.pop();
         } 
-        else if (op == 3) {
+        else if (op == 3) 
+        {
             cout << "Top element: " << stack.peek() << endl;
         }
         else if (op == 4) {
