@@ -7,7 +7,8 @@ class Solution {
 
 public:
     // Constructor
-    Solution() {
+    Solution() 
+    {
         
     }
 
