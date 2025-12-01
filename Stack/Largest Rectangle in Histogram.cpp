@@ -11,7 +11,8 @@ public:
         vector<int> left(n);
         stack<int> st;
         // Next Smallest right
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < n; i++) 
+        {
             while (!st.empty() && heights[st.top()] > heights[i]) 
             {
                 right[st.top()] = i;
