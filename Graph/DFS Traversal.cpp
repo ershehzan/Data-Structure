@@ -29,7 +29,8 @@ public:
     }
 };
 
-int main(){
+int main()
+{
     // Example graph: 0-1, 0-2, 1-3, 1-4
     vector<vector<int>> adj = {
         {1, 2},    // neighbors of node 0
@@ -52,6 +53,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
