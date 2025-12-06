@@ -4,7 +4,8 @@ using namespace std;
 
 class Solution  {
 public:
-    void DFS(int node, vector<vector<int>> &adj, vector<int> &ans, vector<bool> &vis) {
+    void DFS(int node, vector<vector<int>> &adj, vector<int> &ans, vector<bool> &vis) 
+    {
         vis[node] = true;
         ans.push_back(node);
 
@@ -50,6 +51,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
