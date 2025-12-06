@@ -14,7 +14,8 @@ public:
         return i >= 0 && i < r && j >= 0 && j < c;
     }
 
-    int helpaterp(vector<vector<int>> hospital) {
+    int helpaterp(vector<vector<int>> hospital)
+    {
         r = hospital.size();
         c = hospital[0].size();
 
@@ -80,6 +81,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
