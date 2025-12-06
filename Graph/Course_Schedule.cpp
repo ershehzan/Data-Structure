@@ -8,8 +8,7 @@ public:
     vector<int> findOrder(int n, vector<vector<int>> prerequisites) {
         vector<int> Indeg(n, 0);
         vector<int> adj[n];
-        for (auto &p : prerequisites)
-        {
+        for (auto &p : prerequisites){
             int u = p[0];
             int v = p[1];
             adj[v].push_back(u);
