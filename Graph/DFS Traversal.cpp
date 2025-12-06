@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-class Solution{
+class Solution  {
 public:
     void DFS(int node, vector<vector<int>> &adj, vector<int> &ans, vector<bool> &vis) {
         vis[node] = true;
@@ -50,6 +50,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
