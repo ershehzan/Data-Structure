@@ -67,7 +67,8 @@ public:
     }
 };
 
-int main(){
+int main()
+{
     int n, m;
     cin >> n >> m;
     vector<vector<int>> hospital(n, vector<int>(m));
@@ -81,6 +82,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
