@@ -2,6 +2,7 @@
 #include <vector>
 #include <queue>
 using namespace std;
+
 class Solution{
 public:
     int row[4] = {-1, 1, 0, 0};
@@ -78,6 +79,7 @@ int main(){
     return 0;
 
 }
+
 
 
 
