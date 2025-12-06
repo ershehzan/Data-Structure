@@ -8,7 +8,6 @@ int main(){
     int vertex, edges;
     cout << "Enter number of vertices and edges: ";
     cin >> vertex >> edges;
-
     vector<int> list[vertex];
     int u, v;
 
