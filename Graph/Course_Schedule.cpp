@@ -9,7 +9,6 @@ public:
         
         vector<int> Indeg(n, 0);
         vector<int> adj[n];
-        
         for (auto &p : prerequisites){
             int u = p[0];
             int v = p[1];
