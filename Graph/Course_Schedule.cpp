@@ -24,8 +24,7 @@ public:
         }
         vector<int> ans;
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int node = q.front();
             q.pop();
             ans.push_back(node);
