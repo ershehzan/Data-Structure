@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Queue{ 
+class Queue  { 
     int front, rear;
     int *arr;
     int size;
