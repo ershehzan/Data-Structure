@@ -7,7 +7,8 @@ class dequeue {
     int size;
 
     public:
-    dequeue(int n){
+    dequeue(int n)
+    {
         size=n;
         arr=new int[size];
         front = rear = -1;
