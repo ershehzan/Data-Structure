@@ -18,6 +18,7 @@ int main(){
     n--;
 
     cout << "Array after deletion at the end: ";
+    
     for (int i = 0; i < n; i++)
     {
         cout << arr[i] << " "; // Print each element of the array up to the new size
