@@ -26,7 +26,6 @@ int main() {
             odd += arr[i];
         }
     }
-
     // Calculate and print the absolute difference
     int diff = abs(even - odd);
     cout << "Output: " << diff << endl;
