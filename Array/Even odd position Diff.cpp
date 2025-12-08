@@ -8,10 +8,8 @@ int main() {
     // Prompt the user to enter the size of the array
     cout << "Enter the size of array: ";
     cin >> n;
-
     // Declare a vector of size n
     vector<int> arr(n);
-
     // Prompt the user to enter the elements of the array
     cout << "Enter the elements of array: ";
     for (int i = 0; i < n; i++) {
