@@ -2,8 +2,7 @@
 #include <algorithm>
 using namespace std;
 
-int main()
-{
+int main(){
     int arr[1000], n;
 
     // Input array size
