@@ -25,12 +25,14 @@ public:
     }
 };
 
-int main() {
+int main() 
+{
     Solution solution;
     vector<int> nums = {2, 4, 2, 6, 8, 4}; // Example input
     int result = solution.countSubarrays(nums);
     cout << "Count of valid subarrays: " << result << endl;
     return 0;
 }
+
 
 
