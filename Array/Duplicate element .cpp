@@ -4,11 +4,9 @@ using namespace std;
 
 int main(){
     int arr[1000], n;
-
     // Input array size
     cout << "Enter the size of the array: ";
     cin >> n;
-
     // Input array elements
     cout << "Enter the elements of the array: ";
     for (int i = 0; i < n; i++)
