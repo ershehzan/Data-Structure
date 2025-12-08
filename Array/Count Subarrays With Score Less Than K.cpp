@@ -10,7 +10,8 @@ public:
         long long sum = 0;
         int left = 0;
         
-        for (int right = 0; right < nums.size(); ++right) {
+        for (int right = 0; right < nums.size(); ++right) 
+        {
             sum += nums[right];
             
             // Shrink from the left if the score is too big
