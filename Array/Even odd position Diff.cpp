@@ -4,7 +4,6 @@
 using namespace std;
 
 int main() {
-    
     int n;
     // Prompt the user to enter the size of the array
     cout << "Enter the size of array: ";
