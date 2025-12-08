@@ -9,7 +9,6 @@ int main() {
     // Prompt the user to enter the size of the array
     cout << "Enter the size of array: ";
     cin >> n;
-
     // Declare a vector of integers with size n to store the array elements
     vector<int> arr(n);
 
@@ -44,5 +43,6 @@ int main() {
 
     return 0;   // Indicate successful program termination
 }
+
 
 
