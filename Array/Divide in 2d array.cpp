@@ -29,6 +29,5 @@ int main(){
             cout << ans[i][j] << " ";
         }
     }
-
     return 0;
 }
