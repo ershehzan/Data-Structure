@@ -15,7 +15,8 @@ public:
             int third = nums[i + 2];
             
             // Correct condition
-            if (second % 2 == 0 && first + third == second / 2) {
+            if (second % 2 == 0 && first + third == second / 2) 
+            {
                 count++;
             }
         }
@@ -31,4 +32,5 @@ int main() {
     cout << "Count of valid subarrays: " << result << endl;
     return 0;
 }
+
 
