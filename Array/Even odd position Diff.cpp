@@ -15,7 +15,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
     }
-
     // Variables to store the sum of even and odd positioned elements
     int even = 0, odd = 0;
 
