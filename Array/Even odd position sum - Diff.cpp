@@ -1,7 +1,6 @@
 #include <iostream>   // For input/output operations
 #include <vector>     // For using the vector container
 #include <cmath>      // For using the abs() function to calculate absolute value
-
 using namespace std;
 
 int main() {
@@ -45,3 +44,4 @@ int main() {
 
     return 0;   // Indicate successful program termination
 }
+
