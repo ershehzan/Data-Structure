@@ -2,7 +2,8 @@
 using namespace std;
 
 void deleteElement(int arr[], int &size, int index) {
-    if (index < 0 || index >= size) {
+    if (index < 0 || index >= size) 
+    {
         cout << "Invalid index!" << endl;
         return;
     }
@@ -30,3 +31,4 @@ int main() {
     
     return 0;
 }
+
