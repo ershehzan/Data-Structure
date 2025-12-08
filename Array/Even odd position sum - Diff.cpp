@@ -16,7 +16,6 @@ int main() {
     for (int i = 0; i < n; i++) {
         cin >> arr[i];  // Read each element from user input
     }
-
     // Variables to store the sum of elements at even and odd positions
     // 'even' will hold the sum of elements at even positions (2, 4, 6, ...)
     // 'odd' will hold the sum of elements at odd positions (1, 3, 5, ...)
@@ -42,6 +41,7 @@ int main() {
 
     return 0;   // Indicate successful program termination
 }
+
 
 
 
