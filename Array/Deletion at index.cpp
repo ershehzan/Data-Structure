@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-void deleteElement(int arr[], int &size, int index) {
+void deleteElement(int arr[], int &size, int index) 
+{
     if (index < 0 || index >= size) 
     {
         cout << "Invalid index!" << endl;
@@ -31,4 +32,5 @@ int main() {
     
     return 0;
 }
+
 
