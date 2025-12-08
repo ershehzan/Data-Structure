@@ -8,7 +8,8 @@ public:
         int count = 0;
         int n = nums.size();
         
-        for (int i = 0; i <= n - 3; ++i) {
+        for (int i = 0; i <= n - 3; ++i) 
+        {
             int first = nums[i];
             int second = nums[i + 1];
             int third = nums[i + 2];
@@ -30,3 +31,4 @@ int main() {
     cout << "Count of valid subarrays: " << result << endl;
     return 0;
 }
+
