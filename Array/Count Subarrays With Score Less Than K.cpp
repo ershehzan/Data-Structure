@@ -15,7 +15,8 @@ public:
             sum += nums[right];
             
             // Shrink from the left if the score is too big
-            while (sum * (right - left + 1) >= k && left <= right) {
+            while (sum * (right - left + 1) >= k && left <= right) 
+            {
                 sum -= nums[left];
                 left++;
             }
