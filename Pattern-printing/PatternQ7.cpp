@@ -4,7 +4,6 @@ using namespace std;
 int main(){
     // i=row    j=column
     int n, i, j;
-
     cout << "Enter a number :";
     cin >> n;
     for (i = 1; i <= n; i++)
