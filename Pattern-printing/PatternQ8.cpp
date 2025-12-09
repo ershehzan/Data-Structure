@@ -9,7 +9,8 @@ int main(){
     cout << "Enter a number : ";
     cin >> n;
     
-    for (i = 1; i <= n; i++){
+    for (i = 1; i <= n; i++)
+    {
         for (j = 1; j <= n; j++)
         {
            // cout << (i - 1) * 5 + j << " "; //Alternate solution
