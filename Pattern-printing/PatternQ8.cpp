@@ -10,8 +10,7 @@ int main(){
     cin >> n;
     
     for (i = 1; i <= n; i++){
-        for (j = 1; j <= n; j++)
-        {
+        for (j = 1; j <= n; j++){
            // cout << (i - 1) * 5 + j << " "; //Alternate solution
             cout << count << " ";
             count++;
