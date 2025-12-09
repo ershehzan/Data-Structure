@@ -5,7 +5,7 @@ int main(){
     // i=row    j=column
     int n, i, j;
     // Extra variable
-     int count = 1;
+    int count = 1;
     cout << "Enter a number : ";
     cin >> n;
     for (i = 1; i <= n; i++)
