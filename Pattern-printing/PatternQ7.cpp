@@ -9,8 +9,8 @@ int main(){
     
     for (i = 1; i <= n; i++)  {  
         // Nested loop
-        for (j = 1; j <= n; j++)
-        {
+        for (j = 1; j <= n; j++) {
+            
               char name = 'a' + j - 1;
             cout << name << "  ";
         }
