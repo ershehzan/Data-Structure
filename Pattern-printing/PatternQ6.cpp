@@ -7,7 +7,7 @@ int main(){
     cout << "Enter a number :";
     cin >> n;
     
-    for (i = 1; i <= n; i++){
+    for (i = 1; i <= n; i++)  {
         char name = 'a' + (i - 1);
         // Nested loop
         for (j = 1; j <= n; j++)
