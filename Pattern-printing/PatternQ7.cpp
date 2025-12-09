@@ -24,9 +24,5 @@ a  b  c  d  e
 a  b  c  d  e        
 a  b  c  d  e        
 a  b  c  d  e        
-<<<<<<< HEAD
 a  b  c  d  e
 */
-=======
-a  b  c  d  e   */
->>>>>>> 549b0d8 (file update)
