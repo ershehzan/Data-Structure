@@ -11,7 +11,7 @@ int main(){
         // Nested loop
         for (j = 1; j <= n; j++) {
             
-              char name = 'a' + j - 1;
+            char name = 'a' + j - 1;
             cout << name << "  ";
         }
         cout << endl;
