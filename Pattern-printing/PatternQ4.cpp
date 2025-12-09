@@ -6,8 +6,7 @@ int main(){
     int n, i, j;
     cout << "Enter a number :";
     cin >> n;
-    for (i = 1; i <= n; i++)
-    {
+    for (i = 1; i <= n; i++) {
         // Nested loop
         // loop N to 1
         for (j = n; j >= 1; j--)// Opposite Loop
