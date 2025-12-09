@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
  
-int main(){
+int main() {
     // i=row    j=column
     int n, i, j;
     cout << "Enter a number :";
