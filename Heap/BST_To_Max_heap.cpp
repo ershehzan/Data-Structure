@@ -16,7 +16,8 @@ struct Node {
 // Your solution class
 class Solution {
   public:
-    void inorder(Node* root, vector<int>& ans) {
+    void inorder(Node* root, vector<int>& ans) 
+    {
         if (!root)
             return;
         inorder(root->left, ans);
