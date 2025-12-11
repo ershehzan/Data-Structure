@@ -12,6 +12,7 @@ struct Node {
         left = right = NULL;
     }
 };
+
 // Your solution class
 class Solution {
   public:
