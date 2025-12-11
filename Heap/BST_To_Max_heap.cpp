@@ -25,7 +25,8 @@ class Solution {
         inorder(root->right, ans);
     }
 
-    void postorder(Node* root, int& index, vector<int>& ans) {
+    void postorder(Node* root, int& index, vector<int>& ans) 
+    {
         if (!root)
             return;
         postorder(root->left, index, ans);
