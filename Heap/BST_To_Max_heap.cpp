@@ -35,7 +35,8 @@ class Solution {
         index++;
     }
 
-    void convertToMaxHeapUtil(Node* root) {
+    void convertToMaxHeapUtil(Node* root) 
+    {
         vector<int> ans;
         inorder(root, ans); // Sorted values from BST
         int index = 0;
