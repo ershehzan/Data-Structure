@@ -44,7 +44,8 @@ class Solution {
 };
 
 // Function to print postorder of the tree (for verifying Max Heap)
-void printPostorder(Node* root) {
+void printPostorder(Node* root) 
+{
     if (!root) return;
     printPostorder(root->left);
     printPostorder(root->right);
