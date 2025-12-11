@@ -4,8 +4,7 @@ using namespace std;
 
 // Function to maintain the max heap property for a subtree rooted at index 'i'.
 // 'n' is the total number of elements in the heap (array).
-void heapify(vector<int>& arr, int i, int n)
-{
+void heapify(vector<int>& arr, int i, int n){
     
     int largest = i;           // Initialize largest as root
     int left = 2 * i + 1;      // Left child index
