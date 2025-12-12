@@ -21,8 +21,7 @@ int main(){
         {
             start = mid + 1;
         }
-        else
-        {
+        else {
             end = mid - 1;
         }
     }
