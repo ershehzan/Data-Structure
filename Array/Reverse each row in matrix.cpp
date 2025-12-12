@@ -9,6 +9,7 @@ int main(){
                      {13, 14, 15, 16}};
 
     for (int i = 0; i < 4; i++) {
+        
         int start = 0, end = 3;
         while (start < end)
         {
@@ -28,6 +29,7 @@ int main(){
     }
     return 0;
 }
+
 
 
 
