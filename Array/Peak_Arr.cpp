@@ -13,6 +13,7 @@ int main()
     {
         cin >> arr[i]; // Read the array elements
     }
+    
     int start = 0, end = n - 1; // Initialize start and end pointers for binary search
 
     while (start < end)
