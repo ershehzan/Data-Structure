@@ -3,7 +3,6 @@ using namespace std;
 
 int main()
 {
-   
     int arr[1000]; // Declare an array of size 1000
     int n, i;
     cout << "Enter the index: ";
