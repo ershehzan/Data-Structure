@@ -14,6 +14,7 @@ int main() {
 
     // Two-pointer approach to find a pair of numbers that sum up to the target
     while (start < end) {
+        
         int sum = arr[start] + arr[end]; // Calculate the sum of the two pointed elements
 
         if (sum == target) {
@@ -36,6 +37,7 @@ int main() {
  
     return 0;//return 
 }
+
 
 
 
