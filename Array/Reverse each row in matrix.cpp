@@ -8,8 +8,7 @@ int main(){
                      {9, 10, 11, 12},
                      {13, 14, 15, 16}};
 
-    for (int i = 0; i < 4; i++)
-    {
+    for (int i = 0; i < 4; i++) {
         int start = 0, end = 3;
 
         while (start < end)
@@ -30,5 +29,6 @@ int main(){
     }
     return 0;
 }
+
 
 
