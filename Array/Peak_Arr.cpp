@@ -37,7 +37,6 @@ int main()
             end = mid - 1; // Move left
         }
     }
-
     // After the loop, start and end converge at the peak element
     cout << "Peak Element is at index " << start << " is : " << arr[start] << endl;
 
