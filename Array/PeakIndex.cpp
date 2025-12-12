@@ -6,8 +6,7 @@ int main(){
     int size = sizeof(arr) / sizeof(arr[0]);
     int start = 0, end = size - 1;
 
-    while (start < end)
-    {
+    while (start < end) {
         int mid = start + (end - start) / 2;
 
         // Check if mid is the peak element
