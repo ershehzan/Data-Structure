@@ -5,7 +5,7 @@ int main()
 {
    
     int arr[1000]; // Declare an array of size 1000
-     int n, i;
+    int n, i;
     cout << "Enter the index: ";
     cin >> n; // Read the number of elements
 
