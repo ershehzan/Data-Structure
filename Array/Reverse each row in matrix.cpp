@@ -11,6 +11,7 @@ int main(){
     for (int i = 0; i < 4; i++) {
         
         int start = 0, end = 3;
+        
         while (start < end)
         {
             swap(arr[i][start], arr[i][end]);
@@ -29,6 +30,7 @@ int main(){
     }
     return 0;
 }
+
 
 
 
