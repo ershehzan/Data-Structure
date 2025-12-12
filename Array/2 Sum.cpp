@@ -6,7 +6,6 @@ int main() {
     // Initialize an array with some integers (sorted order)
     int arr[1000] = {3, 4, 6, 8, 11, 12, 34, 41}; // Array to store elements
     int n = 8, target; // n is the number of elements in the array
-
     // Prompt the user to enter the target sum value
     cout << "Enter the target: ";
  
@@ -39,6 +38,7 @@ int main() {
  
     return 0;//return 
 }
+
 
 
 
