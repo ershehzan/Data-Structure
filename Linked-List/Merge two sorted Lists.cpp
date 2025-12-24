@@ -3,34 +3,29 @@
 using namespace std;
 
 // Node class represents a single node in the linked list
-class Node
-{
+class Node{
 public:
     int data;       // Data stored in the node
     Node *next;     // Pointer to the next node
 
     // Constructor to initialize the node with a value
-    Node(int value)
-    {
+    Node(int value)  {
         data = value;
         next = NULL;
     }
 };
 
 // Solution class contains the method to merge two sorted linked lists
-class Solution
-{
+class Solution{
 public:
     // Function to merge two sorted linked lists and return the head of the merged list
-    Node *sortedMerge(Node *head1, Node *head2)
-    {
+    Node *sortedMerge(Node *head1, Node *head2)  {
         // Create a dummy node to form the new list
         Node *head = new Node(0);
         Node *tail = head; // Tail pointer to add new nodes
 
         // Traverse both lists and append the smaller node to the merged list
-        while (head1 && head2)
-        {
+        while (head1 && head2){
             if (head1->data <= head2->data)
             {
                 tail->next = head1;     // Append node from list 1
@@ -68,8 +63,7 @@ public:
 };
 
 // Utility function to print the linked list
-void printList(Node *head)
-{
+void printList(Node *head){
     while (head)
     {
         cout << head->data << " ";
@@ -83,8 +77,7 @@ Node *createList(int n)
 {
     Node *head = NULL;
     Node *tail = NULL;
-    for (int i = 0; i < n; ++i)
-    {
+    for (int i = 0; i < n; ++i)  {
         int value;
         cin >> value;
         Node *newNode = new Node(value);
@@ -102,8 +95,7 @@ Node *createList(int n)
     return head;
 }
 
-int main()
-{
+int main(){
     Solution solution;
     int n1, n2;
     cout << "Enter number of nodes in first sorted list: ";
@@ -121,7 +113,15 @@ int main()
 
     cout << "Merged sorted list: ";
     printList(mergedHead);
-
     return 0;
 }
+
+
+
+
+
+
+
+
+
 

@@ -4,8 +4,8 @@ using namespace std;
 
 // Function to maintain the max heap property for a subtree rooted at index 'i'.
 // 'n' is the total number of elements in the heap (array).
-void heapify(vector<int>& arr, int i, int n)
-{
+void heapify(vector<int>& arr, int i, int n){
+    
     int largest = i;           // Initialize largest as root
     int left = 2 * i + 1;      // Left child index
     int right = 2 * i + 2;     // Right child index
@@ -34,7 +34,6 @@ void buildMaxheap(vector<int>& arr, int n)
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, i, n); // Call heapify for each node
 }
-
 // Function to print the elements of the heap
 void print(const vector<int>& arr)
 {
@@ -44,8 +43,7 @@ void print(const vector<int>& arr)
     cout << endl;
 }
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n; // Take the size of the array as input

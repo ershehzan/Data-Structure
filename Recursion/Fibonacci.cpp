@@ -6,11 +6,9 @@ using namespace std;
 // The function takes an integer input `n`
 // If n <= 1, it returns n directly as the base case (0 or 1)
 // Otherwise, it recursively computes the sum of the previous two Fibonacci numbers
-int fab(int n)
-{
+int fab(int n){
     // Base case: if n is 0 or 1, return n
-    if (n <= 1)
-    {
+    if (n <= 1)   {
         return n;
     }
 
@@ -18,11 +16,9 @@ int fab(int n)
     return fab(n - 1) + fab(n - 2);
 }
 
-int main()
-{
+int main(){
     // Declare a variable to store the number of terms in the Fibonacci series
     int n;
-
     // Prompt the user to enter the number of terms
     cout << "Enter the number of terms: ";
     cin >> n;

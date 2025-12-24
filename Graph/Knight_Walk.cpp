@@ -3,8 +3,7 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int row[8] = {2, 2, -2, -2, 1, -1, 1, -1};
     int col[8] = {1, -1, 1, -1, 2, 2, -2, -2};
@@ -13,8 +12,7 @@ public:
     {
         return i >= 0 && i < n && j >= 0 && j < n;
     }
-    int minStepToReachTarget(vector<int> &KnightPos, vector<int> &TargetPos, int N)
-    {
+    int minStepToReachTarget(vector<int> &KnightPos, vector<int> &TargetPos, int N)  {
 
         KnightPos[0]--;
         KnightPos[1]--;
@@ -29,17 +27,14 @@ public:
         chess[KnightPos[0]][KnightPos[1]] = 1;
         int step = 0;
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int count = q.size();
-            while (count--)
-            {
+            while (count--) {
                 int i = q.front().first;
                 int j = q.front().second;
                 q.pop();
 
-                for (int k = 0; k < 8; k++)
-                {
+                for (int k = 0; k < 8; k++) {
                     int ni = i + row[k];
                     int nj = j + col[k];
 
@@ -59,8 +54,8 @@ public:
     }
 };
 
-int main()
-{
+int main(){
+    
     int N;
     cout << "Enter board size N: ";
     cin >> N;

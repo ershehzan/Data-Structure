@@ -7,26 +7,31 @@ public:
     bool check(int n, vector<vector<char>>& board, int i, int j) {
         char c = '0' + n;
         // check Row
-        for (int col = 0; col < 9; col++) {
+        for (int col = 0; col < 9; col++) 
+        {
             if (board[i][col] == c)
                 return 0;
         }
         // check Col
-        for (int row = 0; row < 9; row++) {
+        for (int row = 0; row < 9; row++) 
+        {
             if (board[row][j] == c)
                 return 0;
         }
         // check at same box
         int row = (i / 3) * 3, col = (j / 3) * 3;
-        for (int a = row; a < row + 3; a++) {
-            for (int b = col; b < col + 3; b++) {
+        for (int a = row; a < row + 3; a++) 
+        {
+            for (int b = col; b < col + 3; b++) 
+            {
                 if (board[a][b] == c)
                     return 0;
             }
         }
         return 1;
     }
-    bool find(int i, int j, vector<vector<char>>& board) {
+    bool find(int i, int j, vector<vector<char>>& board)
+{
         if (i == 9)
             return 1;
         if (j == 9)
@@ -49,7 +54,9 @@ public:
 };
 
 int main() {
-    vector<vector<char>> board = {
+    
+    vector<vector<char>> board = 
+    {
         {'5','3','.','.','7','.','.','.','.'},
         {'6','.','.','1','9','5','.','.','.'},
         {'.','9','8','.','.','.','.','6','.'},
@@ -64,8 +71,10 @@ int main() {
     Solution sol;
     sol.solveSudoku(board);
 
-    for (const auto& row : board) {
-        for (const auto& c : row) {
+    for (const auto& row : board) 
+    {
+        for (const auto& c : row) 
+        {
             cout << c << " ";
         }
         cout << endl;

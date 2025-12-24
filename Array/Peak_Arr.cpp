@@ -3,9 +3,8 @@ using namespace std;
 
 int main()
 {
-   
     int arr[1000]; // Declare an array of size 1000
-     int n, i;
+    int n, i;
     cout << "Enter the index: ";
     cin >> n; // Read the number of elements
 
@@ -14,7 +13,7 @@ int main()
     {
         cin >> arr[i]; // Read the array elements
     }
-
+    
     int start = 0, end = n - 1; // Initialize start and end pointers for binary search
 
     while (start < end)
@@ -38,7 +37,6 @@ int main()
             end = mid - 1; // Move left
         }
     }
-
     // After the loop, start and end converge at the peak element
     cout << "Peak Element is at index " << start << " is : " << arr[start] << endl;
 

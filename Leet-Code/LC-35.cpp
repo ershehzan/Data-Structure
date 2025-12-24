@@ -1,22 +1,19 @@
-// Leet code 35
-
 #include <iostream>
 using namespace std;
 
-int BinarySearch(int arr[], int key)
-{
+int BinarySearch(int arr[], int key) {
     int start = 0, end = 6, ans, mid;
 
-    while (start <= end)
-    {
+    while (start <= end)   {
+        
         mid = start + (end - start) / 2;
-        if (arr[mid] == key)
-        {
+        
+        if (arr[mid] == key){
             ans = mid;
             break;
         }
-        else if (arr[mid] < key)
-        {
+        else if (arr[mid] < key){
+            
             start = mid + 1;
         }
         else
@@ -29,8 +26,7 @@ int BinarySearch(int arr[], int key)
     // end here
 }
 
-int main()
-{
+int main(){
     int arr[1000]={2,4,4,4,4,5,6};
     int key;
     cout << "Enter the number to search : ";

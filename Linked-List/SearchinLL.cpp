@@ -2,13 +2,12 @@
 #include <iostream>
 using namespace std;
 
-struct Node
-{ // holds the integer value
+struct Node{ // holds the integer value
     int data;
     Node *next; // points to the next node
 };
-int main()
-{
+
+int main(){
 
     Node *first = new Node();
     Node *second = new Node();
@@ -38,12 +37,10 @@ int main()
         }
         current = current->next;
     }
-    if (found)
-    {
+    if (found) {
         cout << "Number " << target << " is found in the linked list :" << endl;
     }
-    else
-    {
+    else{
         cout << "Number " << target << " is not found in the linked list :" << endl;
     }
     return 0;

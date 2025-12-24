@@ -6,7 +6,7 @@
 #include <queue>
 using namespace std;
 
-class Solution{
+class Solution {
 public:
     bool isBipartite(int V, vector<vector<int>> &edges)  {
         vector<int> adj[V];
@@ -50,7 +50,8 @@ public:
     }
 };
 
-int main(){
+int main() {
+    
     int V, E;
     cout << "Enter number of vertices and edges: ";
     cin >> V >> E;
@@ -74,5 +75,6 @@ int main(){
     return 0;
 
 }
+
 
 

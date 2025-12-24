@@ -2,8 +2,7 @@
 using namespace std;
 //Bubble sort 
 
-int main()
-{
+int main(){
     int arr[1000];
     int n;
     cout << "Enter the size of array: ";
@@ -32,8 +31,7 @@ int main()
     }
 
     cout << "Sorted array: ";
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++)  {
         cout << arr[i] << " ";
     }
     cout << endl;

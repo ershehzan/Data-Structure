@@ -1,22 +1,19 @@
 #include <iostream>
 using namespace std;
 
-class node
-{
+class node{
 public:
     int data;
     node *next;
     node *prev;
-    node(int val)
-    {
+    node(int val) {
         data = val;
         next = NULL;
         prev = NULL;
     }
 };
 
-int main()
-{
+int main(){
     node *head = NULL;
     node*tail=NULL;
     int n;
@@ -24,8 +21,7 @@ int main()
     cin >> n;
     cout << "Enter the values: ";
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
         int val;
         cin >> val;
 
@@ -34,8 +30,7 @@ int main()
             head = new node(val);
             tail=head;
         }
-        else
-        {
+        else{
             node*temp=new node(val);
             tail->next=temp;
             temp->prev=tail;
@@ -43,12 +38,16 @@ int main()
          
         }
     }
-
     node *curr = head;
     cout << "Doubly Linked List: ";
-    while (curr != NULL)
-    {
+    while (curr != NULL) {
         cout << curr->data << " ";
         curr = curr->next;
     }
 }
+
+
+
+
+
+

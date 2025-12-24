@@ -1,19 +1,15 @@
 // Include the iostream library for input and output operations
 #include <iostream>
 using namespace std;
-
 // Recursive function to print the elements of an array in sequence
 // Parameters:
 // - `arr[]`: The array whose elements need to be printed
 // - `index`: The current index of the array being processed
-void print(int arr[], int index)
-{
+void print(int arr[], int index){
     // Base case: If the index is -1, all elements have been printed, so return
-    if (index == -1)
-    {
+    if (index == -1){
         return;
     }
-
     // Recursive call: Process the previous element in the array
     print(arr, index - 1);
 
@@ -21,8 +17,7 @@ void print(int arr[], int index)
     cout << arr[index] << " ";
 }
 
-int main()
-{
+int main(){
     // Initialize an array with 5 elements
     int arr[5] = {1, 2, 3, 4, 5};
     

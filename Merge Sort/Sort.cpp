@@ -3,25 +3,21 @@
 using namespace std;
 
 // Function to merge two sorted halves of the array into a single sorted section
-void merge(int arr[], int start, int mid, int end)
-{
+void merge(int arr[], int start, int mid, int end){
     // Temporary vector to store the merged elements
     vector<int> temp(end - start + 1);
 
     // Pointers for the left and right halves of the array
     int left = start, right = mid + 1, index = 0;
-
     // Merge elements from both halves into the temporary array
-    while (left <= mid && right <= end)
-    {
+    while (left <= mid && right <= end) {
         if (arr[left] < arr[right])
         {
             // If the element in the left half is smaller, add it to the temp array
             temp[index] = arr[left];
             index++, left++;
         }
-        else
-        {
+        else  {
             // If the element in the right half is smaller, add it to the temp array
             temp[index] = arr[right];
             index++, right++;
@@ -29,8 +25,7 @@ void merge(int arr[], int start, int mid, int end)
     }
 
     // Add any remaining elements from the left half
-    while (left <= mid)
-    {
+    while (left <= mid)  {
         temp[index] = arr[left];
         index++, left++;
     }
@@ -52,8 +47,7 @@ void merge(int arr[], int start, int mid, int end)
 }
 
 // Function to perform merge sort on an array
-void mergesort(int arr[], int start, int end)
-{
+void mergesort(int arr[], int start, int end){
     // Calculate the middle index
     int mid = start + (end - start) / 2;
 
@@ -73,8 +67,7 @@ void mergesort(int arr[], int start, int end)
     merge(arr, start, mid, end);
 }
 
-int main()
-{
+int main(){
     // Input array to be sorted
     int arr[] = {12, 11, 13, 5, 6, 7, 34, 56, 82, 10};
 

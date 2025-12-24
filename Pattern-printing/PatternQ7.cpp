@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
-int main()
-{
+
+int main() {
     // i=row    j=column
     int n, i, j;
-
     cout << "Enter a number :";
     cin >> n;
-    for (i = 1; i <= n; i++)
-    {
-      
+    
+    for (i = 1; i <= n; i++)  {  
         // Nested loop
-        for (j = 1; j <= n; j++)
-        {
-              char name = 'a' + j - 1;
+        for (j = 1; j <= n; j++) {
+            
+            char name = 'a' + j - 1;
             cout << name << "  ";
         }
         cout << endl;
@@ -22,13 +20,11 @@ int main()
     return 0;
 }
 /* Output
+
 a  b  c  d  e        
 a  b  c  d  e        
 a  b  c  d  e        
 a  b  c  d  e        
-<<<<<<< HEAD
 a  b  c  d  e
+
 */
-=======
-a  b  c  d  e   */
->>>>>>> 549b0d8 (file update)

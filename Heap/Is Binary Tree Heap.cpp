@@ -1,7 +1,6 @@
 #include <iostream>
 #include <queue>
 using namespace std;
-
 // Node structure
 class Node {
   public:
@@ -53,6 +52,7 @@ class Solution {
 };
 
 int main() {
+  
     /*
        Construct this tree:
               10

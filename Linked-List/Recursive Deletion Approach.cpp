@@ -1,13 +1,11 @@
 
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 public:
     int data;
     node *next;
-    node(int value)
-    {
+    node(int value) {
         data = value;
         next = NULL;
     }
@@ -25,8 +23,7 @@ node *deletenode(node*current,int x){
 }
 
 
-int main()
-{
+int main(){
 
     node *head = NULL;
     node *tail = NULL;

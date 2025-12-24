@@ -3,23 +3,21 @@
 using namespace std;
 
 // Node structure
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
     Node *right;
 
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = right = NULL;
     }
 };
 
 // Helper function to build BST from postorder
-Node *Bst(int arr[], int &index, int lower, int upper)
-{
+Node *Bst(int arr[], int &index, int lower, int upper){
+    
     if (index < 0 || arr[index] < lower || arr[index] > upper)
         return NULL;
 
@@ -32,15 +30,15 @@ Node *Bst(int arr[], int &index, int lower, int upper)
 }
 
 // Function to construct BST from postorder traversal
-Node *constructTree(int post[], int size)
-{
+Node *constructTree(int post[], int size){
+    
     int index = size - 1;
     return Bst(post, index, INT_MIN, INT_MAX);
 }
 
 // Inorder traversal to verify the BST
-void inorder(Node *root)
-{
+void inorder(Node *root){
+    
     if (!root)
         return;
     inorder(root->left);
@@ -48,8 +46,8 @@ void inorder(Node *root)
     inorder(root->right);
 }
 
-int main()
-{
+int main(){
+    
     int post[] = {1, 7, 5, 50, 40, 10};
     int size = sizeof(post) / sizeof(post[0]);
 
@@ -61,3 +59,13 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+
+
+
+

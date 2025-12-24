@@ -2,13 +2,11 @@
 #include <iostream>
 using namespace std;
 
-struct Node
-{ // holds the integer value
+struct Node{ // holds the integer value
     int data;
     Node *next; // points to the next node
 };
-int main()
-{
+int main(){
 
     Node *first = new Node();
     Node *second = new Node();
@@ -25,8 +23,7 @@ int main()
 
     Node *current = first;
 
-    while (current != nullptr)
-    {
+    while (current != nullptr) {
         cout << current->data << " ";
         current = current->next;
     }

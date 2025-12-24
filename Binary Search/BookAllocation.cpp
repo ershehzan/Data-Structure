@@ -1,7 +1,6 @@
 #include <iostream>
 #include <climits>
 using namespace std;
-
 // Function to check if it's possible to allocate books among 'students' such that 
 // no student reads more than 'maxPages'
 bool isPossible(int arr[], int n, int students, int maxPages) {
@@ -21,7 +20,6 @@ bool isPossible(int arr[], int n, int students, int maxPages) {
             pagesSum += arr[i]; // Add book pages to the current student's allocation
         }
     }
-
     return true; // If allocation is possible within 'students', return true
 }
 

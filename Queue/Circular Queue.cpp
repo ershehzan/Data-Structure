@@ -1,31 +1,29 @@
 #include <iostream>
 using namespace std;
 
-class Queue
-{
+class Queue  { 
     int front, rear;
     int *arr;
     int size;
 
 public:
-    Queue(int n)
+    Queue(int n) 
     {
         arr = new int[n];
         size = n;
         front = rear = -1;
     }
 
-    bool isEmpty()
+    bool isEmpty()  
     {
         return (front == -1);
     }
 
-    bool isFull()
-    {
+    bool isFull() {
         return ((rear + 1) % size == front);
     }
 
-    void enqueue(int x)
+    void enqueue(int x) 
     {
         if (isFull())
         {
@@ -45,7 +43,7 @@ public:
         cout << "Inserting " << x << " in Queue" << endl;
     }
 
-    void dequeue()
+    void dequeue() 
     {
         if (isEmpty())
         {
@@ -65,8 +63,7 @@ public:
         }
     }
 
-    int start()
-    {
+    int start()  {
         if (isEmpty())
         {
             cout << "Queue is Empty" << endl;
@@ -77,8 +74,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
    int n;
     cout << "Enter the size of the Queue: ";
     cin >> n;

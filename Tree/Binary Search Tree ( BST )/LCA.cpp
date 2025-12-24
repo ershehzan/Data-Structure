@@ -2,16 +2,14 @@
 using namespace std;
 
 // Tree Node
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
     Node *right;
 
     // Constructor to initialize a new node
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = NULL;
         right = NULL;
@@ -32,11 +30,10 @@ Node *insert(Node *root, int val)
     return root;
 }
 
-class Solution
-{
+class Solution{
+
 public:
-    Node *LCA(Node *root, Node *n1, Node *n2)
-    {
+    Node *LCA(Node *root, Node *n1, Node *n2){
         if (!root)
             return NULL;
 
@@ -49,8 +46,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     // Create a sample BST
     Node *root = NULL;
     root = insert(root, 20);

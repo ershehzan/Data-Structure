@@ -1,12 +1,9 @@
 #include <iostream>
 #include <vector>
 using namespace std;
-
 // Iterative version of heapify to maintain the max-heap property
-void heapify(vector<int> &arr, int i, int n)
-{
-    while (i < n)
-    {
+void heapify(vector<int> &arr, int i, int n){
+    while (i < n) {
         int largest = i;           // Assume current index is largest
         int left = 2 * i + 1;      // Index of left child
         int right = 2 * i + 2;     // Index of right child
@@ -20,8 +17,7 @@ void heapify(vector<int> &arr, int i, int n)
             largest = right;
 
         // If largest is not the current node, swap and continue
-        if (largest != i)
-        {
+        if (largest != i){
             swap(arr[i], arr[largest]);
             i = largest; // Move to the largest child and repeat
         }
@@ -33,22 +29,19 @@ void heapify(vector<int> &arr, int i, int n)
 }
 
 // Function to build a max heap from an unsorted array
-void buildMaxheap(vector<int> &arr, int n)
-{
+void buildMaxheap(vector<int> &arr, int n){
     // Start from the last non-leaf node and apply heapify
     for (int i = n / 2 - 1; i >= 0; i--)
         heapify(arr, i, n);
 }
 
 // Function to perform heap sort using max heap
-void heapsort(vector<int> &arr, int n)
-{
+void heapsort(vector<int> &arr, int n){
     // Build max heap first
     buildMaxheap(arr, n);
 
     // Extract elements one by one from the heap
-    for (int i = n - 1; i > 0; i--)
-    {
+    for (int i = n - 1; i > 0; i--)  {
         // Move current root (maximum) to the end
         swap(arr[i], arr[0]);
 
@@ -65,8 +58,7 @@ void print(const vector<int> &arr)
     cout << endl;
 }
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter the number of elements in the array: ";
     cin >> n;

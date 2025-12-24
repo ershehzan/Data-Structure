@@ -2,30 +2,26 @@
 #include <algorithm> // For sorting the array
 using namespace std;
 // Function to perform binary search
-int binarySearch(int arr[], int n, int target)
-{
+int binarySearch(int arr[], int n, int target){
     int left = 0, right = n - 1, mid;
     while (left <= right) {
         mid = left + (right - left) / 2; // Avoids potential integer overflow
 
-        if (arr[mid] == target)
-        {
+        if (arr[mid] == target)  {
             return mid; // Element found, return index
         }
-        else if (arr[mid] < target)
-        {
+        else if (arr[mid] < target){
             left = mid + 1; // Search in the right half
         }
-        else
-        {
+        else{
             right = mid - 1; // Search in the left half
         }
     }
     return -1; // Element not found
 }
 
-int main()
-{
+int main(){
+    
     int n, target;
     int arr[1000]; // Maximum size of array
 

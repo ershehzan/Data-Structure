@@ -1,19 +1,16 @@
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 public:
     int data;
     node *next;
-    node(int value)
-    {
+    node(int value){
         data = value;
         next = NULL;
     }
 };
 
-int main()
-{
+int main(){
     node *head = NULL;
     node *tail = NULL;
 
@@ -45,8 +42,7 @@ int main()
     cout << "Enter the value of the node to be deleted: ";
     cin >> x;
 
-    if (x == 1)
-    {
+    if (x == 1){
         node *temp = head;
         head = head->next;
         delete temp;
@@ -68,8 +64,7 @@ int main()
     }
     node *curr = head;
     cout << "Enter the value of the node to be deleted: ";
-    while (curr)
-    {
+    while (curr){
         cout << curr->data << " ";
         curr = curr->next;
     }

@@ -2,24 +2,21 @@
 using namespace std;
 
 // Class to represent a Max Heap
-class MaxHeap
-{
+class MaxHeap{
 public:
     int *arr;        // Dynamic array to store heap elements
     int size;        // Current number of elements in the heap
     int total_size;  // Maximum capacity of the heap
 
     // Constructor: Initializes the heap with given capacity
-    MaxHeap(int n)
-    {
+    MaxHeap(int n) {
         arr = new int[n];   // Allocate memory for heap array
         size = 0;           // Initially the heap is empty
         total_size = n;     // Store the maximum number of elements
     }
 
     // Function to insert a new element into the Max Heap
-    void insert(int val)
-    {
+    void insert(int val){
         if (size == total_size)
         {
             cout << "Heap is full" << endl;
@@ -32,8 +29,7 @@ public:
         size++;
 
         // Step 2: Bubble up the element to maintain Max Heap property
-        while (index > 0 && arr[(index - 1) / 2] < arr[index])
-        {
+        while (index > 0 && arr[(index - 1) / 2] < arr[index])  {
             // Swap the current element with its parent if it's greater
             swap(arr[index], arr[(index - 1) / 2]);
             index = (index - 1) / 2;  // Move to the parent index
@@ -43,8 +39,7 @@ public:
     }
 
     // Function to print all elements of the heap
-    void print()
-    {
+    void print()  {
         if (size == 0)
         {
             cout << "Heap is empty" << endl;
@@ -60,8 +55,7 @@ public:
     }
 
     // Function to restore Max Heap property starting from a given index
-    void Heapify(int index)
-    {
+    void Heapify(int index) {
         int largest = index;              // Assume current node is largest
         int left = 2 * index + 1;         // Left child index
         int right = 2 * index + 2;        // Right child index
@@ -92,8 +86,7 @@ public:
     }
 
     // Function to delete the maximum (root) element from the heap
-    void Delete()
-    {
+    void Delete()  {
         if (size == 0)
         {
             cout << "Heap is empty, cannot delete" << endl;
@@ -117,9 +110,8 @@ public:
     }
 
     // Function to get the maximum element (root) without deleting
-    int getMax()
-    {
-        if (size == 0)
+    int getMax()  {
+     if (size == 0)
         {
             cout << "Heap is empty" << endl;
             return -1;  // Return -1 as error value
@@ -135,8 +127,7 @@ public:
 };
 
 // Driver code to test the MaxHeap class
-int main()
-{
+int main(){
     int n;
     cout << "Enter the size of the heap: ";
     cin >> n;

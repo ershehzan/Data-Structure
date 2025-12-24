@@ -6,32 +6,27 @@ using namespace std;
 
 class Solution {
 public:
-    double fractionalKnapsack(vector<int>& val, vector<int>& wt, int capacity)
-    {
+    double fractionalKnapsack(vector<int>& val, vector<int>& wt, int capacity){
         priority_queue<pair<double,pair<int,int>>> pq;
         int n = val.size();
         
-        for(int i = 0; i < n; i++)
-        {
+        for(int i = 0; i < n; i++){
             pq.push({(double)val[i]/wt[i], {val[i], wt[i]}});
         }
 
         double profit = 0.0;
         
-        while(capacity > 0 && !pq.empty())
-        {
+        while(capacity > 0 && !pq.empty()){
             double ratio = pq.top().first;
             int value = pq.top().second.first;
             int weight = pq.top().second.second;
             pq.pop();
             
-            if(capacity >= weight)
-            {
+            if(capacity >= weight)  {
                 profit += value;
                 capacity -= weight;
             }
-            else
-            {
+            else   {
                 profit += ratio * capacity;
                 capacity = 0;
             }
@@ -41,6 +36,7 @@ public:
 };
 
 int main() {
+    
     Solution sol;
 
     // Example input

@@ -1,19 +1,16 @@
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 public:
     int data;
     node *next;
-    node(int value)
-    {
+    node(int value) {
         data = value;
         next = NULL;
     }
 };
 
-node *insertAtend(int arr[], int index, int size)
-{
+node *insertAtend(int arr[], int index, int size){
 
     if (index == size)
         return NULL;
@@ -23,8 +20,7 @@ node *insertAtend(int arr[], int index, int size)
     return temp;
 }
 
-int main()
-{
+int main(){
     node *head;
     head = NULL;
 

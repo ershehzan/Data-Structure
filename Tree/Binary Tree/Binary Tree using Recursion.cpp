@@ -2,23 +2,20 @@
 using namespace std;
 
 // Definition of a Node in the binary tree
-class Node
-{
+class Node{
 public:
     int data;         // Value stored in the node
     Node *left, *right; // Pointers to the left and right child nodes
 
     // Constructor to initialize the node with a value and null children
-    Node(int val)
-    {
+    Node(int val){
         data = val;
         left = right = NULL;
     }
 };
 
 // Function to build the binary tree recursively
-Node *BinaryTree()
-{
+Node *BinaryTree(){
     int n;
 
     cin >> n; // Read the value for the current node from user input
@@ -41,8 +38,7 @@ Node *BinaryTree()
 }
 
 // Preorder traversal: visit root, then left subtree, then right subtree
-void preorder(Node *root)
-{
+void preorder(Node *root){
     if (root == NULL)
         return;
     cout << root->data << " "; // Print current node's data
@@ -70,8 +66,7 @@ void postorder(Node *root)
     cout << root->data << " "; // Print current node's data
 }
 
-int main()
-{
+int main(){
     cout << "Enter the Root: ";
     Node *Root;
     // Start building the binary tree from the root
@@ -79,8 +74,7 @@ int main()
     cout << "Binary Tree created successfully." << endl;
 
     // Example usage: print the root node's data if tree is not empty
-    if (Root != NULL)
-    {
+    if (Root != NULL){
         cout << "Root node value: " << Root->data << endl;
     }
 

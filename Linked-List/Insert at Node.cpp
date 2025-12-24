@@ -1,7 +1,6 @@
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 public:
     int data;
     node *next;
@@ -12,9 +11,7 @@ public:
     }
 };
 
-node *insertAtend(int arr[], int index, int size)
-{
-
+node *insertAtend(int arr[], int index, int size){
     if (index == size)
         return NULL;
 
@@ -23,8 +20,7 @@ node *insertAtend(int arr[], int index, int size)
     return temp;
 }
 
-int main()
-{
+int main(){    
     node *head;
     head = NULL;
 
@@ -36,9 +32,7 @@ int main()
     node *temp = head;
     int value = 30;
     x--;
-    while (x--)
-    {
-
+    while (x--){
         temp = temp->next;
     };
 
@@ -55,3 +49,7 @@ int main()
         current = current->next;
     }
 }
+
+
+
+

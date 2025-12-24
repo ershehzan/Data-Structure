@@ -3,29 +3,30 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution  {
 public:
-    bool isPossible(int N, int P, vector<pair<int, int>> &prerequisites)
-    {
+    bool isPossible(int N, int P, vector<pair<int, int>> &prerequisites)  {
+        
         vector<int> Indeg(N, 0);
         queue<int> q;
         vector<int> adj[N];
-        for (auto &p : prerequisites)
+        
+        for (auto &p : prerequisites) 
         {
             int u = p.second;
             int v = p.first;
             adj[u].push_back(v);
             Indeg[v]++;
         }
+        
         for (int j = 0; j < N; j++)
         {
             if (!Indeg[j])
                 q.push(j);
         }
+        
         int count = 0;
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int node = q.front();
             q.pop();
             count++;
@@ -40,8 +41,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int N, P;
     cout << "Enter number of tasks (N) and prerequisites (P): ";
     cin >> N >> P;
@@ -63,4 +63,14 @@ int main()
         cout << "No, it is not possible to finish all tasks.\n";
     }
     return 0;
+
 }
+
+
+
+
+
+
+
+
+

@@ -4,14 +4,13 @@ using namespace std;
 
 class Solution{
 public:
-    void DFS(int node, int parent, vector<int> adj[], vector<bool> &vis, vector<bool> &A, vector<int> &disc, vector<int> &low, int &timer)
-    {
+    void DFS(int node, int parent, vector<int> adj[], vector<bool> &vis, vector<bool> &A, vector<int> &disc, vector<int> &low, int &timer){
+        
         vis[node] = 1;
         low[node] = disc[node] = timer;
         int child = 0;
 
-        for (int j = 0; j < adj[node].size(); j++)
-        {
+        for (int j = 0; j < adj[node].size(); j++) {
             int neigh = adj[node][j];
 
             if (neigh == parent)
@@ -21,8 +20,7 @@ public:
             {
                 low[node] = min(low[node], disc[neigh]);
             }
-            else
-            {
+            else {
                 child++;
                 timer++;
                 DFS(neigh, node, adj, vis, A, disc, low, timer);
@@ -39,8 +37,7 @@ public:
             A[node] = 1;
         }
     }
-    vector<int> articulationPoints(int V, vector<int> adj[])
-    {
+    vector<int> articulationPoints(int V, vector<int> adj[]) {
         vector<bool> A(V, 0);
         vector<int> disc(V);
         vector<int> low(V);
@@ -65,6 +62,7 @@ public:
 };
 
 int main(){
+    
     int V, E;
     cout << "Enter number of vertices and edges: ";
     cin >> V >> E;

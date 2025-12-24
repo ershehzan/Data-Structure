@@ -1,11 +1,7 @@
-
 #include <iostream>
 using namespace std;
-
-void toh(int n, int sou, int help, int des)
-{
-    if (n == 1)
-    {
+void toh(int n, int sou, int help, int des){
+    if (n == 1) {
         cout << "Move disk 1 from rod " << sou << " to rod " << des << endl;
         return;
     }
@@ -14,9 +10,7 @@ void toh(int n, int sou, int help, int des)
     cout << "Move disk " << n << " from rod " << sou << " to rod " << des << endl;
     toh(n - 1, help, sou, des);
 }
-int main()
-{
-
+int main(){
     int n;
     cout << "Enter the number of disks: ";
     cin >> n;

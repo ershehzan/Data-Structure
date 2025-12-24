@@ -5,7 +5,6 @@ using namespace std;
 class MyStack {
 public:
     queue<int> q;
-
     MyStack() {}
 
     bool empty() 
@@ -13,7 +12,8 @@ public:
         return q.empty(); 
     }
 
-    void push(int x) {
+    void push(int x) 
+    {
         q.push(x);
         for (int i = 0; i < q.size() - 1; i++)
         {
@@ -34,6 +34,7 @@ public:
 };
 
 int main() {
+    
     MyStack st;
     st.push(10);
     st.push(20);

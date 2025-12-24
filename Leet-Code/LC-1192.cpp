@@ -5,12 +5,12 @@ using namespace std;
 class Solution{
 public:
     void DFS(int node, int parent, vector<vector<int>> &adj, vector<vector<int>> &bridges,
-             vector<int> &disc, vector<int> &low, vector<bool> &vis, int &count)
-    {
-        disc[node] = low[node] = count;
-        vis[node] = 1;
-        for (int j = 0; j < adj[node].size(); j++)
-        {
+             vector<int> &disc, vector<int> &low, vector<bool> &vis, int &count){
+        
+           disc[node] = low[node] = count;
+           vis[node] = 1;
+           for (int j = 0; j < adj[node].size(); j++)
+             {
             int neigh = adj[node][j];
             if (neigh == parent)
                 continue;
@@ -18,8 +18,7 @@ public:
             {
                 low[node] = min(low[node], disc[neigh]);
             }
-            else
-            {
+            else  {
                 count++;
                 DFS(neigh, node, adj, bridges, disc, low, vis, count);
                 if (disc[node] < low[neigh])
@@ -34,8 +33,7 @@ public:
         }
     }
 
-    vector<vector<int>> criticalConnections(int n, vector<vector<int>> &connections)
-    {
+    vector<vector<int>> criticalConnections(int n, vector<vector<int>> &connections){
         vector<vector<int>> adj(n);
         for (auto &c : connections)
         {
@@ -59,6 +57,7 @@ public:
 };
 
 int main(){
+    
     int n = 5;
     vector<vector<int>> connections = {
         {0, 1}, {1, 2}, {2, 0}, {1, 3}, {3, 4}};

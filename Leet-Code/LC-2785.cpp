@@ -3,18 +3,14 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    string sortVowels(string s)
-    {
+    string sortVowels(string s) {
         vector<int> lower(26, 0);
         vector<int> upper(26, 0);
 
-        for (int i = 0; i < s.size(); i++)
-        {
-            if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u')
-            {
+        for (int i = 0; i < s.size(); i++) {
+            if (s[i] == 'a' || s[i] == 'e' || s[i] == 'i' || s[i] == 'o' || s[i] == 'u') {
                 lower[s[i] - 'a']++;
                 s[i] = '#';
             }
@@ -26,10 +22,8 @@ public:
         }
 
         string vowel;
-
         // upper
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++) {
             char c = 'A' + i;
             while (upper[i])
             {
@@ -39,8 +33,7 @@ public:
         }
 
         // lower
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++) {
             char c = 'a' + i;
             while (lower[i])
             {
@@ -52,8 +45,7 @@ public:
         int first = 0;
         size_t sec = 0;
 
-        while (sec < vowel.size())
-        {
+        while (sec < vowel.size()) {
             if (s[first] == '#')
             {
                 s[first] = vowel[sec];
@@ -65,8 +57,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string input;
     cout << "Enter a string: ";

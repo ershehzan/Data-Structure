@@ -1,8 +1,8 @@
 // Book Allocation
 #include <iostream>
 using namespace std;
-int main()
-{
+
+int main(){
     int n;
     cout << "Enter a number : ";
     cin >> n;
@@ -10,8 +10,7 @@ int main()
 
     int start = 0, end = 3, mid, ans;
 
-    while (start <= end)
-    {
+    while (start <= end)  {
         mid = start + (end - start) / 2;
         int page = 0, count = 1;
 
@@ -28,15 +27,11 @@ int main()
                 count++;
             page = arr[i];
         }
-        if (count <= n)
-        {
-
+        if (count <= n) {
             ans = mid;
             end = mid - 1;
         }
-        else
-        {
-
+        else {
             start = mid + 1;
         }
     }

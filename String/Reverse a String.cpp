@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
-
-int main() // Corrected function name from 'msin' to 'main'
-{
-    string s = "nazhehs"; // Initialize the string
-
-    int start = 0, end = s.size() - 1; // Set start and end pointers
+// Corrected function name from 'msin' to 'main'
+int main() {
     
+    string s = "nazhehs"; // Initialize the string
+    int start = 0, end = s.size() - 1; // Set start and end pointers
     // Reverse the string using two-pointer approach
     while (start < end)
     {
@@ -14,11 +12,11 @@ int main() // Corrected function name from 'msin' to 'main'
         start++; // Move start pointer forward
         end--; // Move end pointer backward
     }
-    
     cout << s << endl; // Print the reversed string
 
 int size=0;
-while(s[size] != '\0') // Calculate the size of the string
+    // Calculate the size of the string
+while(s[size] != '\0') 
 {
     size++; // Increment size for each character until null terminator
 }

@@ -3,20 +3,17 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int r;
     int c;
-    bool valid(int i, int j)
-    {
+    bool valid(int i, int j) {
         return i >= 0 && i < r && j >= 0 && j < c;
     }
     int row[8] = {-1, -1, -1, 1, 1, 1, 0, 0};
     int col[8] = {-1, 0, 1, -1, 0, 1, -1, 1};
 
-    int countIslands(vector<vector<char>> &grid)
-    {
+    int countIslands(vector<vector<char>> &grid) {
         r = grid.size();
         c = grid[0].size();
 
@@ -57,8 +54,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n, m;
     cout << "Enter number of rows and columns: ";
     cin >> n >> m;
@@ -75,4 +71,8 @@ int main()
     int islands = sol.countIslands(grid);
     cout << "Number of islands: " << islands << endl;
     return 0;
+
 }
+
+
+

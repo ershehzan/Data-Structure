@@ -4,20 +4,17 @@
 using namespace std;
 
 // Tree node structure
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
-    Node(int x)
-    {
+    Node(int x){
         data = x;
         left = right = NULL;
     }
 };
 
-int search(vector<int> &arr, int target, int s, int e)
-{
+int search(vector<int> &arr, int target, int s, int e){
     for (int i = s; i <= e; i++)
     {
         if (arr[i] == target)
@@ -26,11 +23,9 @@ int search(vector<int> &arr, int target, int s, int e)
     return -1;
 }
 
-class Solution
-{
+class Solution{
 public:
-    Node *tree(vector<int> &inorder, vector<int> &postorder, int start, int end, int index)
-    {
+    Node *tree(vector<int> &inorder, vector<int> &postorder, int start, int end, int index) {
         if (start > end)
         {
             return NULL;
@@ -48,8 +43,7 @@ public:
     }
 
     // Function to return a tree created from postorder and inorder traversals.
-    Node *buildTree(vector<int> inorder, vector<int> postorder)
-    {
+    Node *buildTree(vector<int> inorder, vector<int> postorder){
         int idx = postorder.size() - 1;
         return tree(inorder, postorder, 0, inorder.size() - 1, idx);
     }
@@ -79,8 +73,7 @@ void printLevelOrder(Node *root)
     }
 }
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter number of nodes: ";
     cin >> n;

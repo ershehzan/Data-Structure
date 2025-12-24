@@ -4,8 +4,7 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
@@ -13,11 +12,9 @@ struct Node
 };
 
 // Solution class as provided
-class Solution
-{
+class Solution{
 public:
-    vector<int> rightView(Node *root)
-    {
+    vector<int> rightView(Node *root) {
         vector<int> ans;
         if (root == NULL)
             return ans;
@@ -25,13 +22,11 @@ public:
         queue<Node *> q;
         q.push(root);
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             ans.push_back(q.front()->data);
             int n = q.size();
 
-            while (n--)
-            {
+            while (n--) {
                 Node *temp = q.front();
                 q.pop();
 
@@ -47,8 +42,8 @@ public:
 };
 
 // Helper function to build a simple binary tree for demonstration
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
+    
     //      1
     //     / \
     //    2   3
@@ -62,8 +57,8 @@ Node *buildSampleTree()
     return root;
 }
 
-int main()
-{
+int main(){
+    
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> right_view = sol.rightView(root);

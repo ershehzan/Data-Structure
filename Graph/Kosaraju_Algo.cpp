@@ -15,11 +15,9 @@ class Solution {
             s.push(node);
         }
     
-        void DFS(int node,vector<vector<int>>&adj,vector<bool>&vis)
-        {
+        void DFS(int node,vector<vector<int>>&adj,vector<bool>&vis) {
                 vis[node]=1;
-                for(int neigh:adj[node])
-                {
+                for(int neigh:adj[node])  {
                         if(!vis[neigh])
                         DFS(neigh,adj,vis);
                 }
@@ -30,16 +28,14 @@ class Solution {
             //Topological sort 
             stack<int>s;
             vector<bool>vis(V,0);
-            for(int i=0;i<V;i++)
-            {
+            for(int i=0;i<V;i++){
                     if(!vis[i])
                     topo_sort(i,adj,vis,s);
             }
             // Transpose the edges or revere it 
             vector<vector<int>>adj2(V);
             for(int i=0;i<V;i++)
-            for(int j=0;j<adj[i].size();j++)
-            {
+            for(int j=0;j<adj[i].size();j++){
                     int u=i;
                     int v=adj[i][j];
                     adj2[v].push_back(u);
@@ -66,6 +62,7 @@ class Solution {
 };
 
 int main() {
+    
         int V, E;
         cout << "Enter number of vertices and edges: ";
         cin >> V >> E;

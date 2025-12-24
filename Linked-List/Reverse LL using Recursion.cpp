@@ -2,23 +2,18 @@
 #include <vector>
 using namespace std;
 
-class node
-{
-
+class node{
 public:
     int data;
     node *next;
 
-    node(int value)
-    {
-
+    node(int value) {
         data = value;
         next = NULL;
     }
 };
 
-node*reverse(node*curr,node*prev)
-{
+node*reverse(node*curr,node*prev){
     if(curr==NULL)
     return prev;
 
@@ -28,8 +23,7 @@ node*reverse(node*curr,node*prev)
     return reverse(fut,curr);
 }
 
-int main()
-{
+int main(){
 
     node *head, *tail;
     tail = head = NULL;
@@ -37,16 +31,13 @@ int main()
     vector<int> arr = {10, 20, 30, 40, 50};
     int n = arr.size();
 
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++) {
 
-        if (head == NULL)
-        {
+        if (head == NULL) {
             head = new node(arr[i]);
             tail = head;
         }
-        else
-        {
+        else  {
             tail->next = new node(arr[i]);
             tail = tail->next;
         }
@@ -54,14 +45,20 @@ int main()
 
     head=reverse(head,NULL);
     
-
     node *current;
     current = head;
     cout << "Reversed Linked List: ";
-    while (current != NULL)
-    {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->next;
     }
     return 0;
 }
+
+
+
+
+
+
+
+

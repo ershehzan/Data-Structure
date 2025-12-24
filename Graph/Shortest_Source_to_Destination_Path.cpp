@@ -4,8 +4,7 @@
 using namespace std;
 
 // User function Template for C++
-class Solution
-{
+class Solution{
 public:
     int row[4] = {1, -1, 0, 0};
     int col[4] = {0, 0, 1, -1};
@@ -15,8 +14,7 @@ public:
         return i >= 0 && j >= 0 && i < n && j < m;
     }
 
-    int shortestDistance(int N, int M, vector<vector<int>> A, int X, int Y)
-    {
+    int shortestDistance(int N, int M, vector<vector<int>> A, int X, int Y) {
         if (A[0][0] == 0)
             return -1; // start blocked
         if (X == 0 && Y == 0)
@@ -58,8 +56,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int N, M;
     cout << "Enter number of rows and columns: ";
     cin >> N >> M;

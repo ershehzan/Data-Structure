@@ -19,7 +19,6 @@ public:
         return insertAtbegin(arr, index + 1, size, temp);
     }
 };
-
 int main(){
     node *head;
     head = NULL;
@@ -37,6 +36,7 @@ int main(){
         temp = temp->next;
     }
 }
+
 
 
 

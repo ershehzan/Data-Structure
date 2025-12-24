@@ -2,8 +2,7 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
@@ -11,11 +10,9 @@ struct Node
 };
 
 // Solution class as provided
-class Solution
-{
+class Solution{
 public:
-    void flatten(Node *root)
-    {
+    void flatten(Node *root) {
         while (root)
         {
             if (!root->left)
@@ -35,8 +32,7 @@ public:
 };
 
 // Helper function to print the flattened tree
-void printRightLinkedList(Node *root)
-{
+void printRightLinkedList(Node *root){
     while (root)
     {
         cout << root->data << " ";
@@ -45,8 +41,7 @@ void printRightLinkedList(Node *root)
     cout << endl;
 }
 
-int main()
-{
+int main(){
     /* Example: Constructing the following tree
           1
          / \
@@ -63,10 +58,8 @@ int main()
 
     Solution sol;
     sol.flatten(root);
-
     // Print the flattened tree
     printRightLinkedList(root);
-
     // Free memory (not strictly necessary for short-lived programs)
     // In practice, you'd want to delete all nodes.
 

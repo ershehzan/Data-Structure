@@ -3,26 +3,22 @@
 #include <stack>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    queue<int> reverseFirstK(queue<int> q, int k)
-    {
+    queue<int> reverseFirstK(queue<int> q, int k){
         if (k > q.size() || k < 0)
             return q; // ❗ Important: guard condition
 
         stack<int> st;
 
         // Step 1: Push first k elements into stack
-        for (int i = 0; i < k; ++i)
-        {
+        for (int i = 0; i < k; ++i) {
             st.push(q.front());
             q.pop();
         }
 
         // Step 2: Enqueue back the reversed elements
-        while (!st.empty())
-        {
+        while (!st.empty()) {
             q.push(st.top());
             st.pop();
         }
@@ -39,8 +35,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     queue<int> q;
     int n, k, val;
     cout << "Enter number of elements in queue: ";

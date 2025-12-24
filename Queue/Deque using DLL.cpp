@@ -2,27 +2,23 @@
 using namespace std;
 
 // Node class for doubly linked list
-class Node
-{
+class Node{
 public:
     int data;        // Value stored in the node
     Node *next, *prev; // Pointers to the next and previous nodes
-    Node(int val)
-    {
+
+    Node(int val)  {
         data = val;
         next = prev = NULL;
     }
 };
 
 // Deque class using a doubly linked list
-class Deque
-{
+class Deque{
     Node *front, *rear; // Pointers to the front and rear of the deque
-
 public:
     // Constructor: initializes an empty deque
-    Deque()
-    {
+    Deque()  {
         front = rear = NULL;
     }
 
@@ -51,8 +47,7 @@ public:
     }
 
     // Adds an element to the rear of the deque
-    void push_back(int x)
-    {
+    void push_back(int x) {
         if (isEmpty())
         {
             // If empty, both front and rear point to the new node
@@ -138,6 +133,7 @@ public:
 };
 
 int main() {
+    
     Deque dq; // Create a Deque object
 
     // Demonstrate push operations

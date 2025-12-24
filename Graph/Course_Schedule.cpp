@@ -6,25 +6,24 @@ using namespace std;
 class Solution{
 public:
     vector<int> findOrder(int n, vector<vector<int>> prerequisites) {
+        
         vector<int> Indeg(n, 0);
         vector<int> adj[n];
-        for (auto &p : prerequisites)
-        {
+        for (auto &p : prerequisites){
             int u = p[0];
             int v = p[1];
             adj[v].push_back(u);
             Indeg[u]++;
         }
         queue<int> q;
-        for (int i = 0; i < n; i++)
-        {
+        
+        for (int i = 0; i < n; i++){
             if (Indeg[i] == 0)
                 q.push(i);
         }
         vector<int> ans;
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int node = q.front();
             q.pop();
             ans.push_back(node);
@@ -42,6 +41,7 @@ public:
 };
 
 int main(){
+    
     int n, m;
     cout << "Enter number of courses and number of prerequisites: ";
     cin >> n >> m;

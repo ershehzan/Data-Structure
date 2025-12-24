@@ -3,29 +3,24 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
     Node(int val) : data(val), left(nullptr), right(nullptr) {}
 };
 
-class Solution
-{
+class Solution{
 public:
-    vector<int> preOrder(Node *root)
-    {
+    vector<int> preOrder(Node *root) {
         vector<int> ans;
-        while (root)
-        {
+        while (root){
             if (!root->left)
             {
                 ans.push_back(root->data);
                 root = root->right;
             }
-            else
-            {
+            else {
                 Node *curr = root->left;
                 while (curr->right && curr->right != root)
                     curr = curr->right;
@@ -47,13 +42,14 @@ public:
 };
 
 // Helper function to create a simple binary tree for demonstration
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
+    
     /*      1
            / \
           2   3
          / \
         4   5  */
+    
     Node *root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
@@ -62,8 +58,7 @@ Node *buildSampleTree()
     return root;
 }
 
-int main()
-{
+int main(){
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> preorder = sol.preOrder(root);

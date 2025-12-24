@@ -3,20 +3,17 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
     int r, c;
     int row[4] = {1, -1, 0, 0};
     int col[4] = {0, 0, 1, -1};
 
-    bool valid(int i, int j)
-    {
+    bool valid(int i, int j)  {
         return i >= 0 && i < r && j >= 0 && j < c;
     }
 
-    vector<vector<char>> fill(vector<vector<char>> &mat)
-    {
+    vector<vector<char>> fill(vector<vector<char>> &mat)  {
 
         r = mat.size();
         c = mat[0].size();
@@ -99,8 +96,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n, m;
     cout << "Enter number of rows and columns: ";
     cin >> n >> m;
@@ -125,4 +121,8 @@ int main()
         cout << endl;
     }
     return 0;
+
 }
+
+
+

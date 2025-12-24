@@ -1,34 +1,30 @@
 #include <iostream>
 using namespace std;
-class Node
-{
+
+class Node  { 
 public:
     int data;
     Node *next;
-    Node(int value)
-    {
+    Node(int value) {
         data = value;
         next = NULL;
     }
 };
-class Stack
-{
+
+class Stack  {
     Node *top;
     int size;
 
 public:
-    Stack()
-    {
+    Stack() {
         top = NULL;
         size = 0;
     }
 
     // push operation
-    void push(int value)
-    {
+    void push(int value)  {
         Node *temp = new Node(value);
-        if (temp == NULL)
-        {
+        if (temp == NULL){
             cout << "Stack Overflow" << endl;
             return;
         }
@@ -41,15 +37,12 @@ public:
         }
     };
     // pop operation
-    void pop()
-    {
-        if (top == NULL)
-        {
+    void pop(){
+        if (top == NULL){
             cout << "Stack Underflow" << endl;
             return;
         }
-        else
-        {
+        else{
             Node *temp = top;
             cout << "Popped " << temp->data << " from Stack" << endl;
             top = top->next;
@@ -58,10 +51,8 @@ public:
         }
     };
     //  peek operation
-    int peek()
-    {
-        if (top == NULL)
-        {
+    int peek(){
+        if (top == NULL){
             cout << "Stack is empty" << endl;
             return -1;
         }
@@ -72,18 +63,16 @@ public:
      
         }
     };
-    bool isEmpty()
-    {
+    bool isEmpty() {
         return top == NULL;
     };
 
-    int isSize()
-    {
+    int isSize(){
         return size;
     };
 };
-int main()
-{
+int main(){
+    
     Stack s;
     s.push(10);
     s.push(20);
@@ -91,5 +80,4 @@ int main()
     
     cout<<s.peek();
 
-  
 }

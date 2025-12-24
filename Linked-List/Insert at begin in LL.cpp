@@ -1,23 +1,18 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
-
+class Node{
 public:
     int data;
     Node *next;
 
-    Node(int value)
-    {
+    Node(int value)   {
         data = value;
         next = NULL;
     }
 };
 
-int main()
-{
-
+int main(){
     Node *head;
     head = NULL;
 
@@ -28,9 +23,7 @@ int main()
     {
         head = new Node(arr[i]);
     }
-    else
-    {
-
+    else{
         Node *temp;
         temp = new Node(arr[i]);
         temp->next = head;
@@ -38,9 +31,8 @@ int main()
     }
 }
 cout<<"Linked List: ";
-    // Print the linked list
+ // Print the linked list
 Node *current =head;
-
 while(current !=NULL){
     cout<<current->data<<" ";
     current=current->next;
@@ -48,3 +40,8 @@ while(current !=NULL){
     cout<<endl;
     return 0;
 }
+
+
+
+
+

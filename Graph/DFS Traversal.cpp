@@ -2,10 +2,9 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution  {
 public:
-    void DFS(int node, vector<vector<int>> &adj, vector<int> &ans, vector<bool> &vis)
+    void DFS(int node, vector<vector<int>> &adj, vector<int> &ans, vector<bool> &vis) 
     {
         vis[node] = true;
         ans.push_back(node);
@@ -45,11 +44,20 @@ int main()
     vector<int> traversal = sol.dfs(adj);
 
     cout << "DFS Traversal: ";
-    for (int node : traversal)
-    {
+    for (int node : traversal){
+        
         cout << node << " ";
     }
     cout << endl;
 
     return 0;
+
 }
+
+
+
+
+
+
+
+

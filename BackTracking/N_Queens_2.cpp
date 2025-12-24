@@ -4,7 +4,8 @@ using namespace std;
 
 class Solution {
 public:
-    void find(int row, int n, int &ans, vector<bool>& column, vector<bool>& RD, vector<bool>& LD) {
+    void find(int row, int n, int &ans, vector<bool>& column, vector<bool>& RD, vector<bool>& LD)  {
+        
         if (row == n) {
             ans++;
             return;
@@ -21,7 +22,9 @@ public:
             }
         }
     }
+
     int totalNQueens(int n) {
+    
         if (n == 1)
             return 1;
         int ans = 0;
@@ -34,6 +37,7 @@ public:
 };
 
 int main() {
+    
     int n;
     cout << "Enter the value of n: ";
     cin >> n;

@@ -5,24 +5,21 @@
 using namespace std;
 
 // Tree Node
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
     Node *right;
 
     // Constructor to initialize a new node
-    Node(int val)
-    {
+    Node(int val)   {
         data = val;
         left = NULL;
         right = NULL;
     }
 };
 
-void find(Node *root, int pos, int &l, int &r)
-{
+void find(Node *root, int pos, int &l, int &r){
     if (!root)
         return;
 
@@ -33,11 +30,9 @@ void find(Node *root, int pos, int &l, int &r)
     find(root->right, pos + 1, l, r);
 }
 
-class Solution
-{
+class Solution{
 public:
-    vector<vector<int>> verticalOrder(Node *root)
-    {
+    vector<vector<int>> verticalOrder(Node *root)  {
         int l = 0, r = 0;
         find(root, 0, l, r);
 
@@ -93,8 +88,8 @@ public:
 };
 
 // Helper function to build a simple binary tree for testing
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
+    
     //      1
     //     / \
         //    2   3
@@ -109,8 +104,8 @@ Node *buildSampleTree()
     return root;
 }
 
-int main()
-{
+int main(){
+    
     Node *root = buildSampleTree();
     Solution sol;
     vector<vector<int>> result = sol.verticalOrder(root);

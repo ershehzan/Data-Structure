@@ -2,27 +2,23 @@
 using namespace std;
 
 // Node class representing a single node in the Binary Search Tree (BST)
-class Node
-{
+class Node{
 public:
     int data;        // Value stored in the node
     Node *left;      // Pointer to the left child
     Node *right;     // Pointer to the right child
 
     // Constructor to initialize the node with a value
-    Node(int value)
-    {
+    Node(int value) {
         data = value;
         left = right = nullptr; // Initialize child pointers as nullptr
     }
 };
 
 // Recursive function to insert a value into the BST
-Node *insert(Node *root, int value)
-{
+Node *insert(Node *root, int value){
     // If the tree/subtree is empty, create a new node and return it
-    if (!root)
-    {
+    if (!root) {
         Node *temp = new Node(value);
         return temp;
     }
@@ -36,8 +32,7 @@ Node *insert(Node *root, int value)
 }
 
 // Inorder traversal to print the BST in sorted order (LNR: Left, Node, Right)
-void inorder(Node *root)
-{
+void inorder(Node *root){
     if (!root)
         return;
 
@@ -47,8 +42,7 @@ void inorder(Node *root)
 }
 
 // Search function to check if a target value exists in the BST
-bool search(Node *root, int target)
-{
+bool search(Node *root, int target){
     if (!root)
         return 0; // Tree is empty or not found
 
@@ -63,14 +57,12 @@ bool search(Node *root, int target)
 }
 
 // Function to delete a node with value x from the BST
-Node *deleteNode(Node *root, int x)
-{
+Node *deleteNode(Node *root, int x){
     if (!root)
         return nullptr; // Value not found, return nullptr
 
     // If the value to be deleted is smaller, go left
-    if (root->data > x)
-    {
+    if (root->data > x) {
         root->left = deleteNode(root->left, x);
         return root;
     }
@@ -81,8 +73,7 @@ Node *deleteNode(Node *root, int x)
         return root;
     }
     // Node found
-    else
-    {
+    else{
         // Case 1: Node is a leaf (no children)
         if (!root->left && !root->right)
         {
@@ -104,8 +95,7 @@ Node *deleteNode(Node *root, int x)
             return temp;
         }
         // Case 4: Node has two children
-        else
-        {
+        else {
             // Find the largest value in left subtree (inorder predecessor)
             Node *child = root->left;
             Node *parent = root;
@@ -135,8 +125,8 @@ Node *deleteNode(Node *root, int x)
     }
 }
 
-int main()
-{
+int main(){
+    
     int n; // Number of nodes to be inserted
 
     cout << "Enter the number of nodes in the BST: ";
@@ -161,8 +151,7 @@ Node *root = NULL; //*
     int d;
     cout << "Enter number of deletions to perform: ";
     cin >> d;
-    for (int i = 0; i < d; ++i)
-    {
+    for (int i = 0; i < d; ++i) {
         int x;
         cout << "Enter value to delete: ";
         cin >> x;

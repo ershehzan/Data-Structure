@@ -9,8 +9,10 @@ public:
     // Constructor
     Solution() {}
 
-    void push(int x) {
-        if (s1.empty()) {
+    void push(int x) 
+    {
+        if (s1.empty()) 
+        {
             s1.push(x * 101 + x);  // First element: min = x
         } else {
             int currentMin = s1.top() % 101;
@@ -19,14 +21,16 @@ public:
     }
 
     // Remove the top element
-    void pop() {
+    void pop() 
+    {
         if (s1.empty())
             return;
         s1.pop();
     }
 
     // Return top element
-    int peek() {
+    int peek() 
+    {
         if (s1.empty())
             return -1;
         return s1.top() / 101;
@@ -41,6 +45,7 @@ public:
 };
 
 int main() {
+    
     Solution stack;
     int q;
     cout << "Enter number of operations: ";
@@ -49,15 +54,22 @@ int main() {
     while (q--) {
         int op;
         cin >> op;
-        if (op == 1) {
+        if (op == 1) 
+        {
             int x;
             cin >> x;
             stack.push(x);
-        } else if (op == 2) {
+        }
+        else if (op == 2) 
+        {
             stack.pop();
-        } else if (op == 3) {
+        } 
+        else if (op == 3) 
+        {
             cout << "Top element: " << stack.peek() << endl;
-        } else if (op == 4) {
+        }
+        else if (op == 4) 
+        {
             cout << "Minimum element: " << stack.getMin() << endl;
         }
     }

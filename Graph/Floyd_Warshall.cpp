@@ -3,20 +3,20 @@
 #include <iomanip>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    void floydWarshall(vector<vector<int>> &dist)
-    {
+    void floydWarshall(vector<vector<int>> &dist) {
+        
         int n = dist.size();
-        for (int k = 0; k < n; k++)
-        {
+        for (int k = 0; k < n; k++)  {
+            
             for (int i = 0; i < n; i++)
             {
                 for (int j = 0; j < n; j++)
                 {
                     if (dist[i][k] == 1e8 || dist[k][j] == 1e8)
                         continue;
+                    
                     dist[i][j] = min(dist[i][j], dist[i][k] + dist[k][j]);
                 }
             }
@@ -24,8 +24,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
 
     int n;
     cout << "Enter number of vertices: ";
@@ -44,8 +43,8 @@ int main()
     sol.floydWarshall(dist);
 
     cout << "Shortest distances matrix:\n";
-    for (int i = 0; i < n; i++)
-    {
+    
+    for (int i = 0; i < n; i++){
         for (int j = 0; j < n; j++)
         {
             if (dist[i][j] == 1e8)

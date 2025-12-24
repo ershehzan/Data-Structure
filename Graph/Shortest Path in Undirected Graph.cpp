@@ -1,14 +1,11 @@
-
 //BFS approach to find the shortest path in an unweighted undirected graph
 //Time Complexity: O(N + E) where N is the number of nodes and E is
 #include <bits/stdc++.h>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    vector<int> shortestPath(vector<vector<int>> &adj, int src)
-    {
+    vector<int> shortestPath(vector<vector<int>> &adj, int src) {
         int n = adj.size();
         vector<int> dist(n, -1);
         vector<bool> vis(n, 0);
@@ -18,13 +15,11 @@ public:
         dist[src] = 0;
         vis[src] = 1;
 
-        while (!q.empty())
-        {
+        while (!q.empty()) {
             int node = q.front();
             q.pop();
 
-            for (int j = 0; j < adj[node].size(); j++)
-            {
+            for (int j = 0; j < adj[node].size(); j++){
                 if (vis[adj[node][j]])
                     continue;
 
@@ -37,14 +32,12 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n, m;
     cin >> n >> m; // number of nodes and edges
 
     vector<vector<int>> adj(n);
-    for (int i = 0; i < m; i++)
-    {
+    for (int i = 0; i < m; i++) {
         int u, v;
         cin >> u >> v;
         // undirected graph
@@ -66,3 +59,10 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+

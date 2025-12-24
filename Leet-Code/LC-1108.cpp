@@ -1,20 +1,16 @@
 #include <iostream>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    string lc(string address)
-    {
+    string lc(string address)  {
 
         // start here
         string ans;
         size_t index = 0;
 
-        while (index < address.size())
-        {
-            if (address[index] == '.')
-            {
+        while (index < address.size()) {
+            if (address[index] == '.'){
                 ans += "[.]";
             }
             else
@@ -28,8 +24,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string ipAddress;
 
@@ -43,3 +38,8 @@ int main()
 
     return 0;
 }
+
+
+
+
+

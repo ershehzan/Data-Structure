@@ -1,28 +1,24 @@
 #include <iostream>
 using namespace std;
-class Node
-{
+
+class Node{
 public:
     int data;
     Node *next;
-    Node(int val)
-    {
+    Node(int val){
         data = val;
         next = NULL;
     }
 };
-class Queue
-{
+class Queue{
     Node *front;
     Node *rear;
 
 public:
-    Queue()
-    {
+    Queue() {
         front = rear = NULL;
     }
-    bool isEmpty()
-    {
+    bool isEmpty(){
         return front == NULL;
     }
     // Enqueue operation
@@ -80,8 +76,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
 
     Queue q;
     q.push(10);

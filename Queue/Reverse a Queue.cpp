@@ -7,7 +7,8 @@ class Solution {
   public:
     queue<int> reverseQueue(queue<int> &q) {
         stack<int> st;
-        while (!q.empty()) {
+        while (!q.empty()) 
+        {
             st.push(q.front());
             q.pop();
         }
@@ -20,6 +21,7 @@ class Solution {
 };
 
 int main() {
+  
     Solution solution;
     int n;
     cout << "Enter the number of elements in the queue: ";
@@ -31,7 +33,6 @@ int main() {
         cin >> x;
         q.push(x);
     }
-
     q = solution.reverseQueue(q);
 
     cout << "Reversed queue: ";

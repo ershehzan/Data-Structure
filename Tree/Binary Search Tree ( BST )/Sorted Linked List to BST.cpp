@@ -3,40 +3,34 @@
 using namespace std;
 
 // Linked List Node
-class LNode
-{
+class LNode{
 public:
     int data;
     LNode *next;
 
-    LNode(int x)
-    {
+    LNode(int x) {
         data = x;
         next = NULL;
     }
 };
 
 // Tree Node
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
     Node *right;
 
-    Node(int x)
-    {
+    Node(int x){
         data = x;
         left = right = NULL;
     }
 };
 
-class Solution
-{
+class Solution{
 public:
     // Convert sorted array to Balanced BST
-    Node *BST(vector<int> &arr, int start, int end)
-    {
+    Node *BST(vector<int> &arr, int start, int end){
         if (start > end)
             return NULL;
 
@@ -50,8 +44,7 @@ public:
     }
 
     // Convert sorted linked list to BST
-    Node *sortedListToBST(LNode *head)
-    {
+    Node *sortedListToBST(LNode *head) {
         vector<int> arr;
         while (head)
         {
@@ -63,8 +56,7 @@ public:
 };
 
 // Inorder traversal of BST
-void inorder(Node *root)
-{
+void inorder(Node *root){
     if (!root)
         return;
     inorder(root->left);
@@ -73,8 +65,7 @@ void inorder(Node *root)
 }
 
 // Helper function to create a sorted linked list
-LNode *createLinkedList(vector<int> values)
-{
+LNode *createLinkedList(vector<int> values){
     if (values.empty())
         return NULL;
     LNode *head = new LNode(values[0]);
@@ -87,8 +78,7 @@ LNode *createLinkedList(vector<int> values)
     return head;
 }
 
-int main()
-{
+int main(){
     vector<int> sortedList = {1, 2, 3, 4, 5, 6, 7};
     LNode *head = createLinkedList(sortedList);
 

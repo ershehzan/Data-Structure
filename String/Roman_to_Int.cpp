@@ -3,15 +3,13 @@
 using namespace std; // Use the standard namespace to simplify code
 
 // Class to provide a solution for converting Roman numerals to integers
-class Solution
-{
+class Solution{
 public:
     // Helper function to map a Roman numeral character to its integer value
     // Parameters:
     // c - a Roman numeral character (e.g., 'I', 'V', 'X', etc.)
     // Returns: the integer value corresponding to the Roman numeral
-    int nums(char c)
-    {
+    int nums(char c) {
         if (c == 'I')
             return 1; // 'I' represents 1
         else if (c == 'V')
@@ -27,13 +25,12 @@ public:
         else
             return 1000; // 'M' represents 1000
     }
-
     // Function to convert a Roman numeral string to its integer value
     // Parameters:
     // s - the Roman numeral string (e.g., "IX", "XLII", etc.)
     // Returns: the integer value corresponding to the Roman numeral
-    int romanToInt(string s)
-    {
+    int romanToInt(string s) {
+        
         if (s.empty())
             return 0; // Return 0 for empty input to avoid out-of-bounds access
 
@@ -41,8 +38,7 @@ public:
         int index = 0; // Index to traverse the Roman numeral string
 
         // Process each character in the string except the last one
-        while (index < s.size() - 1)
-        {
+        while (index < s.size() - 1) {
             // If the current numeral is smaller than the next numeral,
             // subtract its value from the sum (e.g., "IV" -> 4)
             if (nums(s[index]) < nums(s[index + 1]))
@@ -63,8 +59,8 @@ public:
     }
 };
 
-int main()
-{
+int main(){
+    
     Solution solution;   // Create an instance of the Solution class
     string romanNumeral; // Variable to store the user-input Roman numeral
 

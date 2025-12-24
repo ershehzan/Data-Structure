@@ -3,16 +3,13 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    int longestPalindrome(string s)
-    {
+    int longestPalindrome(string s) {
         vector<int> lower(26, 0);
         vector<int> upper(26, 0);
 
-        for (int i = 0; i < s.size(); i++)
-        {
+        for (int i = 0; i < s.size(); i++)  {
             if (s[i] >= 'a')
                 lower[s[i] - 'a']++;
             else
@@ -22,8 +19,7 @@ public:
         int count = 0;
         bool odd = 0;
 
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++){
             if (lower[i] % 2 == 0)
             {
                 count += lower[i];
@@ -51,8 +47,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Solution solution;
     string input;
     cout << "Enter a string: ";
@@ -63,4 +58,9 @@ int main()
 
     return 0;
 }
+
+
+
+
+
 

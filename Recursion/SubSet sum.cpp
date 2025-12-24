@@ -2,10 +2,8 @@
 #include <vector>
 using namespace std;
 
-void subsetsum(int arr[], int index, int n, int sum ,vector<int>&ans)
-{
-    if (index == n)
-    {
+void subsetsum(int arr[], int index, int n, int sum ,vector<int>&ans){
+    if (index == n) {
        ans.push_back(sum); // Store the sum of the current subset
         return;
     }
@@ -13,8 +11,7 @@ void subsetsum(int arr[], int index, int n, int sum ,vector<int>&ans)
     subsetsum(arr, index + 1, n, sum + arr[index],ans); // include the current element
 }
 
-int main()
-{
+int main(){
     int arr[] = {3, 4, 5,6};
     int n = 4;
     vector<int> ans; // Vector to store the sums of all subsets
@@ -22,8 +19,7 @@ int main()
     
     subsetsum(arr,0,n,0,ans);
     
-    for(size_t i=0;i<ans.size();i++)
-    {
+    for(size_t i=0;i<ans.size();i++){
         cout << ans[i] << " ";
     }
     cout << endl;

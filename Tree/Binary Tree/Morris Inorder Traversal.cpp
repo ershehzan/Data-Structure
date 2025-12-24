@@ -3,8 +3,7 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
@@ -12,21 +11,16 @@ struct Node
 };
 
 // Solution class with Morris Inorder Traversal
-class Solution
-{
+class Solution{
 public:
-    vector<int> inOrder(Node *root)
-    {
+    vector<int> inOrder(Node *root)  {
         vector<int> ans;
-        while (root)
-        {
-            if (!root->left)
-            {
+        while (root) {
+            if (!root->left) {
                 ans.push_back(root->data);
                 root = root->right;
             }
-            else
-            {
+            else{
                 Node *curr = root->left;
                 while (curr->right && curr->right != root)
                     curr = curr->right;
@@ -35,8 +29,7 @@ public:
                     curr->right = root;
                     root = root->left;
                 }
-                else
-                {
+                else {
                     curr->right = NULL;
                     ans.push_back(root->data);
                     root = root->right;
@@ -48,8 +41,8 @@ public:
 };
 
 // Helper function to create a simple binary tree for demonstration
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
+    
      /*     1
            / \
           2   3
@@ -63,8 +56,7 @@ Node *buildSampleTree()
     return root;
 }
 
-int main()
-{
+int main(){
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> inorder = sol.inOrder(root);

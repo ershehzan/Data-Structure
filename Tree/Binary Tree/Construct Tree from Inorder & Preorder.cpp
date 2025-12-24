@@ -4,23 +4,20 @@
 using namespace std;
 
 // Definition of the Node class
-class Node
-{
+class Node{
 public:
     int data;
     Node *left;
     Node *right;
 
-    Node(int x)
-    {
+    Node(int x){
         data = x;
         left = NULL;
         right = NULL;
     }
 };
 
-int search(vector<int> &arr, int key, int start, int end)
-{
+int search(vector<int> &arr, int key, int start, int end){
     for (int i = start; i <= end; i++)
     {
         if (arr[i] == key)
@@ -29,8 +26,7 @@ int search(vector<int> &arr, int key, int start, int end)
     return -1;
 }
 
-class Solution
-{
+class Solution{
 public:
     Node *tree(vector<int> in, vector<int> pre, int INstart, int INend, int index)
     {
@@ -69,8 +65,7 @@ void printInorder(Node *root)
 }
 
 // Helper function to print the tree in level order
-void printLevelOrder(Node *root)
-{
+void printLevelOrder(Node *root){
     if (!root)
         return;
     queue<Node *> q;
@@ -92,8 +87,7 @@ void printLevelOrder(Node *root)
     }
 }
 
-int main()
-{
+int main(){
     vector<int> inorder = {4, 2, 5, 1, 6, 3};
     vector<int> preorder = {1, 2, 4, 5, 3, 6};
 

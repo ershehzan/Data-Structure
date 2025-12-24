@@ -3,21 +3,17 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution {
 public:
-    bool checkIfPangram(string sentence)
-    {
+    bool checkIfPangram(string sentence) {
 // start here
         vector<bool> alpha(26, 0);
 
-        for (int i = 0; i < sentence.size(); i++)
-        {
+        for (int i = 0; i < sentence.size(); i++){
             alpha[sentence[i] - 'a'] = 1;
         }
 
-        for (int i = 0; i < 26; i++)
-        {
+        for (int i = 0; i < 26; i++) {
             if (alpha[i] == 0)
                 return 0;
         }
@@ -27,8 +23,8 @@ public:
     }
 };
 
-int main()
-{
+int main() {
+    
     Solution solution;
     string sentence;
 
@@ -46,3 +42,10 @@ int main()
 
     return 0;
 }
+
+
+
+
+
+
+

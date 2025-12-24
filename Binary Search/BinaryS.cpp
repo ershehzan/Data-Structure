@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-int BinarySearch(int arr[], int key, int n)
-{
-    int start = 0, end = n - 1, mid;
-    while (start <= end)
+int BinarySearch(int arr[], int key, int n){
+int start = 0, end = n - 1, mid;
+    
+    while (start <= end) 
     {
+        
         int mid = (start + end) / 2;
-        if (arr[mid] == key)
-        {
+        if (arr[mid] == key){
             cout << "Element found at index ";
             return mid;
         }
@@ -17,16 +17,15 @@ int BinarySearch(int arr[], int key, int n)
 
             start = mid + 1;
         }
-        else
-        {
+        else{
             end = mid - 1;
         }
     }
     return -1;
 }
 
-int main()
-{
+int main(){
+    
     int arr[1000];
     int n;
     cout << "Enter the index of array : ";

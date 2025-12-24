@@ -2,15 +2,13 @@
 using namespace std;
 
 // A class representing a node in the linked list
-class node
-{
+class node{
 public:
     int data;   // Stores the data value of the node
     node *next; // Pointer to the next node in the list
 
     // Constructor to initialize a node with a given value
-    node(int value)
-    {
+    node(int value) {
         data = value;  // Assign the value to the data field
         next = NULL;   // Initialize the next pointer to NULL
     }
@@ -21,8 +19,7 @@ public:
 // - arr: Array containing values to insert
 // - index: Current index in the array
 // - size: Total size of the array
-node *insertAtend(int arr[], int index, int size)
-{
+node *insertAtend(int arr[], int index, int size){
     if (index == size) // Base case: If all elements are processed, return NULL
         return NULL;
 
@@ -34,8 +31,7 @@ node *insertAtend(int arr[], int index, int size)
     return temp; // Return the current node
 }
 
-int main()
-{
+int main(){
     node *head;   // Pointer to the head of the linked list
     head = NULL;  // Initialize the head to NULL (empty list)
 
@@ -59,3 +55,8 @@ int main()
 
     return 0; // Indicate successful program completion
 }
+
+
+
+
+

@@ -1,15 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class Queue
-{
+class Queue{
     int front, rear;
     int *arr;
     int size;
 
 public:
-    Queue(int n)
-    {
+    Queue(int n){
         arr = new int[n];
         size = n;
         front = rear = -1;
@@ -46,8 +44,7 @@ public:
             arr[rear] = x;
         }
     }
-    void pop()
-    {
+    void pop(){
         if (isEmpty())
         {
             cout << "Queue is Empty" << endl;
@@ -79,6 +76,7 @@ public:
 };
 
 int main(){
+    
     int n;
     cout << "Enter the size of the Queue: ";
     cin >> n;

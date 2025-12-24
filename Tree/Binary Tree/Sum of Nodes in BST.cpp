@@ -2,21 +2,18 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
 
-    Node(int x)
-    {
+    Node(int x) {
         data = x;
         left = right = NULL;
     }
 };
 
-void pre(int &sum, Node *root)
-{
+void pre(int &sum, Node *root){
     if (root == NULL)
         return;
     sum += root->data;
@@ -24,19 +21,16 @@ void pre(int &sum, Node *root)
     pre(sum, root->right);
 }
 
-class Solution
-{
+class Solution{
 public:
-    int sumBT(Node *root)
-    {
+    int sumBT(Node *root) {
         int sum = 0;
         pre(sum, root);
         return sum;
     }
 };
 
-int main()
-{
+int main(){
 
     Node *root = new Node(10);
     root->left = new Node(5);
@@ -48,7 +42,6 @@ int main()
     Solution sol;
     int sum = sol.sumBT(root);
     cout << "Sum of all nodes in BST: " << sum << endl;
-
     // Free allocated memory
     delete root->left->left;
     delete root->left->right;

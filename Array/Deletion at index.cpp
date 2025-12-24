@@ -1,8 +1,10 @@
 #include <iostream>
 using namespace std;
 
-void deleteElement(int arr[], int &size, int index) {
-    if (index < 0 || index >= size) {
+void deleteElement(int arr[], int &size, int index) 
+{
+    if (index < 0 || index >= size) 
+    {
         cout << "Invalid index!" << endl;
         return;
     }
@@ -13,6 +15,7 @@ void deleteElement(int arr[], int &size, int index) {
 }
 
 int main() {
+    
     int arr[] = {10, 20, 30, 40, 50};
     int size = sizeof(arr) / sizeof(arr[0]);
     int index;
@@ -30,3 +33,6 @@ int main() {
     
     return 0;
 }
+
+
+

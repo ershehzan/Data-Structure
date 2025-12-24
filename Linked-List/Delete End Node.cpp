@@ -1,19 +1,15 @@
 #include <iostream>
 using namespace std;
-class node
-{
+class node{
 public:
     int data;
     node *next;
-    node(int value)
-    {
+    node(int value){
         data = value;
         next = NULL;
     }
 };
-int main()
-{
-
+int main(){
     node *head;
     node *tail = NULL; // Declare tail outside the loop
     head = NULL;
@@ -22,8 +18,7 @@ int main()
    for (int i = 0; i < 5; i++)
     {
 
-        if (head == NULL)
-        {
+        if (head == NULL) {
             head = new node(arr[i]);
             tail=head;
         }
@@ -62,8 +57,7 @@ int main()
 
     node *current = head;
 
-    while (current)
-    {
+    while (current) {
         cout << current->data << " ";
         current = current->next;
     }

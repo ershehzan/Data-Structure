@@ -1,8 +1,7 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
+class Node{
 public:
     int data;
     Node *left, *right;
@@ -13,8 +12,7 @@ public:
     }
 };
 
-Node *BinaryTree()
-{
+Node *BinaryTree(){
     int n;
 
     cin >> n;
@@ -29,8 +27,7 @@ Node *BinaryTree()
     return temp;
 }
 
-void preorder(Node *root)
-{
+void preorder(Node *root){
     if (root == NULL)
         return;
     cout << root->data << " ";
@@ -38,8 +35,7 @@ void preorder(Node *root)
     preorder(root->right);
 }
 
-void inorder(Node *root)
-{
+void inorder(Node *root) {
     if (root == NULL)
         return;
     inorder(root->left);
@@ -47,8 +43,7 @@ void inorder(Node *root)
     inorder(root->right);
 }
 
-void postorder(Node *root)
-{
+void postorder(Node *root){
     if (root == NULL)
         return;
     postorder(root->left);
@@ -56,8 +51,7 @@ void postorder(Node *root)
     cout << root->data << " ";
 }
 
-int main()
-{
+int main(){
 
     cout << "Enter the Root: ";
     Node *Root;

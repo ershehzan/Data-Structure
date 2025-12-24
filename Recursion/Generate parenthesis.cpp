@@ -6,10 +6,12 @@ using namespace std;
 class Solution {
 public:
     void parenthesis(int n, int l, int r, vector<string>& ans, string& temp) {
+        
         if (l + r == 2 * n) {
             ans.push_back(temp);
             return;
         }
+        
         if (l < n) {
             temp.push_back('(');
             parenthesis(n, l + 1, r, ans, temp);
@@ -21,7 +23,6 @@ public:
             temp.pop_back();
         }
     }
-
     vector<string> generateParenthesis(int n) {
         vector<string> ans;
         string temp;
@@ -41,6 +42,5 @@ int main() {
     for (const string& s : result) {
         cout << s << endl;
     }
-
     return 0;
 }

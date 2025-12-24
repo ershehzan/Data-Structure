@@ -3,11 +3,9 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    string intToRoman(int num)
-    {
+    string intToRoman(int num){
         // Define the values of Roman numerals in descending order
         vector<int> values = {1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
         // Define the corresponding Roman numeral symbols for the values
@@ -17,11 +15,9 @@ public:
         string result = "";
 
         // Iterate through each value-symbol pair
-        for (size_t i = 0; i < values.size(); i++)
-        {
+        for (size_t i = 0; i < values.size(); i++) {
             // While the current value can be subtracted from the number
-            while (num >= values[i])
-            {
+            while (num >= values[i]) {
                 // Append the corresponding Roman numeral symbol to the result
                 result += symbols[i];
                 // Subtract the value from the number
@@ -34,8 +30,8 @@ public:
     }
 };
 
-int main()
-{
+int main(){
+    
     Solution solution;
     int num;
 

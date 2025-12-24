@@ -5,7 +5,8 @@ using namespace std;
 
 class Solution {
 public:
-    void lpsfind(vector<int> &lps, string s) {
+    void lpsfind(vector<int> &lps, string s) 
+{
         int pre = 0, suf = 1;
 
         while (suf < s.size()) {
@@ -24,7 +25,8 @@ public:
         }
     }
 
-    int strStr(string haystack, string needle) {
+    int strStr(string haystack, string needle)
+{
         if (needle.empty()) return 0;
 
         vector<int> lps(needle.size(), 0);
@@ -36,7 +38,8 @@ public:
             if (haystack[first] == needle[second]) {
                 first++;
                 second++;
-            } else {
+            } 
+            else {
                 if (second == 0)
                     first++;
                 else
@@ -52,6 +55,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
     string haystack, needle;
 

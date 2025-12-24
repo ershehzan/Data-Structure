@@ -1,33 +1,25 @@
 #include <iostream>
 using namespace std;
 
-class Node
-{
-
+class Node{
 public:
     int data;
     Node *next;
 
-    Node(int value)
-    {
+    Node(int value){
         data = value;
         next = NULL;
     }
 };
 
-int main()
-{
-
+int main(){
     Node *head, *tail;
     tail = head = NULL;
 
     int arr[] = {10,20, 30, 40, 50};
     for (int i = 0; i < 5; i++)
     {
-
-        if (head == NULL)
-        {
-            
+        if (head == NULL)  {
             head = new Node(arr[i]);
             tail = head;
         }
@@ -48,8 +40,7 @@ int main()
     // Print the linked list
     Node *current = head;
 
-    while (current != NULL)
-    {
+    while (current != NULL) {
         cout << current->data << " ";
         current = current->next;
     };

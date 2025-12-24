@@ -5,27 +5,23 @@
 using namespace std;
 
 // Definition for a binary tree node.
-struct Node
-{
+struct Node{
     int data;
     Node *left;
     Node *right;
     Node(int val) : data(val), left(NULL), right(NULL) {}
 };
 
-class Solution
-{
+class Solution{
 public:
-    vector<int> postOrder(Node *root)
-    {
+    vector<int> postOrder(Node *root)  {
         stack<Node *> s;
         vector<int> ans;
         if (root == NULL)
             return ans;
         s.push(root);
 
-        while (!s.empty())
-        {
+        while (!s.empty())   {
             Node *temp = s.top();
             s.pop();
             ans.push_back(temp->data);
@@ -42,13 +38,14 @@ public:
 };
 
 // Helper function to create a simple binary tree for demonstration
-Node *buildSampleTree()
-{
+Node *buildSampleTree(){
+    
     /*   1
         / \
        2   3
       / \
      4   5  */
+    
     Node *root = new Node(1);
     root->left = new Node(2);
     root->right = new Node(3);
@@ -57,8 +54,7 @@ Node *buildSampleTree()
     return root;
 }
 
-int main()
-{
+int main(){
     Node *root = buildSampleTree();
     Solution sol;
     vector<int> result = sol.postOrder(root);

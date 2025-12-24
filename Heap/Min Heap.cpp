@@ -2,30 +2,26 @@
 using namespace std;
 
 // Class representing a Min Heap data structure
-class MinHeap
-{
+class MinHeap{
 public:
     int *arr;        // Dynamic array to store heap elements
     int size;        // Current number of elements in the heap
     int total_size;  // Maximum capacity of the heap
 
     // Constructor to initialize the heap with given capacity
-    MinHeap(int n)
-    {
+    MinHeap(int n)  {
         arr = new int[n];  // Allocate memory for the heap
         size = 0;          // Initially heap is empty
         total_size = n;    // Set maximum capacity
     }
 
     // Destructor to free allocated memory and prevent memory leaks
-    ~MinHeap()
-    {
+    ~MinHeap() {
         delete[] arr;
     }
 
     // Insert a new value into the heap and maintain the min-heap property
-    void insert(int val)
-    {
+    void insert(int val) {
         if (size == total_size)
         {
             cout << "Heap is full" << endl;
@@ -49,8 +45,7 @@ public:
     }
 
     // Print all elements of the heap in array order
-    void print()
-    {
+    void print() {
         if (size == 0)
         {
             cout << "Heap is empty" << endl;
@@ -89,10 +84,8 @@ public:
     }
 
     // Delete the root (minimum element) from the heap
-    void deleteRoot()
-    {
-        if (size == 0)
-        {
+    void deleteRoot()  {
+        if (size == 0) {
             cout << "Heap is empty, cannot delete" << endl;
             return;
         }
@@ -109,9 +102,8 @@ public:
     }
 
     // Return the minimum (root) element of the heap
-    int getMin()
-    {
-        if (size == 0)
+    int getMin() {
+     if (size == 0)
         {
             cout << "Heap is empty" << endl;
             return -1;  // You could throw an exception here instead
@@ -120,8 +112,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int n;
     cout << "Enter the size of the heap: ";
     cin >> n;

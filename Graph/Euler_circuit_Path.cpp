@@ -2,11 +2,9 @@
 #include <vector>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    void DFS(int node, vector<int> adj[], vector<bool> &vis)
-    {
+    void DFS(int node, vector<int> adj[], vector<bool> &vis) {
         vis[node] = 1;
         for (int j = 0; j < adj[node].size(); j++)
         {
@@ -14,8 +12,7 @@ public:
                 DFS(adj[node][j], adj, vis);
         }
     }
-    int isEulerCircuit(int V, vector<int> adj[])
-    {
+    int isEulerCircuit(int V, vector<int> adj[])  {
         vector<int> deg(V, 0);
         int odd_deg = 0;
         for (int i = 0; i < V; i++)
@@ -54,8 +51,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     int V, E;
     cout << "Enter number of vertices and edges: ";
     cin >> V >> E;

@@ -3,8 +3,7 @@
 using namespace std;
 
 // Definition of a Node in AVL Tree
-class Node
-{
+class Node{
 public:
     int data;    // Value of the node
     Node *left;  // Pointer to left child
@@ -12,8 +11,7 @@ public:
     int height;  // Height of the node
 
     // Constructor
-    Node(int val)
-    {
+    Node(int val) {
         data = val;
         left = right = NULL;
         height = 1; // A newly created node is a leaf, so height is 1
@@ -21,16 +19,14 @@ public:
 };
 
 // Function to get the height of a node
-int getheight(Node *root)
-{
+int getheight(Node *root){
     if (!root)
         return 0; // Null node has height 0
     return root->height;
 }
 
 // Function to get the balance factor of a node
-int getbalance(Node *root)
-{
+int getbalance(Node *root){
     if (!root)
         return 0;
     // Balance = height of left subtree - height of right subtree
@@ -38,8 +34,7 @@ int getbalance(Node *root)
 }
 
 // Right Rotation (for Left-Left case)
-Node *rightrotation(Node *root)
-{
+Node *rightrotation(Node *root){
     Node *child = root->left;
     Node *childright = child->right;
 
@@ -56,8 +51,7 @@ Node *rightrotation(Node *root)
 }
 
 // Left Rotation (for Right-Right case)
-Node *leftrotation(Node *root)
-{
+Node *leftrotation(Node *root){
     Node *child = root->right;
     Node *childleft = child->left;
 
@@ -73,8 +67,7 @@ Node *leftrotation(Node *root)
     return child;
 }
 
-Node *deleteNode(Node *root, int key)
-{
+Node *deleteNode(Node *root, int key){
 
     if (!root)
         return NULL;
@@ -85,34 +78,29 @@ Node *deleteNode(Node *root, int key)
     else if (key > root->data)
         root->right = deleteNode(root->right, key);
 
-    else
-    {
+    else {
         // Leaf Node
-        if (!root->left && !root->right)
-        {
+        if (!root->left && !root->right) {
             delete root;
             return NULL;
         }
 
         // One child
         // Right Child
-        else if (root->left && !root->right)
-        {
+        else if (root->left && !root->right) {
             Node *temp = root->left;
             delete root;
             return temp;
         }
         // Left Child
-        else if (!root->left && root->right)
-        {
+        else if (!root->left && root->right){
             Node *temp = root->right;
             delete root;
             return temp;
         }
 
         // Both Child
-        else
-        {
+        else{
             // Right Side Smallest Element
             Node *curr = root->right;
             while (curr->left)
@@ -129,16 +117,13 @@ Node *deleteNode(Node *root, int key)
     int balance = getbalance(root);
 
     // Left Side
-    if (balance > 1)
-    {
+    if (balance > 1){
         // LL
-        if (getbalance(root->left) >= 0)
-        {
+        if (getbalance(root->left) >= 0) {
             return rightrotation(root);
         }
         // LR
-        else
-        {
+        else{
             root->left = leftrotation(root->left);
             return rightrotation(root);
         }
@@ -158,16 +143,13 @@ Node *deleteNode(Node *root, int key)
             return leftrotation(root);
         }
     }
-    else
-    {
-
+    else{
         return root;
     }
 }
 
 // Function to insert a node in the AVL tree
-Node *insert(Node *root, int key)
-{
+Node *insert(Node *root, int key){
     // Step 1: Perform normal BST insertion
     if (!root)
         return new Node(key); // Create a new node if root is NULL
@@ -222,8 +204,8 @@ void inorder(Node *root)
 }
 
 // Driver Code
-int main()
-{
+int main(){
+    
     Node *root = NULL;
 
     // Insert elements into the AVL tree

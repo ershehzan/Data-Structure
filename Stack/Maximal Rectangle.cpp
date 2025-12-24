@@ -19,7 +19,9 @@ public:
                 else
                     ans = max(ans, heights[index] * i);
             }
+            
             st.push(i);
+            
         }
         while (!st.empty()) {
             index = st.top();
@@ -32,7 +34,7 @@ public:
         return ans;
     }
 
-    int maximalRectangle(vector<vector<char>>& matrix) {
+    int maximalRectangle(vector<vector<char>>& matrix){
         if (matrix.empty() || matrix[0].empty()) return 0;
         int ans = 0;
         int row = matrix.size();
@@ -52,6 +54,7 @@ public:
 };
 
 int main() {
+    
     Solution solution;
     int m, n;
     cout << "Enter number of rows: ";
@@ -63,7 +66,7 @@ int main() {
     for (int i = 0; i < m; i++) {
         string row;
         cin >> row;
-        for (int j = 0; j < n; j++) {
+        for (int j = 0; j < n; j++)  {
             matrix[i][j] = row[j];
         }
     }

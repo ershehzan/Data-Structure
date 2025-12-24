@@ -16,7 +16,8 @@ struct Node {
 // Your solution class
 class Solution {
   public:
-    void inorder(Node* root, vector<int>& ans) {
+    void inorder(Node* root, vector<int>& ans) 
+    {
         if (!root)
             return;
         inorder(root->left, ans);
@@ -24,7 +25,8 @@ class Solution {
         inorder(root->right, ans);
     }
 
-    void postorder(Node* root, int& index, vector<int>& ans) {
+    void postorder(Node* root, int& index, vector<int>& ans) 
+    {
         if (!root)
             return;
         postorder(root->left, index, ans);
@@ -33,7 +35,8 @@ class Solution {
         index++;
     }
 
-    void convertToMaxHeapUtil(Node* root) {
+    void convertToMaxHeapUtil(Node* root) 
+    {
         vector<int> ans;
         inorder(root, ans); // Sorted values from BST
         int index = 0;
@@ -42,7 +45,8 @@ class Solution {
 };
 
 // Function to print postorder of the tree (for verifying Max Heap)
-void printPostorder(Node* root) {
+void printPostorder(Node* root) 
+{
     if (!root) return;
     printPostorder(root->left);
     printPostorder(root->right);

@@ -88,8 +88,8 @@ Space Complexity: O(V + E)
 
 */
 
-int main()
-{
+int main(){
+  
     int V = 4;
     vector<vector<int>> edges = {
         {0, 1, 10},

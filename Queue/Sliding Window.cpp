@@ -1,27 +1,22 @@
-#include <iostream>
+        #include <iostream>
 #include <queue>
 using namespace std;
-
-void display(queue<int> q)
-{
+void display(queue<int> q){
     cout << "Sliding Window:";
-    while (!q.empty())
-    {
+    while (!q.empty()){
         cout << q.front() << " ";
         q.pop();
     }
     cout << endl;
 }
 
-int main()
-{
+int main(){
     int arr[100];
     int n, k;
     cout << "Enter the number of elements in the array: ";
     cin >> n;
     cout << "Enter the elements of the array: ";
-    for (int i = 0; i < n; i++)
-    {
+    for (int i = 0; i < n; i++){
         cin >> arr[i];
     }
     cout << "Enter the size of the sliding window: ";

@@ -3,11 +3,9 @@
 #include <queue>
 using namespace std;
 
-class Solution
-{
+class Solution{
 public:
-    int spanningTree(int V, vector<vector<int>> &edges)
-    {
+    int spanningTree(int V, vector<vector<int>> &edges){
         vector<vector<pair<int, int>>> adj(V);
         for (auto &e : edges)
         {
@@ -23,6 +21,7 @@ public:
         vector<int> parent(V, -1);
         int cost = 0;
         pq.push({0, {0, -1}});
+        
         while (!pq.empty())
         {
             int wt = pq.top().first;

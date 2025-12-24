@@ -3,8 +3,8 @@
 using namespace std;
 
 // Main function where execution starts
-int main()
-{
+int main(){
+    
     int n, i, j, key; // Declare variables: 'n' for array size, 'i' and 'j' for loops, 'key' for sorting
     int arr[1000];    // Declare an array of size 1000 to store user input
 
@@ -20,8 +20,7 @@ int main()
     }
 
     // Insertion Sort Algorithm
-    for (i = 1; i < n; i++) // Start from the second element (index 1) to the last
-    {
+    for (i = 1; i < n; i++){
         key = arr[i]; // Store the current element (key) to be placed correctly
         j = i - 1;    // Start comparing with the previous element
 

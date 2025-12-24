@@ -1,12 +1,14 @@
 #include<iostream>
 using namespace std;
 
-class dequeue{
+class dequeue {
     int front, rear;
     int *arr;
     int size;
+
     public:
-    dequeue(int n){
+    dequeue(int n)
+    {
         size=n;
         arr=new int[size];
         front = rear = -1;
@@ -32,6 +34,7 @@ class dequeue{
             arr[front]=x;
         }
     }
+
     void push_back(int x){
          if(isFull()){
             cout << "Dequeue is full\n";
@@ -70,6 +73,7 @@ class dequeue{
            rear=(rear-1+size)%size;
         }
     }
+
     int start(){
         if(isEmpty()){
             cout<<"Dequeue is Empty";
@@ -88,6 +92,7 @@ class dequeue{
             return arr[rear];
         }
     }
+
     void display(){
     if (isEmpty()) {
         cout << "Dequeue is Empty\n";
@@ -108,6 +113,7 @@ class dequeue{
 
 };
 int main(){
+    
     dequeue d(5);
     d.push_back(10);
     d.push_back(20);

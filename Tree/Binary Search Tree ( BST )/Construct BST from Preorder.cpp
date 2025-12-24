@@ -2,7 +2,6 @@
 #include <vector>
 #include <climits>
 using namespace std;
-
 // TreeNode definition
 class TreeNode {
 public:
@@ -39,7 +38,8 @@ public:
 };
 
 // Inorder traversal for validation
-void inorder(TreeNode* root) {
+void inorder(TreeNode* root)
+{
     if (!root) return;
     inorder(root->left);
     cout << root->val << " ";
@@ -47,6 +47,7 @@ void inorder(TreeNode* root) {
 }
 
 int main() {
+    
     vector<int> preorder = {10, 5, 1, 7, 40, 50};
 
     Solution sol;

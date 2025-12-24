@@ -2,27 +2,23 @@
 using namespace std;
 
 // Node class representing a node in the Binary Search Tree (BST)
-class Node
-{
+class Node{
 public:
     int data;        // Value stored in the node
     Node *left;      // Pointer to the left child node
     Node *right;     // Pointer to the right child node
 
     // Constructor to initialize node with a value
-    Node(int value)
-    {
+    Node(int value){
         data = value;          // Set node's data to the given value
         left = right = NULL;   // Initialize left and right pointers to NULL
     }
 };
 
 // Function to insert a value into the BST recursively
-Node *insert(Node *root, int value)
-{
+Node *insert(Node *root, int value){
     // If the current node is NULL, create and return a new node with the given value
-    if (!root)
-    {
+    if (!root) {
         Node *temp = new Node(value);
         return temp;
     }
@@ -36,8 +32,7 @@ Node *insert(Node *root, int value)
 }
 
 // Function to perform inorder traversal of the BST (prints nodes in sorted order)
-void inorder(Node *root)
-{
+void inorder(Node *root){
     if (!root)
         return; // Base case: if the node is NULL, return
 
@@ -47,8 +42,7 @@ void inorder(Node *root)
 }
 
 // Function to search for a target value in the BST
-bool search(Node *root, int target)
-{
+bool search(Node *root, int target){
     if (!root)
         return 0; // Base case: reached a NULL node, target not found
 
@@ -62,8 +56,8 @@ bool search(Node *root, int target)
         return search(root->right, target);
 }
 
-int main()
-{
+int main(){
+    
     int n; // Number of nodes to insert into the BST
 
     cout << "Enter the number of nodes in the BST: ";

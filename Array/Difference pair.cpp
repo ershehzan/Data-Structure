@@ -2,8 +2,7 @@
 #include <vector>
 using namespace std;
 
-int main()
-{
+int main(){
     vector<int> arr = {2, 3, 5, 8, 50, 80}; // Initialize the array
     int k;                                  // Difference to find
     cout << "Enter the difference: ";
@@ -14,7 +13,6 @@ int main()
     while (end < n)
     {
         int diff = arr[end] - arr[start]; // Calculate the difference between the elements at the two pointers
-
         if (diff == k)
         {
             // If the difference is equal to k, print the indices of the pair and exit
