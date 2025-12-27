@@ -17,8 +17,7 @@ public:
 };
 
 // Derived class Cat
-class Cat : public Animal
-{
+class Cat : public Animal{
 public:
     void makeSound()
     {
