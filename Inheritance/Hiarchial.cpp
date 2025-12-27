@@ -19,8 +19,7 @@ public:
 // Derived class Cat
 class Cat : public Animal{
 public:
-    void makeSound()
-    {
+    void makeSound(){
         cout << "Meow!" << endl;
     }
 };
