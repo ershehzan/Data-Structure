@@ -9,8 +9,7 @@ public:
 };
 
 // Derived class Dog
-class Dog : public Animal
-{
+class Dog : public Animal{
 public:
     void makeSound()
     {
