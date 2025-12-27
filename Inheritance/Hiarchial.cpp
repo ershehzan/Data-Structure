@@ -11,8 +11,7 @@ public:
 // Derived class Dog
 class Dog : public Animal{
 public:
-    void makeSound()
-    {
+    void makeSound(){
         cout << "Woof!" << endl;
     }
 };
