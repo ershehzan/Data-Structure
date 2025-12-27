@@ -34,8 +34,7 @@ public:
     }
 };
 
-int main()
-{
+int main(){
     Dog dog;
     Cat cat;
     Bird bird;
