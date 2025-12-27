@@ -3,8 +3,7 @@
 using namespace std;
 
 
-class Animal
-{
+class Animal{
 public:
     void makeSound(){
         cout << "Animal sound" << endl;
