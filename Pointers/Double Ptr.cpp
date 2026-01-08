@@ -21,3 +21,4 @@ cout<<n<<endl; //15
     return 0;
 
 }
+
