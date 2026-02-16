@@ -1,5 +1,4 @@
 #include <iostream>
-#include <vector>
 using namespace std;
 
 class node{
@@ -15,16 +14,16 @@ public:
 
 int main(){
 
-   node *head, *tail;
-   tail= head = NULL;
-    
+    node *head = NULL, *tail = NULL;
+
     int arr[] = {20, 30, 40, 50};
+
+    // Creating Linked List
     for (int i = 0; i < 4; i++)
     {
-
         if (head == NULL) {
             head = new node(arr[i]);
-            tail=head;
+            tail = head;
         }
         else
         {
@@ -32,37 +31,30 @@ int main(){
             tail = tail->next;
         }
     }
-    //Lc-206
-//start
-    vector<int>ans;
-        node*temp=head;
 
-        while(temp!=NULL) {
-            ans.push_back(temp->data);
-            temp=temp->next;
-        }
-        int i=ans.size()-1;
-        temp=head;
+    // 🔹 Reverse Linked List (3 Pointer Method)
 
-        while(temp){
+    node* curr = head;
+    node* prev = NULL;
+    node* fut = NULL;
 
-            temp->data=ans[i];
-            i--;
-            temp=temp->next;
-        }
-        //end
-    
-    node *current;
-    current = head;
+    while (curr != NULL) {
+        fut = curr->next;   // store next
+        curr->next = prev;  // reverse link
+        prev = curr;        // move prev
+        curr = fut;         // move curr
+    }
+
+    head = prev;  // update head
+
+    // Printing Reversed List
+    node *current = head;
     cout << "Reversed Linked List: ";
     while (current != NULL)
     {
         cout << current->data << " ";
         current = current->next;
     }
+
     return 0;
 }
-
-
-
-
