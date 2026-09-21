@@ -33,7 +33,6 @@ int main() {
             start++;
         }
     }
-
     // If no pair is found, print a message indicating that
     cout << "No pair found" << endl;
     return 0; // Return 0 to indicate successful execution
