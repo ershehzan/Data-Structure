@@ -20,6 +20,16 @@ int main()
         cin >> arr[i];
     }
 
+    // for (int i = 0; i < n; i++) {
+    //     if (arr[i] > first) {
+    //         sec = first;
+    //         first = arr[i];
+    //     }
+    //     else if (arr[i] > sec && arr[i] != first) {
+    //         sec = arr[i];
+    //     }
+    // }
+
     // Find the largest element in the array
     for (int i = 0; i < n; i++)
     {
@@ -28,6 +38,7 @@ int main()
             ans = arr[i];
         }
     }
+
 
     // Find the second largest element in the array
     int sec = INT_MIN; // Initialize second largest to the smallest possible integer
