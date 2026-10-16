@@ -60,3 +60,11 @@ int main(){
 //         }
 //         return index; // New length of the array
 //     }
+
+// int findUnique(const std::vector<int>& nums) {
+//     int result = 0;
+//     for (int num : nums) {
+//         result ^= num; // XOR each element
+//     }
+//     return result;
+// }
